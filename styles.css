@@ -1,0 +1,377 @@
+.single-icon {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.single-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Optional: dim icons that aren't selected */
+.single-icon.active {
+    outline: 2px solid #007bff;
+    border-radius: 50%;
+}
+
+.single-icon.active-skill {
+    filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.8));
+    /* Green glow */
+    outline-offset: 1.5px;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;      /* Allows icons to move to next line on small screens */
+    align-items: center;  /* Aligns button and icons along their center axis */
+    gap: 20px;            /* Consistent spacing between icons and the button */
+    margin-bottom: 50px;  /* The space you wanted at the bottom of the container */
+}
+
+#show-all-icons {
+    width: 60px;          /* Match icon width */
+    height: 60px;         /* Match icon width */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1.1;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;       /* Prevents the circle from squishing */
+}
+
+#show-all-icons:hover {
+    background: rgba(255, 179, 0, 0.443);
+    border-color: rgba(255, 157, 0, 0.8);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 174, 0, 0.4);
+}
+
+#show-all-icons:active {
+    transform: scale(0.95);
+}
+
+.domain-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px; /* Space between filter rows */
+}
+
+.reset-pill {
+    background: rgba(0, 0, 0, 0.7);
+    color: white; /* Ensure your page background isn't white! */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: inline-block; /* Ensures it respects padding/height */
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reset-pill:hover {
+    background: rgba(255, 179, 0, 0.443);
+    border-color: rgba(255, 157, 0, 0.8);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 174, 0, 0.4);
+}
+
+.single-domain {
+    padding: 8px 12px;
+}
+
+/* Update this specific rule in your CSS */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap; /* Add this */
+    align-items: center; /* Add this to align button with text */
+    gap: 15px;
+}
+
+.single-skill {
+    padding: 8px 12px;
+}
+
+/* Apply to both Domain and Skill text buttons */
+.single-domain,
+.single-skill {
+    cursor: pointer;
+    display: inline-block; /* Required for transform/scale to work properly */
+    padding: 8px 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect: Scale up and add the glow */
+.single-domain:hover,
+.single-skill:hover {
+    transform: scale(1.1);
+}
+
+/* Active (Clicking) effect: Slight shrink for feedback */
+.single-domain:active,
+.single-skill:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Domain: Purple Aesthetic */
+.single-domain.active-filter {
+    background-color: rgba(147, 51, 234, 0.3); /* Purple background */
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.6); /* Purple glow */
+    border-radius: 4px;
+    transform: scale(1.05);
+}
+
+/* Skills: Blue Aesthetic */
+.single-skill.active-filter {
+    background-color: rgba(50, 118, 254, 0.2); /* Your original Blue */
+    box-shadow: 0 0 10px rgba(0, 26, 255, 0.4);  /* Your original Blue glow */
+    border-radius: 4px;
+    transform: scale(1.05);
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    flex: 1;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* 1. Setup the container for the image and text */
+.project-image-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-image-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    /* Smooth zoom effect on hover */
+}
+
+/* 2. Create the hidden overlay */
+.project-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+/* 3. Style the H2 title */
+.project-title h2 {
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+    padding: 12px 24px;
+    border-radius: 4px;
+
+    /* The "Box" around the text */
+    background: rgba(0, 0, 0, 0.7);
+
+    /* Hide the box and text by default on desktop */
+    opacity: 0;
+    transform: scale(0.9);
+    /* Subtle "pop-in" effect */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-image-wrapper:hover .project-title h2 {
+    opacity: 1;
+    transform: translateY(0);
+    /* Slides text into place */
+}
+
+.project-image-wrapper:hover img {
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+.project-skills-bar img {
+    width: 25px;
+    /* Small icon size */
+    height: 25px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.mini-skill-icon {
+    width: 25px;
+    height: 25px;
+    display: block;
+    object-fit: contain;
+}
+
+.project-info-stack {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stacks items from bottom to top */
+    align-items: flex-start;
+    /* Keeps them flush to the left */
+    gap: 8px;
+    /* Space between the bars */
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Base style for all bars to ensure they look like matching tabs */
+.project-skills-bar,
+.project-domain-bar,
+.project-type-bar {
+    position: relative;
+    /* Change from absolute to relative to stay in the stack */
+    width: auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6px 14px 6px 10px;
+    border-radius: 0 6px 6px 0;
+    /* Flat on the left, rounded on the right */
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Skill icon bar specifics */
+.project-skills-bar {
+    gap: 10px;
+}
+
+.single-domain,
+.single-skill {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icons, .domains, .skills {
+    margin-bottom: 30px;
+}
+
+/* Ensure the hover title appears ABOVE the skill bar */
+.project-title {
+    z-index: 10;
+}
+
+/* Ensure the title doesn't overlap the icons too much if it's large */
+.project-title {
+    z-index: 3;
+}
+
+/* --- Modal Styles --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* When this class is added via JS, the modal shows up */
+.modal-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Mobile Adjustment */
+/* Mobile sizing */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-title h2 {
+        opacity: 1 !important;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        /* Remove any transform if you had one, to keep it static */
+        transform: none !important;
+    }
+
+    .project-image-wrapper img {
+        /* Ensure image is slightly dimmed on mobile so text pops */
+        opacity: 0.8;
+    }
+
+    .project-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-item img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .project-skills-bar img {
+        width: 20px;
+        /* Even smaller for mobile */
+        height: 20px;
+    }
+
+    .modal-content {
+        width: 95%;
+        height: 80vh;
+        /* Takes up 80% of the screen height */
+        overflow-y: auto;
+        /* Allows scrolling if the description is long */
+    }
+}

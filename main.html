@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <!--     <video id="bgVideo" autoplay muted loop style="position:fixed; left:0; bottom:0; width:100vw; height:auto; min-width:100vw; z-index:-1;">
+        <source src="/img/vid/globe_1080.mp4" type="video/mp4">
+    </video> -->
+    <header>
+        <h1 class="portfolio-title">Adam Nearing's Portfolio</h1>
+    </header>
+
+    <!-- Displaying the filterable icons -->
+    <section id="icons" class="icons">
+        <h2>Softwares and Platforms</h2>
+        <div class="icon-container">
+            <img class="single-icon" src="/img/skills/allskills/html.png" data-skill="html"> <!-- Portfolio x3 / Relaxation place -->
+            <img class="single-icon" src="/img/skills/allskills/css.png" data-skill="css"> <!-- Portfolio x3 / Relaxation place -->
+            <img class="single-icon" src="/img/skills/allskills/java_script.png" data-skill="javascript"> <!-- Portfolio x2 / Relaxation place -->
+            <img class="single-icon" src="/img/skills/allskills/visual_studio_code.png" data-skill="visualstudiocode"> <!-- Portfolio x3 -->
+            <img class="single-icon" src="/img/skills/allskills/python.png" data-skill="python"> <!-- Places of the world AS-->
+            <img class="single-icon" src="/img/skills/allskills/react.png" data-skill="react"> <!-- Relaxation place -->
+            <img class="single-icon" src="/img/skills/allskills/qgis.png" data-skill="qgis"> <!-- POTW AS / NYC Demo / South Am rivers -->
+            <img class="single-icon" src="/img/skills/allskills/arcgis_pro.png" data-skill="arcgispro"> <!-- Gold mine AS / Img Class AS / Subcatchment map youtube  -->
+            <img class="single-icon" src="/img/skills/allskills/catalyst.png" data-skill="catalyst"> <!-- Img Class AS / Volcano AS / Orthorectification AS -->
+            <img class="single-icon" src="/img/skills/allskills/r_studio.png" data-skill="rstudio"> <!-- Turbine data analysis -->
+            <img class="single-icon" src="/img/skills/allskills/oracle.png" data-skill="oracle"> <!-- coming soon -->
+            <img class="single-icon" src="/img/skills/allskills/pg_admin.png" data-skill="sql"> <!-- Forest data management -->
+            <img class="single-icon" src="/img/skills/allskills/supabase.png" data-skill="supabase"> <!-- Relaxation place -->
+            <img class="single-icon" src="/img/skills/allskills/youwind.png" data-skill="youwind"> <!-- Youwind -->
+            <button id="show-all-icons">Show All</button>
+        </div>
+    </section>
+
+    <section id="domains" class="domains">
+        <h2>Domains</h2>
+        <div class="domain-container">
+            <div class="single-domain" data-domain="Professional Development">Professional Development</div> <!-- Portfolio x3 -->
+            <div class="single-domain" data-domain="User Experience">User Experience</div> <!-- Relaxation place -->
+            <div class="single-domain" data-domain="Forestry">Forestry</div> <!-- Forest data management -->
+            <div class="single-domain" data-domain="Renewable Energy">Renewable Energy</div> <!-- Youwind / Turbine data analysis -->
+            <div class="single-domain" data-domain="Hazard">Hazard</div> <!-- Volcano AS / South Am rivers / Subcatchment map youtube -->
+            <div class="single-domain" data-domain="Land Analysis">Land Analysis</div> <!-- Gold mine AS / Img Class AS / Orthorectification AS / POTW AS -->
+            <div class="single-domain" data-domain="Urban Planning">Urban Planning</div> <!-- NYC Demo -->
+            <button id="show-all-domains" class="reset-pill">Show All Domains</button>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="single-skill" data-type="Web Development">Web Development</div> <!-- Portfolio x3 / Relaxation place -->
+            <div class="single-skill" data-type="Data Managment">Database Managment</div> <!-- Forest data management -->
+            <div class="single-skill" data-type="Data Analytics">Data Analytics</div> <!-- Turbine data analysis -->
+            <div class="single-skill" data-type="Remote Sensing">Remote Sensing</div> <!-- South Am rivers / Img Class AS / Volcano AS / Orthorectification AS / Subcatchment map youtube  -->
+            <div class="single-skill" data-type="GIS">GIS</div> <!-- South Am rivers / Gold mine AS / POTW AS / NYC Demo / Subcatchment map youtube -->
+            <div class="single-skill" data-type="Modelling">Modeling</div> <!-- Youwind / Orthorectification AS -->
+            <div class="single-skill" data-type="Research">Research</div> <!-- Youwind / Turbine data analysis / Volcano AS -->
+            <div class="single-skill" data-type="LiDAR">LiDAR</div> <!-- coming soon -->
+            <div class="single-skill" data-type="Raster Analysis">Raster Analysis</div> <!-- coming soon -->
+            <button id="show-all-skills" class="reset-pill">Show All Skills</button>
+        </div>
+    </section>
+
+    <!-- Displaying the projects -->
+    <section id="project" class="project">
+        <div class="project-container">
+            <div class="project-item" data-skills="youwind" data-domains="Renewable Energy" data-types="Research">
+                <div class="project-image-wrapper" data-modal="modal1">
+                    <img src="/img/projects/YouwindTrial/Images/CROPScreenshot 2025-11-25 123052.png" alt="Project 1">
+                    <div class="project-title">
+                        <h2>Youwind Trial Research Project</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/youwind.png" class="mini-skill-icon">
+                        </div>
+
+                        <div class="project-domain-bar">Renewable Energy</div>
+
+                        <div class="project-type-bar">Research</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-skills="catalyst" data-domains="Hazard" data-types="Remote Sensing Research">
+                <div class="project-image-wrapper" data-modal="modal2">
+                    <img src="/img/projects/ImageEnhancmentVolcano/Images/Poster_Draft.png" alt="Project 2">
+                    <div class="project-title">
+                        <h2>Image Enhancment</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/catalyst.png" class="mini-skill-icon">
+                        </div>
+
+                        <div class="project-domain-bar">Hazard</div>
+
+                        <div class="project-type-bar">Remote Sensing / Research</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-skills="python" data-domains="Land Analysis" data-types="GIS">
+                <div class="project-image-wrapper" data-modal="modal3">
+                    <img src="/img/projects/PlacesOfTheWorld/img/Screenshot 2025-11-08 135311.png" alt="Project 3">
+                    <div class="project-title">
+                        <h2>Places of the World</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/python.png" class="mini-skill-icon">
+                        </div>
+
+                        <div class="project-domain-bar">Land Analysis</div>
+
+                        <div class="project-type-bar">GIS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal1" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Project Title 1</h2>
+            <p>This is the detailed description of your project. On mobile, this box will expand to fill most of the
+                screen, making it very easy to read your project details.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Project Title 2</h2>
+            <p>This is the detailed description of your project. On mobile, this box will expand to fill most of the
+                screen, making it very easy to read your project details.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Project Title 3</h2>
+            <p>This is the detailed description of your project. On mobile, this box will expand to fill most of the
+                screen, making it very easy to read your project details.</p>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. MODAL LOGIC ---
+        const projectWrappers = document.querySelectorAll('.project-image-wrapper');
+        const closeButtons = document.querySelectorAll('.close-button');
+
+        projectWrappers.forEach(wrapper => {
+            wrapper.addEventListener('click', () => {
+                const modalId = wrapper.getAttribute('data-modal');
+                const targetModal = document.getElementById(modalId);
+                if (targetModal) targetModal.classList.add('open');
+            });
+        });
+
+        closeButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const modal = btn.closest('.modal-overlay');
+                if (modal) modal.classList.remove('open');
+            });
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.classList.remove('open');
+            }
+        });
+
+        // --- 2. REUSABLE FILTER FUNCTION ---
+    function refreshProjects() {
+        const activeSkills = Array.from(document.querySelectorAll('.single-icon.active-skill')).map(i => i.getAttribute('data-skill'));
+        const activeDomains = Array.from(document.querySelectorAll('.single-domain.active-filter')).map(i => i.getAttribute('data-domain'));
+        const activeTypes = Array.from(document.querySelectorAll('.single-skill.active-filter')).map(i => i.getAttribute('data-type'));
+
+        const hasActiveFilters = activeSkills.length > 0 || activeDomains.length > 0 || activeTypes.length > 0;
+        const projects = document.querySelectorAll('.project-item');
+
+        projects.forEach(project => {
+            if (!hasActiveFilters) {
+                project.style.display = 'block';
+                return;
+            }
+
+            const pSkills = project.getAttribute('data-skills') || "";
+            const pDomains = project.getAttribute('data-domains') || "";
+            const pTypes = project.getAttribute('data-types') || "";
+
+            const skillMatch = activeSkills.some(s => pSkills.includes(s));
+            const domainMatch = activeDomains.some(d => pDomains.includes(d));
+            const typeMatch = activeTypes.some(t => pTypes.includes(t));
+
+            project.style.display = (skillMatch || domainMatch || typeMatch) ? 'block' : 'none';
+        });
+    }
+
+    // --- 3. FILTER CLICK LOGIC ---
+    const filterElements = document.querySelectorAll('.single-icon, .single-domain, .single-skill');
+    filterElements.forEach(el => {
+        el.addEventListener('click', () => {
+            if (el.classList.contains('single-icon')) {
+                el.classList.toggle('active-skill');
+            } else {
+                el.classList.toggle('active-filter');
+            }
+            refreshProjects();
+        });
+    });
+
+    // --- 4. RESET BUTTONS ---
+    
+    // Master Show All (Software)
+    document.getElementById('show-all-icons').addEventListener('click', () => {
+        document.querySelectorAll('.single-icon').forEach(el => el.classList.remove('active-skill'));
+        refreshProjects();
+    });
+
+    // Show All Domains
+    document.getElementById('show-all-domains').addEventListener('click', () => {
+        document.querySelectorAll('.single-domain').forEach(el => el.classList.remove('active-filter'));
+        refreshProjects();
+    });
+
+    // Show All Skills (The new ID)
+    document.getElementById('show-all-skills').addEventListener('click', () => {
+        document.querySelectorAll('.single-skill').forEach(el => el.classList.remove('active-filter'));
+        refreshProjects();
+    });
+</script>
+
+</body>
+
+</html>
