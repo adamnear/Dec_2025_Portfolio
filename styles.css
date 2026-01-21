@@ -515,27 +515,103 @@ html {
 .skill-icon-container {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Keeps them centered vertically */
-    justify-content: flex-start; /* Keeps them left-aligned */
+    flex-wrap: wrap;
     gap: 12px;
-    margin: 10px 0 20px 0;
+    margin-bottom: 40px
+}
+
+/* The individual chip containing icon + both labels */
+.skill-chip {
+    display: inline-flex;
+    align-items: center;    /* Centers the icon and text group vertically */
+    background: rgba(255, 255, 255, 0.08); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;          /* This creates the space for your box shadow to be visible */
+    gap: 15px;
+}
+
+/* The vertical stack for text */
+.skill-text-group {
+    display: flex;
+    flex-direction: column; /* This performs the stacking */
+    justify-content: center;
+    padding: 5px 0;
+    gap: 8px; /* This creates the vertical gap between Domain and Skill */
+}
+
+.label-prefix {
+    text-decoration: underline;
+    text-underline-offset: 2px; /* Makes the underline look cleaner */
+    margin-right: 4px; /* Space between prefix and the actual name */
+}
+
+/* Enforcing icon size */
+.skill-icon-modal {
+    height: 25px !important;
+    width: auto !important;
+    object-fit: contain;
+}
+
+/* Domain Label Styling */
+.domain-label, .skill-label {
+    font-size: 1rem;
+    color: #515151; /* Slightly dimmed to distinguish from skill */
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Optional: Vertical line between Domain and Skill */
+.domain-label::after {
+    content: "|";
+    margin-left: 15px;
+    color: rgba(255, 255, 255, 0.2);
 }
 
 /* Updated for smaller icon size */
 .skill-icon-modal {
-    height: 25px;
-    width: auto;           
-    cursor: default; /* Changed to default if they aren't clickable inside the modal */      
-    object-fit: contain;
-    transition: transform 0.2s ease;
+    height: 100% !important; /* Take up 100% of the chip's height */
+    width: auto !important;
+    display: block;          /* Removes the baseline text gap */
+    margin: 0 !important;    /* Removes any mystery margins */
+    padding: 5px;            /* Optional: small internal padding so it doesn't touch the VERY edge */
+    background: rgba(255, 255, 255, 0.05)
 }
 
 /* Using the container + class ensures this takes priority */
-.skill-icon-container .skill-icon-modal {
-    height: 90px !important; /* The !important is a last resort, but useful for testing */
+.skill-icon-container, .skill-icon-modal {
+    height: 80px !important; /* The !important is a last resort, but useful for testing */
     width: auto;
     object-fit: contain;
     display: inline-block;
+}
+
+/* Isolated container for the Development Modal */
+.dev-skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* This centers the group of icons */
+    align-items: center;
+    gap: 20px;               /* Clean spacing between raw icons */
+    margin: 15px 0 25px 0;
+    padding: 10px;
+}
+
+/* Reset icon behavior for this specific container only */
+.dev-skills-container .skill-icon-modal {
+    height: 80px !important;  /* Slightly larger for visibility since there is no text */
+    width: auto !important;
+    display: inline-block !important; 
+    margin: 0 !important;
+    filter: none;             /* Clean look without the heavy project drop-shadow */
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.dev-skills-container .skill-icon-modal:hover {
+    opacity: 1;
 }
 
 .close-button {
