@@ -46,9 +46,10 @@
             <img class="single-icon" src="/img/skills/allskills/python.png" data-skill="python">
             <img class="single-icon" src="/img/skills/allskills/qgis.png" data-skill="qgis">
             <img class="single-icon" src="/img/skills/allskills/arcgis_pro.png" data-skill="arcgispro">
+            <img class="single-icon" src="/img/skills/allskills/arcgis_enterprise.png" data-skill="arcgis_enterprise">
             <img class="single-icon" src="/img/skills/allskills/catalyst.png" data-skill="catalyst">
             <img class="single-icon" src="/img/skills/allskills/microstation.png" data-skill="microstation">
-            <img class="single-icon" src="/img/skills/allskills/r_studio.png" data-skill="rstudio">
+            <img class="single-icon" src="/img/skills/allskills/r_studio.png" data-skill="r_studio">
             <img class="single-icon" src="/img/skills/allskills/oracle.png" data-skill="oracle">
             <img class="single-icon" src="/img/skills/allskills/pg_admin.png" data-skill="sql">
             <img class="single-icon" src="/img/skills/allskills/supabase.png" data-skill="supabase">
@@ -228,7 +229,27 @@
                     </div>
                 </div>
             </div>
-            <div class="project-item" data-skills="microstation oracle windpro geoserver global_mapper autocad" data-types="Raster Analysis LiDAR">
+            <div class="project-item" data-skills="r_studio" data-domains="Renewable Energy" data-types="Data Analytics">
+                <div class="project-image-wrapper" data-modal="modal7">
+                    <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 134602.png" alt="Project 7">
+                    <div class="project-title">
+                        <h2>Wind Turbine Data Analysis</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/r_studio.png" class="mini-skill-icon">
+                        </div>
+
+                        <div class="project-domain-bar">Renewable Energy</div>
+
+                        <div class="project-type-bar">Data Analytics</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="project-item" data-skills="arcgis_enterprise microstation oracle windpro geoserver global_mapper autocad" data-types="Raster Analysis LiDAR">
                 <div class="project-image-wrapper" data-modal="modal99">
                     <img src="/img/projects/FutureSkills/Media.jpg" alt="Project 99">
                     <div class="project-title">
@@ -236,6 +257,7 @@
                     </div>
                     <div class="project-info-stack">
                         <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/arcgis_enterprise.png" class="mini-skill-icon">
                             <img src="/img/skills/allskills/microstation.png" class="mini-skill-icon">
                             <img src="/img/skills/allskills/oracle.png" class="mini-skill-icon">
                             <img src="/img/skills/allskills/windpro.png" class="mini-skill-icon">
@@ -292,41 +314,40 @@
     </div>
 
     <div id="modal3" class="modal-overlay">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <div class="modal-text-content">
-            <h1>Project Summary: Places of the World (Python for QGIS)</h1>
-            <img src="/img/projects/PlacesOfTheWorld/img/Screenshot 2025-11-08 135311.png" alt="Project 3">
-            <p><strong>Places of the World</strong> is a custom PyQGIS tool designed to automate spatial demographic analysis. The program allows users to interactively select global locations within QGIS and generate a structured geospatial report based on Esri shapefile attributes.</p>
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: Places of the World (Python for QGIS)</h1>
+                <img src="/img/projects/PlacesOfTheWorld/img/Screenshot 2025-11-08 135311.png" alt="Project 3">
+                <p><strong>Places of the World</strong> is a custom PyQGIS tool designed to automate spatial demographic analysis. The program allows users to interactively select global locations within QGIS and generate a structured geospatial report based on Esri shapefile attributes.</p>
 
-            <h3>Key Technical Features:</h3>
-            <ul>
-                <li><strong>Spatial Data Integration:</strong> Developed a workflow to ingest point features and overlay them with OpenStreetMap (OSM) basemaps via the QuickMapServices plugin.</li>
-                <li><strong>Interactive Selection:</strong> Built the script to recognize user-defined spatial selections (Polygon Tool). It features a "Default Selection" logic that processes the entire global dataset if no specific area is isolated.</li>
-                <li><strong>Quadrant Analysis Logic:</strong> Programmed a spatial categorization engine that sorts points into the four global hemispheres (NE, NW, SE, SW) based on coordinate geometry.</li>
-                <li><strong>Dynamic Reporting:</strong> Automated the generation of <code>.txt</code> reports that calculate:
-                    <ul class="nested-list">
-                        <li>Total location counts and aggregate populations per hemisphere.</li>
-                        <li>Statistical extremes (identifying the highest and lowest population centers).</li>
-                        <li>Complex edge-case handling for population ties, listing all relevant place names.</li>
-                    </ul>
-                </li>
-                <li><strong>User Input Handling:</strong> Implemented a prompt-based system for custom directory and file naming, including automated file path string formatting.</li>
-            </ul>
+                <h3>Key Technical Features:</h3>
+                <ul>
+                    <li><strong>Spatial Data Integration:</strong> Developed a workflow to ingest point features and overlay them with OpenStreetMap (OSM) basemaps via the QuickMapServices plugin.</li>
+                    <li><strong>Interactive Selection:</strong> Built the script to recognize user-defined spatial selections (Polygon Tool). It features a "Default Selection" logic that processes the entire global dataset if no specific area is isolated.</li>
+                    <li><strong>Quadrant Analysis Logic:</strong> Programmed a spatial categorization engine that sorts points into the four global hemispheres (NE, NW, SE, SW) based on coordinate geometry.</li>
+                    <li><strong>Dynamic Reporting:</strong> Automated the generation of <code>.txt</code> reports that calculate:
+                        <ul class="nested-list">
+                            <li>Total location counts and aggregate populations per hemisphere.</li>
+                            <li>Statistical extremes (identifying the highest and lowest population centers).</li>
+                            <li>Complex edge-case handling for population ties, listing all relevant place names.</li>
+                        </ul>
+                    </li>
+                    <li><strong>User Input Handling:</strong> Implemented a prompt-based system for custom directory and file naming, including automated file path string formatting.</li>
+                </ul>
 
-            <p><strong>Technical Takeaways:</strong> This project demonstrates proficiency in <strong>PyQGIS scripting</strong>, spatial attribute manipulation, and automated reporting. Future iterations aim to improve data visualization by outputting results in tabular formats and expanding the geographic attribute dataset.</p>
-        
+                <p><strong>Technical Takeaways:</strong> This project demonstrates proficiency in <strong>PyQGIS scripting</strong>, spatial attribute manipulation, and automated reporting. Future iterations aim to improve data visualization by outputting results in tabular formats and expanding the geographic attribute dataset.</p>
+            
+        </div>
+            <img src="/img/projects/PlacesOfTheWorld/img/Step2_SelectTool.png" alt="Project 3">
+        </div>
     </div>
-    <img src="/img/projects/PlacesOfTheWorld/img/Step2_SelectTool.png" alt="Project 3">
-    </div>
-</div>
 
     <div id="modal4" class="modal-overlay">
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <div class="modal-text-content">
-            <h1>Orthorectification Accuracy Assessment</h1>
-            
+            <h1>Project Summary: Orthorectification Accuracy Assessment</h1>
             <p><strong>Precision Orthorectification: Aerial Imagery Accuracy Assessment</strong><br>
             This project focused on the high-resolution orthorectification of raw aerial photography using <strong>PCI Geomatica (Catalyst)</strong>. By integrating a Digital Elevation Model (DEM) and georeferenced reference data, I transformed raw flightline imagery into a map-accurate product.</p>
 
@@ -339,9 +360,115 @@
                 <li><strong>Visual QA/QC:</strong> Conducted a final comparative analysis between the output ortho-image and reference datasets to ensure seamless alignment and feature consistency.</li>
             </ul>
         </div>
-                <img src="/img/projects/Orthorectification/Images/Screenshot 2026-01-08 172112.png" alt="Project 4">
+            <img src="/img/projects/Orthorectification/Images/Screenshot 2026-01-08 172112.png" alt="Project 4">
+            <img src="/img/projects/Orthorectification/Images/Screenshot 2026-01-08 172233.png" alt="Project 4">
         </div>
     </div>
+
+    <div id="modal5" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+            <h1>Project Summary: Portfolio December 2025</h1>
+            <img src="/img/projects/Portfolios/Portfolio3/Screenshot 2026-01-20 183319.png" alt="Project 5">
+            <p><strong>COGS Professional Identity: GIS & Full-Stack Integration Portfolio</strong><br>
+                Developed during the <strong>Geographic Information Systems Graduate Certificate</strong> program at NSCC, this comprehensive web project serves as a professional hub for a career transition. It integrates a decade of media expertise with modern spatial sciences, utilizing a video-integrated UI to showcase academic schedules, professional experience, and technical projects.</p>
+
+                <h3>Key Technical Workflows:</h3>
+                <ul>
+                    <li><strong>Dynamic Multimedia Background:</strong> Engineered a modern visual experience using a fixed-position <code>1080p</code> MP4 video loop, providing a high-tech "digital globe" aesthetic across all site sections without impacting content scannability.</li>
+                    <li><strong>Structural Semantics & Navigation:</strong> Built a multi-page architecture (Home, Experience, Schedule, Contact) using semantic HTML5 and a responsive CSS navbar with hover-active states and utility classes for layout alignment.</li>
+                    <li><strong>Complex Data Visualization:</strong> Developed a color-coded academic schedule using HTML <code>table</code> structures with <code>rowspan</code> and <code>colspan</code> attributes to visualize concurrent GIS and Programming fundamental courses.</li>
+                    <li><strong>Cross-Disciplinary Skill Matrix:</strong> Documented technical proficiency across three distinct domains: <strong>GIS Analysis</strong> (QGIS, ArcGIS Online), <strong>Software Development</strong> (Java, Python, C#, React), and <strong>Expert-Level Media Editing</strong> (12 years in After Effects and Premiere Pro).</li>
+                    <li><strong>Project Management & Internship Reflection:</strong> Systematically detailed professional milestones, including backend development for Chebucto Community Net and leading the <strong>Park Buddy</strong> capstone project through Agile/Sprint methodologies.</li>
+                </ul>
+        </div>
+            <img src="/img/projects/Portfolios/Portfolio3/Screenshot 2026-01-20 183344.png" alt="Project 5">
+            <img src="/img/projects/Portfolios/Portfolio3/Screenshot 2026-01-20 183417.png" alt="Project 5">
+        </div>
+    </div>
+
+    <div id="modal6" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+            <h1>Project Summary: Portfolio December 2024</h1>
+            <img src="/img/projects/Portfolios/Portfolio2/Screenshot 2026-01-20 183005.png" alt="Project 6">
+            <p><strong>Legacy Professional Portfolio: Multi-Disciplinary Digital Showcase</strong><br>
+                This project involved the design and development of a custom, responsive portfolio website built to bridge the gap between my background in <strong>Film Studies</strong> and <strong>IT Programming</strong>. It serves as a central hub to showcase full-stack development projects alongside a decade of professional media editing experience.</p>
+
+                <h3>Key Technical Workflows:</h3>
+                <ul>
+                    <li><strong>3D Environment Integration:</strong> Implemented <strong>Three.js</strong> to render an interactive, mobile-responsive 3D globe within the hero section, utilizing modern <code>importmap</code> configurations for modular JavaScript.</li>
+                    <li><strong>Responsive UI Framework:</strong> Built a fluid, mobile-first interface using <strong>Bootstrap 5</strong>, featuring sticky navigation, custom grid layouts, and theme-shadow styling for a modern aesthetic.</li>
+                    <li><strong>Interactive Media Gallery:</strong> Integrated the <strong>Fancybox UI</strong> library to provide high-resolution, lightboxed previews of programming projects and cinematography work.</li>
+                    <li><strong>Full-Stack Project Documentation:</strong> Curated detailed post-project reflections for various applications, including 3D interactive books (BookGlide), community-driven GIS tools (ParkBuddy), and database-driven explorers (IMDB Explorer).</li>
+                    <li><strong>Cross-Platform Asset Management:</strong> Optimized a diverse range of media assets, highlighting proficiency in both programming languages (Java, C#, Kotlin) and creative software (Adobe Premiere Pro, After Effects, DaVinci Resolve).</li>
+                </ul>
+        </div>
+            <img src="/img/projects/Portfolios/Portfolio2/Screenshot 2026-01-20 183122.png" alt="Project 6">
+        </div>
+    </div>
+
+    <div id="modal7" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+            <h1>Project Summary: Wind Turbine Data Analysis</h1>
+            <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 134602.png" alt="Project 7">
+            <p><strong>Building an ETL Pipeline for Geospatial Data Analysis: Nova Scotian Turbine Report</strong><br>
+                This project involved developing a robust ETL (Extract, Transform, Load) workflow to analyze the relationships between wind turbine technical specifications. Utilizing <strong>R and the tidyverse</strong>, I processed raw geospatial data to examine correlations between <code>Turbine Rated Capacity</code>, <code>Hub Height</code>, and <code>Rotor Diameter</code>.</p>
+
+                <h3>Key Technical Workflows:</h3>
+                <ul>
+                    <li><strong>Environment & ETL Setup:</strong> Configured a data pipeline using <code>GGally</code> and <code>patchwork</code> libraries. Implemented data type enforcement using the <code>mutate</code> function to ensure high-precision numeric analysis.</li>
+                    <li><strong>Numeric Variable Analysis:</strong> Generated comprehensive summary statistics (mean, median, SD, IQR) to establish a baseline for the Nova Scotia turbine dataset.</li>
+                    <li><strong>Distribution Visualization:</strong> Engineered a multi-plot dashboard featuring <strong>Density Plots</strong>, <strong>Histograms</strong>, and <strong>Box Plots</strong> to identify data spikes, skewness, and significant outliers in turbine dimensions.</li>
+                    <li><strong>Correlation Analysis:</strong> Applied the <strong>Spearman Method</strong> to assess statistical trends. Discovered a strong correlation (<code>0.817</code>) between Hub Height and Rotor Diameter, while identifying non-linear anomalies in capacity-to-height ratios.</li>
+                    <li><strong>Advanced Matrix Reporting:</strong> Developed a <strong>Scatterplot Matrix</strong> to visualize all bivariate relationships simultaneously, providing a holistic view of how physical turbine constraints impact energy yield.</li>
+                    <li><strong>Frequency Modeling:</strong> Conducted frequency and proportion counts to identify industry standards within the region, identifying the <code>80m</code> hub height and <code>2300kW</code> capacity as the most frequent regional configurations.</li>
+                </ul>
+
+            <p><strong>Conclusion:</strong> This project demonstrates proficiency in <strong>statistical programming</strong> and geospatial data cleaning. The analysis successfully validated that while physical dimensions (height and diameter) scale linearly, electrical capacity follows a more complex optimization curve influenced by external technological factors.</p>
+        </div>
+            <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 140336.png" alt="Project 7">
+            <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 16314s2.png" alt="Project 7">
+            <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 170810.png" alt="Project 7">
+        </div>
+    </div>
+
+    <div id="modal99" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-text-content">
+            <h1>Project Summary: Skills in Development</h1>
+            <p><strong>Advanced Geospatial Skill Acquisition: Graduate Technical Development</strong><br>
+                Currently undergoing intensive technical training at <strong>The Centre of Geographic Sciences (COGS)</strong>. This phase of development focuses on mastering high-precision spatial data to support <strong>GIS planning and energy logistics</strong>. By balancing a rigorous academic curriculum with proactive self-directed study, I am expanding my toolkit to include industry-standard software for spatial analysis, database management, and renewable energy layout planning.</p>
+            
+            <h3>Enterprise Data Management & Infrastructure:</h3>
+            <p>Mastering <strong>ArcGIS Enterprise</strong>, <strong>Oracle</strong>, and <strong>GeoServer</strong> to build robust back-end systems for multi-user databases.</p>
+            <div class="skill-icon-container">
+                <img src="/img/skills/allskills/arcgis_enterprise.png" alt="ArcGIS Enterprise" class="skill-icon-modal">
+                <img src="/img/skills/allskills/oracle.png" alt="Oracle" class="skill-icon-modal">
+                <img src="/img/skills/allskills/geoserver.png" alt="GeoServer" class="skill-icon-modal">
+            </div>
+
+            <h3>Remote Sensing & Elevation Modelling:</h3>
+            <p>Developing competencies in <strong>LiDAR</strong> and <strong>Raster Analysis</strong> using <strong>MicroStation</strong> and <strong>Global Mapper</strong>.</p>
+            <div class="skill-icon-container">
+                <img src="/img/skills/allskills/microstation.png" alt="MicroStation" class="skill-icon-modal">
+                <img src="/img/skills/allskills/global_mapper.png" alt="Global Mapper" class="skill-icon-modal">
+            </div>
+
+            <h3>Independent Professional Development:</h3>
+            <p>Proactively pursuing self-taught skills in <strong>AutoCAD</strong> and <strong>windPRO</strong> for specialized planning and energy logistics.</p>
+            <div class="skill-icon-container">
+                <img src="/img/skills/allskills/autocad.png" alt="AutoCAD" class="skill-icon-modal">
+                <img src="/img/skills/allskills/windpro.png" alt="windPRO" class="skill-icon-modal">
+            </div> 
+        </div>   
+    </div>  
+</div>
 
     <footer class="main-footer">
     <div class="footer-content">
