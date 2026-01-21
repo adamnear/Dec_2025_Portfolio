@@ -12,39 +12,61 @@
     <!--     <video id="bgVideo" autoplay muted loop style="position:fixed; left:0; bottom:0; width:100vw; height:auto; min-width:100vw; z-index:-1;">
         <source src="/img/vid/globe_1080.mp4" type="video/mp4">
     </video> -->
-    <header>
-        <h1 class="portfolio-title">Adam Nearing's Portfolio</h1>
-    </header>
+    <header class="main-header">
+    <div class="header-top-row">
+        <div class="header-side text-left">
+            <h1 class="portfolio-title">Adam Nearing's Portfolio</h1>
+        </div>
+
+        <div class="header-center">
+            <div class="profile-circle">
+                <img src="" alt="Adam Nearing"> </div>
+        </div>
+
+        <div class="header-side text-right">
+            <p class="portfolio-subtitle">IT Programmer and GIS Analyst</p>
+        </div>
+    </div>
+
+    <div class="header-bottom-row">
+        <a href="path-to-your-resume.pdf" class="resume-button" target="_blank">View my resume</a>
+    </div>
+</header>
 
     <!-- Displaying the filterable icons -->
     <section id="icons" class="icons">
-        <h2>Softwares and Platforms</h2>
+    <button class="filter-trigger" onclick="toggleFilter('software-list')">
+        View Primary Softwares and Platforms <span class="arrow">▼</span>
+    </button>
+    <div id="software-list" class="filter-content">
         <div class="icon-container">
-            <img class="single-icon" src="/img/skills/allskills/html_css_js.png" data-skill="html_css_js"> <!-- Portfolio x3 / Relaxation place -->
-            <img class="single-icon" src="/img/skills/allskills/react.png" data-skill="react"> <!-- Relaxation place -->
-            <img class="single-icon" src="/img/skills/allskills/leaflet.png" data-skill="leaflet"> <!-- ParkBuddy -->
-            <!-- <img class="single-icon" src="/img/skills/allskills/visual_studio_code.png" data-skill="visualstudiocode"> Portfolio x3 -->
-            <img class="single-icon" src="/img/skills/allskills/python.png" data-skill="python"> <!-- Places of the world AS-->
-            <img class="single-icon" src="/img/skills/allskills/qgis.png" data-skill="qgis"> <!-- POTW AS / NYC Demo / South Am rivers -->
-            <img class="single-icon" src="/img/skills/allskills/arcgis_pro.png" data-skill="arcgispro"> <!-- Gold mine AS / Img Class AS / Subcatchment map youtube  -->
-            <img class="single-icon" src="/img/skills/allskills/catalyst.png" data-skill="catalyst"> <!-- Img Class AS / Volcano AS / Orthorectification AS -->
-            <img class="single-icon" src="/img/skills/allskills/microstation.png" data-skill="microstation"> <!-- MicroStation -->
-            <img class="single-icon" src="/img/skills/allskills/r_studio.png" data-skill="rstudio"> <!-- Turbine data analysis -->
-            <img class="single-icon" src="/img/skills/allskills/oracle.png" data-skill="oracle"> <!-- coming soon -->
-            <img class="single-icon" src="/img/skills/allskills/pg_admin.png" data-skill="sql"> <!-- Forest data management -->
-            <img class="single-icon" src="/img/skills/allskills/supabase.png" data-skill="supabase"> <!-- Relaxation place -->
-            <img class="single-icon" src="/img/skills/allskills/youwind.png" data-skill="youwind"> <!-- Youwind -->
-            <img class="single-icon" src="/img/skills/allskills/windpro.png" data-skill="windpro"> <!-- WindPRO -->
-            <img class="single-icon" src="/img/skills/allskills/geoserver.png" data-skill="geoserver"> <!--  -->
-            <img class="single-icon" src="/img/skills/allskills/global_mapper.png" data-skill="global_mapper"> <!-- Global Mapper -->
-            <img class="single-icon" src="/img/skills/allskills/autocad.png" data-skill="autocad"> <!-- AutoCAD -->
-            <button id="show-all-icons">Show All</button>
+            <img class="single-icon" src="/img/skills/allskills/html_css_js.png" data-skill="html_css_js">
+            <img class="single-icon" src="/img/skills/allskills/react.png" data-skill="react">
+            <img class="single-icon" src="/img/skills/allskills/leaflet.png" data-skill="leaflet">
+            <img class="single-icon" src="/img/skills/allskills/python.png" data-skill="python">
+            <img class="single-icon" src="/img/skills/allskills/qgis.png" data-skill="qgis">
+            <img class="single-icon" src="/img/skills/allskills/arcgis_pro.png" data-skill="arcgispro">
+            <img class="single-icon" src="/img/skills/allskills/catalyst.png" data-skill="catalyst">
+            <img class="single-icon" src="/img/skills/allskills/microstation.png" data-skill="microstation">
+            <img class="single-icon" src="/img/skills/allskills/r_studio.png" data-skill="rstudio">
+            <img class="single-icon" src="/img/skills/allskills/oracle.png" data-skill="oracle">
+            <img class="single-icon" src="/img/skills/allskills/pg_admin.png" data-skill="sql">
+            <img class="single-icon" src="/img/skills/allskills/supabase.png" data-skill="supabase">
+            <img class="single-icon" src="/img/skills/allskills/youwind.png" data-skill="youwind">
+            <img class="single-icon" src="/img/skills/allskills/windpro.png" data-skill="windpro">
+            <img class="single-icon" src="/img/skills/allskills/geoserver.png" data-skill="geoserver">
+            <img class="single-icon" src="/img/skills/allskills/global_mapper.png" data-skill="global_mapper">
+            <img class="single-icon" src="/img/skills/allskills/autocad.png" data-skill="autocad">
+            <button id="show-all-icons" class="reset-pill">Clear Selection</button>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Additional icons -->
-    <section id="icons" class="icons">
-        <h2>Additional Softwares and Platforms</h2>
+<section id="additional-icons" class="icons">
+    <button class="filter-trigger" onclick="toggleFilter('additional-list')">
+        View Additional Softwares and Platforms <span class="arrow">▼</span>
+    </button>
+    <div id="additional-list" class="filter-content">
         <div class="icon-container">
             <img class="single-icon" src="/img/skills/allskills/c_code.png" data-skill="c_code">
             <img class="single-icon" src="/img/skills/allskills/c_sharp.png" data-skill="c#">
@@ -55,40 +77,49 @@
             <img class="single-icon" src="/img/skills/allskills/photoshop.png" data-skill="photoshop">
             <img class="single-icon" src="/img/skills/allskills/lightroom_classic.png" data-skill="lightroom_classic">
             <img class="single-icon" src="/img/skills/allskills/davinci.png" data-skill="davinci">
-            <button id="show-all-icons">Show All</button>
+            <button id="show-all-additional" class="reset-pill">Clear Selection</button>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="domains" class="domains">
-        <h2>Domains</h2>
+    <button class="filter-trigger" onclick="toggleFilter('domain-list')">
+        Select Domains <span class="arrow">▼</span>
+    </button>
+    <div id="domain-list" class="filter-content">
         <div class="domain-container">
-            <div class="single-domain" data-domain="Professional Development">Professional Development</div> <!-- Portfolio x3 -->
-            <div class="single-domain" data-domain="User Experience">User Experience</div> <!-- Relaxation place -->
-            <div class="single-domain" data-domain="Forestry">Forestry</div> <!-- Forest data management -->
-            <div class="single-domain" data-domain="Renewable Energy">Renewable Energy</div> <!-- Youwind / Turbine data analysis -->
-            <div class="single-domain" data-domain="Hazard">Hazard</div> <!-- Volcano AS / South Am rivers / Subcatchment map youtube -->
-            <div class="single-domain" data-domain="Land Analysis">Land Analysis</div> <!-- Gold mine AS / Img Class AS / Orthorectification AS / POTW AS -->
-            <div class="single-domain" data-domain="Urban Planning">Urban Planning</div> <!-- NYC Demo -->
-            <div class="single-domain" data-domain="Project Management">Project Management</div> <!-- ParkBuddy -->
+            <div class="single-domain" data-domain="Professional Development">Professional Development</div>
+            <div class="single-domain" data-domain="User Experience">User Experience</div>
+            <div class="single-domain" data-domain="Forestry">Forestry</div>
+            <div class="single-domain" data-domain="Renewable Energy">Renewable Energy</div>
+            <div class="single-domain" data-domain="Hazard">Hazard</div>
+            <div class="single-domain" data-domain="Land Analysis">Land Analysis</div>
+            <div class="single-domain" data-domain="Urban Planning">Urban Planning</div>
+            <div class="single-domain" data-domain="Project Management">Project Management</div>
             <button id="show-all-domains" class="reset-pill">Show All Domains</button>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
+<section id="skills" class="skills">
+    <button class="filter-trigger" onclick="toggleFilter('skill-list')">
+        Select Skills <span class="arrow">▼</span>
+    </button>
+    <div id="skill-list" class="filter-content">
         <div class="skill-container">
-            <div class="single-skill" data-type="Web Development">Web Development</div> <!-- Portfolio x3 / Relaxation place / ParkBuddy -->
-            <div class="single-skill" data-type="Data Managment">Database Managment</div> <!-- Forest data management -->
-            <div class="single-skill" data-type="Data Analytics">Data Analytics</div> <!-- Turbine data analysis -->
-            <div class="single-skill" data-type="Remote Sensing">Remote Sensing</div> <!-- South Am rivers / Img Class AS / Volcano AS / Orthorectification AS / Subcatchment map youtube  -->
-            <div class="single-skill" data-type="GIS">GIS</div> <!-- South Am rivers / Gold mine AS / POTW AS / NYC Demo / Subcatchment map youtube -->
-            <div class="single-skill" data-type="Modelling">Modeling</div> <!-- Youwind / Orthorectification AS -->
-            <div class="single-skill" data-type="Research">Research</div> <!-- Youwind / Turbine data analysis / Volcano AS -->
-            <div class="single-skill" data-type="LiDAR">LiDAR</div> <!-- coming soon -->
-            <div class="single-skill" data-type="Raster Analysis">Raster Analysis</div> <!-- coming soon -->
+            <div class="single-skill" data-type="Web Development">Web Development</div>
+            <div class="single-skill" data-type="Data Managment">Database Managment</div>
+            <div class="single-skill" data-type="Data Analytics">Data Analytics</div>
+            <div class="single-skill" data-type="Remote Sensing">Remote Sensing</div>
+            <div class="single-skill" data-type="GIS">GIS</div>
+            <div class="single-skill" data-type="Modelling">Modeling</div>
+            <div class="single-skill" data-type="Research">Research</div>
+            <div class="single-skill" data-type="LiDAR">LiDAR</div>
+            <div class="single-skill" data-type="Raster Analysis">Raster Analysis</div>
             <button id="show-all-skills" class="reset-pill">Show All Skills</button>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Displaying the projects -->
     <section id="project" class="project">
@@ -312,6 +343,22 @@
         </div>
     </div>
 
+    <footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-side">
+            <p>&copy; 2026 Adam Nearing</p>
+        </div>
+
+        <div class="footer-center">
+            <a href="mailto:adamrjnearing@gmail.com" class="footer-contact-link">Get In Touch</a>
+        </div>
+
+        <div class="footer-side text-right">
+            <a href="#" class="back-to-top">Back to Top ↑</a>
+        </div>
+    </div>
+</footer>
+
     <script>
         // --- 1. MODAL LOGIC ---
         const projectWrappers = document.querySelectorAll('.project-image-wrapper');
@@ -379,25 +426,53 @@
         });
     });
 
-    // --- 4. RESET BUTTONS ---
+    // --- 4. RESET BUTTONS (TARGETED) ---
+
+// Reset Primary Software (Only icons inside #software-list)
+document.getElementById('show-all-icons').addEventListener('click', () => {
+    const container = document.getElementById('software-list');
+    container.querySelectorAll('.single-icon').forEach(el => el.classList.remove('active-skill'));
+    refreshProjects();
+});
+
+// Reset Additional Software (Only icons inside #additional-list)
+document.getElementById('show-all-additional').addEventListener('click', () => {
+    const container = document.getElementById('additional-list');
+    container.querySelectorAll('.single-icon').forEach(el => el.classList.remove('active-skill'));
+    refreshProjects();
+});
+
+// Show All Domains
+document.getElementById('show-all-domains').addEventListener('click', () => {
+    document.querySelectorAll('.single-domain').forEach(el => el.classList.remove('active-filter'));
+    refreshProjects();
+});
+
+// Show All Skills
+document.getElementById('show-all-skills').addEventListener('click', () => {
+    document.querySelectorAll('.single-skill').forEach(el => el.classList.remove('active-filter'));
+    refreshProjects();
+});
+
+    function toggleFilter(id) {
+    const content = document.getElementById(id);
+    const trigger = content.previousElementSibling;
     
-    // Master Show All (Software)
-    document.getElementById('show-all-icons').addEventListener('click', () => {
-        document.querySelectorAll('.single-icon').forEach(el => el.classList.remove('active-skill'));
-        refreshProjects();
-    });
+    // Toggle the 'show' class for the container
+    content.classList.toggle('show');
+    
+    // Toggle the 'active' class for the trigger (to rotate the arrow)
+    trigger.classList.toggle('active');
+}
 
-    // Show All Domains
-    document.getElementById('show-all-domains').addEventListener('click', () => {
-        document.querySelectorAll('.single-domain').forEach(el => el.classList.remove('active-filter'));
+// Updated Reset for Additional Icons
+const resetAdditional = document.getElementById('show-all-additional');
+if(resetAdditional) {
+    resetAdditional.addEventListener('click', () => {
+        document.querySelectorAll('#additional-list .single-icon').forEach(el => el.classList.remove('active-skill'));
         refreshProjects();
     });
-
-    // Show All Skills (The new ID)
-    document.getElementById('show-all-skills').addEventListener('click', () => {
-        document.querySelectorAll('.single-skill').forEach(el => el.classList.remove('active-filter'));
-        refreshProjects();
-    });
+}
 </script>
 
 </body>

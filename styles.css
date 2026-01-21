@@ -1,8 +1,103 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main-header {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #111; /* Or your preferred dark background */
+    color: white;
+}
+
+.header-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.header-side {
+    flex: 1; /* Gives both text sides equal width */
+}
+
+.text-left {
+    text-align: right; /* Aligns toward the center image */
+}
+
+.text-right {
+    text-align: left; /* Aligns toward the center image */
+}
+
+.portfolio-title {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.portfolio-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0;
+    color: #bbb;
+}
+
+/* The Circle Image */
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffb300; /* Matching your orange accent color */
+    background: #333; /* Placeholder color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Resume Button Styling */
+.header-bottom-row {
+    margin-top: 30px;
+}
+
+.resume-button {
+    text-decoration: none;
+    background: #ffb300;
+    color: #111;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.resume-button:hover {
+    background: #ffa000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 179, 0, 0.4);
+}
+
+
 .single-icon {
-    width: 70px;
+    width: 50px; /* Adjust size as needed */
     height: auto;
     cursor: pointer;
-    transition: transform 0.2s, filter 0.2s;
+    filter: grayscale(100%); /* Optional: icons look cleaner when grayed out until active */
+    transition: all 0.3s ease;
+}
+
+.single-icon.active-skill {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    border-bottom: 2px solid #007bff;
 }
 
 .single-icon:hover {
@@ -15,39 +110,16 @@
     border-radius: 50%;
 }
 
-.single-icon.active-skill {
-    filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.8));
-    /* Green glow */
-    outline-offset: 1.5px;
-    border-radius: 50%;
-    transform: scale(1.1);
-}
-
 .icon-container {
     display: flex;
-    flex-wrap: wrap;      /* Allows icons to move to next line on small screens */
-    align-items: center;  /* Aligns button and icons along their center axis */
-    gap: 20px;            /* Consistent spacing between icons and the button */
-    margin-bottom: 50px;  /* The space you wanted at the bottom of the container */
-}
-
-#show-all-icons {
-    width: 60px;          /* Match icon width */
-    height: 60px;         /* Match icon width */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.75rem;
-    font-weight: bold;
-    line-height: 1.1;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    flex-shrink: 0;       /* Prevents the circle from squishing */
+    justify-content: center; /* Centers icons and the button */
+    align-items: center;     /* Vertically aligns icons and button */
+    flex-wrap: wrap;        /* Moves items to next line if screen is narrow */
+    gap: 15px;               /* Space between all items */
+    padding: 20px 20px 10px 20px; /* Reduced bottom padding */
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 12px;
+    margin-bottom: 15px;     /* Much smaller space below the container */
 }
 
 #show-all-icons:hover {
@@ -63,10 +135,23 @@
 
 .domain-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
     gap: 15px;
-    margin-bottom: 30px; /* Space between filter rows */
+    /* Add space above and below the buttons */
+    padding: 30px 0; 
+    /* Ensure it takes full width to keep items centered */
+    width: 100%;
+}
+
+/* If you want the same spacing for the Skills section */
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 30px 0;
+    width: 100%;
 }
 
 .reset-pill {
@@ -90,14 +175,6 @@
 
 .single-domain {
     padding: 8px 12px;
-}
-
-/* Update this specific rule in your CSS */
-.skill-container {
-    display: flex;
-    flex-wrap: wrap; /* Add this */
-    align-items: center; /* Add this to align button with text */
-    gap: 15px;
 }
 
 .single-skill {
@@ -132,6 +209,61 @@
     box-shadow: 0 0 10px rgba(168, 85, 247, 0.6); /* Purple glow */
     border-radius: 4px;
     transform: scale(1.05);
+}
+/* The Toggle Button Styling */
+.filter-trigger {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px auto 20px auto;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.filter-trigger:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.arrow {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+/* Rotate arrow when active */
+.filter-trigger.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Collapse Logic */
+.filter-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), opacity 0.3s ease;
+}
+
+/* Open State */
+.filter-content.show {
+    max-height: 1000px; /* High value to accommodate content */
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease;
+    margin-bottom: 30px;
+}
+
+/* Ensuring the buttons stay centered when revealed */
+.domain-container, .skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 /* Skills: Blue Aesthetic */
@@ -278,6 +410,8 @@
     align-items: center;
 }
 
+
+
 /* Skill icon bar specifics */
 .project-skills-bar {
     gap: 10px;
@@ -364,6 +498,7 @@
     flex-shrink: 0;      /* 4. Prevents the image from shrinking to fit the box */
     border-radius: 8px;
     object-fit: contain;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
 }
 .modal-content::-webkit-scrollbar {
     width: 8px;
@@ -383,11 +518,97 @@
     font-size: 30px;
     cursor: pointer;
     color: #333;
+    /* Styling to make it visible against images */
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent circle background */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 1;
+    transition: background 0.3s ease;
+    
+    /* Prevent the button from pushing content down */
+    margin-bottom: -40px;
+}
+
+.main-footer {
+    background: #111;
+    color: #bbb;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-side {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.footer-center {
+    flex: 0 0 auto;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Footer Link Styling */
+.footer-contact-link {
+    color: #ffb300;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #ffb300;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.footer-contact-link:hover {
+    background: #ffb300;
+    color: #111;
+    box-shadow: 0 0 15px rgba(255, 179, 0, 0.3);
+}
+
+.back-to-top {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-to-top:hover {
+    color: #ffb300;
 }
 
 /* Mobile Adjustment */
 /* Mobile sizing */
 @media (max-width: 768px) {
+
+    .header-top-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-left, .text-right {
+        text-align: center;
+    }
+    .profile-circle {
+        order: -1; /* Puts image at the very top on mobile */
+    }
+
     .project-container {
         grid-template-columns: 1fr;
     }
@@ -400,6 +621,8 @@
         transform: none !important;
     }
 
+    
+
     .project-image-wrapper img {
         /* Ensure image is slightly dimmed on mobile so text pops */
         opacity: 0.8;
@@ -407,7 +630,6 @@
 
     .project-item {
         width: 100%;
-        margin-bottom: 20px;
     }
 
     .project-item img {
@@ -422,10 +644,51 @@
     }
 
     .modal-content {
-        width: 95%;
+        width: 100%;
         height: 80vh;
         /* Takes up 80% of the screen height */
         overflow-y: auto;
         /* Allows scrolling if the description is long */
+    }
+
+    .icon-container {
+        flex-direction: row; /* Keep icons side-by-side */
+        justify-content: center;
+    }
+
+    /* Target only the reset buttons inside icon containers */
+    .icon-container .reset-pill {
+        flex-basis: 100%;    /* Forces the button to take up the full width of a row */
+        width: fit-content;  /* Keeps the button itself from stretching */
+        margin: 15px auto 5px auto; /* Centers it and adds space above */
+        order: 10;           /* Ensures it always stays at the very bottom */
+    }
+
+    /* Target all images inside the modal */
+    .modal-content img {
+        display: block;
+        width: 100%;          /* Makes the image almost full width of the modal */
+        max-width: 1000px;   /* Prevents it from becoming blurry on giant screens */
+        height: auto;        /* Maintains aspect ratio */
+        margin: 20px auto;   /* Centers the image with space above and below */
+        border-radius: 8px;  /* Optional: keeps the clean look of your cards */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+    }
+
+    /* Specifically for the text-heavy areas, ensure the text doesn't 
+    get squeezed by the wider images */
+    .modal-text-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .text-right {
+        text-align: center;
     }
 }
