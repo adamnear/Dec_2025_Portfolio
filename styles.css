@@ -594,6 +594,26 @@ html {
     color: #ffb300;
 }
 
+.footer-icon {
+    width: 54px;   /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 15px; /* Adds space between the icon and "Back to Top" */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Ensure the text-right div keeps items in a single line */
+.footer-side.text-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Keeps it to the edge of your constrained container */
+}
+
 /* Mobile Adjustment */
 /* Mobile sizing */
 @media (max-width: 768px) {
