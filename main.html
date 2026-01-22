@@ -24,7 +24,7 @@
         </div>
 
         <div class="header-side text-right">
-            <p class="portfolio-subtitle">IT Programmer and GIS Analyst</p>
+            <p class="portfolio-subtitle">IT Programmer / GIS Analyst</p>
         </div>
     </div>
 
@@ -35,24 +35,26 @@
 
     <!-- List of projects (IN ORDER):
         
-        Supervised Land Classification :(
+        Supervised Land Classification :)
         Forestry Data Management QGIS/SQL :((
         Satelite Image Enhancment :)
         Youwind Trial :)
-        South America Rivers :((
-        Arcgis Flood Map Tutorial :((
+        South America Rivers :)
+        Esri Canada GIS Ambassador Experience :(
+        Arcgis Flood Map Tutorial :)
         Nova Scotia Wind Turbine Data Analysis :)
         Places of the World :)
         Orthorectification :)
+        Portfolio December 2025 :)
         NYC park QGIS :((
         Arcgis Gold mines :((
-        Relaxation space :(
-        Portfolio December 2025 :)
+        ParkBuddy :)
+        Relaxation space :)
         Portfolio December 2024 :)
         
     -->
-    <!-- Displaying the filterable icons -->
-    <section id="icons" class="icons">
+<!-- Displaying the filterable icons -->
+<section id="icons" class="icons">
     <button class="filter-trigger" onclick="toggleFilter('software-list')">
         View Primary Softwares and Platforms <span class="arrow">▼</span>
     </button>
@@ -81,6 +83,7 @@
     </div>
 </section>
 
+<!-- Additional Software and Platforms -->
 <section id="additional-icons" class="icons">
     <button class="filter-trigger" onclick="toggleFilter('additional-list')">
         View Additional Softwares and Platforms <span class="arrow">▼</span>
@@ -101,7 +104,8 @@
     </div>
 </section>
 
-    <section id="domains" class="domains">
+<!-- Displaying the filterable domains -->
+<section id="domains" class="domains">
     <button class="filter-trigger" onclick="toggleFilter('domain-list')">
         Select Domains <span class="arrow">▼</span>
     </button>
@@ -114,12 +118,14 @@
             <div class="single-domain" data-domain="Hazard">Hazard</div>
             <div class="single-domain" data-domain="Land Analysis">Land Analysis</div>
             <div class="single-domain" data-domain="Urban Planning">Urban Planning</div>
+            <div class="single-domain" data-domain="Population Tracking">Population Tracking</div>
             <div class="single-domain" data-domain="Project Management">Project Management</div>
             <button id="show-all-domains" class="reset-pill">Show All Domains</button>
         </div>
     </div>
 </section>
 
+<!-- Displaying the filterable skills -->
 <section id="skills" class="skills">
     <button class="filter-trigger" onclick="toggleFilter('skill-list')">
         Select Skills <span class="arrow">▼</span>
@@ -131,6 +137,7 @@
             <div class="single-skill" data-type="Data Analytics">Data Analytics</div>
             <div class="single-skill" data-type="Remote Sensing">Remote Sensing</div>
             <div class="single-skill" data-type="GIS">GIS</div>
+            <div class="single-skill" data-type="Cartography">Cartography</div>
             <div class="single-skill" data-type="Modelling">Modeling</div>
             <div class="single-skill" data-type="Research">Research</div>
             <div class="single-skill" data-type="LiDAR">LiDAR</div>
@@ -140,7 +147,9 @@
     </div>
 </section>
 
+    <!----------------------------->
     <!-- Displaying the projects -->
+    <!----------------------------->
     <section id="project" class="project">
         <div class="project-container">
             <div class="project-item" data-skills="youwind" data-domains="Renewable Energy" data-types="Research">
@@ -177,7 +186,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-item" data-skills="python" data-domains="Land Analysis" data-types="GIS">
+            <div class="project-item" data-skills="python" data-domains="Population Tracking" data-types="GIS">
                 <div class="project-image-wrapper" data-modal="modal3">
                     <img src="/img/projects/PlacesOfTheWorld/img/Screenshot 2025-11-08 135311.png" alt="Project 3">
                     <div class="project-title">
@@ -189,7 +198,7 @@
                             <img src="/img/skills/allskills/qgis.png" class="mini-skill-icon">
                         </div>
 
-                        <div class="project-domain-bar">Land Analysis</div>
+                        <div class="project-domain-bar">Population Tracking</div>
 
                         <div class="project-type-bar">GIS</div>
                     </div>
@@ -263,8 +272,100 @@
                     </div>
                 </div>
             </div>
+            <div class="project-item" data-skills="qgis" data-domains="Land Analysis" data-types="GIS Cartography">
+                <div class="project-image-wrapper" data-modal="modal8">
+                    <img src="/img/projects/SouthAmericaRivers/SouthAmericaRiverscropped6.png" alt="Project 8">
+                    <div class="project-title">
+                        <h2>South America Rivers</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/qgis.png" class="mini-skill-icon">
+                        </div>
 
+                        <div class="project-domain-bar">Land Analysis</div>
 
+                        <div class="project-type-bar">GIS / Cartography</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-skills="catalyst arcgis_pro" data-domains="Land Analysis" data-types="Remote Sensing GIS">
+                <div class="project-image-wrapper" data-modal="modal9">
+                    <img src="/img/projects/SupervisedImageClassification/Images/LandClassification.png" alt="Project 9">
+                    <div class="project-title">
+                        <h2>SupervisedLand Classification</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/catalyst.png" class="mini-skill-icon">
+                            <img src="/img/skills/allskills/arcgis_pro.png" class="mini-skill-icon">
+                        </div>
+
+                        <div class="project-domain-bar">Land Analysis</div>
+
+                        <div class="project-type-bar">Remote Sensing / GIS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-skills="arcgispro" data-domains="Land Analysis" data-types="GIS Cartography">
+                <div class="project-image-wrapper" data-modal="modal10">
+                    <img src="/img/projects/SubcatchmentMapping/Watershed Map.png" alt="Project 10">
+                    <div class="project-title">
+                        <h2>Subcatchment Mapping</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/arcgis_pro.png" class="mini-skill-icon">
+                        </div>
+
+                        <div class="project-domain-bar">Land Analysis</div>
+
+                        <div class="project-type-bar">GIS / Cartography</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-skills="html_css_js react supabase" data-domains="User Experience" data-types="Web Development">
+                <div class="project-image-wrapper" data-modal="modal11">
+                    <img src="/img/projects/RelaxationSpace/Screenshot 2026-01-22 131914.png" alt="Project 11">
+                    <div class="project-title">
+                        <h2>Immersive Ambient Web Platform</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/html_css_js.png" class="mini-skill-icon">
+                            <img src="/img/skills/allskills/react.png" class="mini-skill-icon">
+                            <img src="/img/skills/allskills/supabase.png" class="mini-skill-icon">
+                        </div>
+
+                        <div class="project-domain-bar">User Experience</div>
+
+                        <div class="project-type-bar">Web Development</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-skills="html_css_js react leaflet" data-domains="User Experience Project Management" data-types="Web Development">
+                <div class="project-image-wrapper" data-modal="modal12">
+                    <img src="/img/projects/ParkBuddy/ParkBuddy2.png" alt="Project 12">
+                    <div class="project-title">
+                        <h2>ParkBuddy App</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/html_css_js.png" class="mini-skill-icon">
+                            <img src="/img/skills/allskills/react.png" class="mini-skill-icon">
+                            <img src="/img/skills/allskills/leaflet.png" class="mini-skill-icon">
+                        </div>
+
+                        <div class="project-domain-bar">User Experience / Project Management</div>
+
+                        <div class="project-type-bar">Web Development</div>
+                    </div>
+                </div>
+            </div>
 
             <div class="project-item" data-skills="arcgis_enterprise microstation oracle windpro geoserver global_mapper autocad" data-types="Raster Analysis LiDAR">
                 <div class="project-image-wrapper" data-modal="modal99">
@@ -290,6 +391,9 @@
         </div>
     </section>
 
+    <!-------------------------------->
+    <!-- Modals for project details -->
+    <!-------------------------------->
     <div id="modal1" class="modal-overlay">
         <div class="modal-content">
             <span class="close-button">&times;</span>
@@ -360,7 +464,7 @@
                         <img src="/img/skills/allskills/python.png" class="skill-icon-modal" alt="Python">
                         <img src="/img/skills/allskills/qgis.png" class="skill-icon-modal" alt="QGIS">
                         <div class="skill-text-group">
-                            <span class="domain-label">Domain: Land Analysis</span>
+                            <span class="domain-label">Domain: Population Tracking</span>
                             <span class="skill-label">Skill: GIS</span>
                         </div>
                     </div>
@@ -488,35 +592,196 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <div class="modal-text-content">
-            <h1>Project Summary: Wind Turbine Data Analysis</h1>
-            <div class="skill-icon-container">
-                    <div class="skill-chip">
-                        <img src="/img/skills/allskills/r_studio.png" class="skill-icon-modal" alt="R Studio">
-                        <div class="skill-text-group">
-                            <span class="domain-label">Domain: Renewable Energy</span>
-                            <span class="skill-label">Skill: Data Analytics</span>
+                <h1>Project Summary: Wind Turbine Data Analysis</h1>
+                <div class="skill-icon-container">
+                        <div class="skill-chip">
+                            <img src="/img/skills/allskills/r_studio.png" class="skill-icon-modal" alt="R Studio">
+                            <div class="skill-text-group">
+                                <span class="domain-label">Domain: Renewable Energy</span>
+                                <span class="skill-label">Skill: Data Analytics</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 134602.png" alt="Project 7">
-            <p><strong>Building an ETL Pipeline for Geospatial Data Analysis: Nova Scotian Turbine Report</strong><br>
-                This project involved developing a robust ETL (Extract, Transform, Load) workflow to analyze the relationships between wind turbine technical specifications. Utilizing <strong>R and the tidyverse</strong>, I processed raw geospatial data to examine correlations between <code>Turbine Rated Capacity</code>, <code>Hub Height</code>, and <code>Rotor Diameter</code>.</p>
+                <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 134602.png" alt="Project 7">
+                <p><strong>Building an ETL Pipeline for Geospatial Data Analysis: Nova Scotian Turbine Report</strong><br>
+                    This project involved developing a robust ETL (Extract, Transform, Load) workflow to analyze the relationships between wind turbine technical specifications. Utilizing <strong>R and the tidyverse</strong>, I processed raw geospatial data to examine correlations between <code>Turbine Rated Capacity</code>, <code>Hub Height</code>, and <code>Rotor Diameter</code>.</p>
 
-                <h3>Key Technical Workflows:</h3>
-                <ul>
-                    <li><strong>Environment & ETL Setup:</strong> Configured a data pipeline using <code>GGally</code> and <code>patchwork</code> libraries. Implemented data type enforcement using the <code>mutate</code> function to ensure high-precision numeric analysis.</li>
-                    <li><strong>Numeric Variable Analysis:</strong> Generated comprehensive summary statistics (mean, median, SD, IQR) to establish a baseline for the Nova Scotia turbine dataset.</li>
-                    <li><strong>Distribution Visualization:</strong> Engineered a multi-plot dashboard featuring <strong>Density Plots</strong>, <strong>Histograms</strong>, and <strong>Box Plots</strong> to identify data spikes, skewness, and significant outliers in turbine dimensions.</li>
-                    <li><strong>Correlation Analysis:</strong> Applied the <strong>Spearman Method</strong> to assess statistical trends. Discovered a strong correlation (<code>0.817</code>) between Hub Height and Rotor Diameter, while identifying non-linear anomalies in capacity-to-height ratios.</li>
-                    <li><strong>Advanced Matrix Reporting:</strong> Developed a <strong>Scatterplot Matrix</strong> to visualize all bivariate relationships simultaneously, providing a holistic view of how physical turbine constraints impact energy yield.</li>
-                    <li><strong>Frequency Modeling:</strong> Conducted frequency and proportion counts to identify industry standards within the region, identifying the <code>80m</code> hub height and <code>2300kW</code> capacity as the most frequent regional configurations.</li>
-                </ul>
+                    <h3>Key Technical Workflows:</h3>
+                    <ul>
+                        <li><strong>Environment & ETL Setup:</strong> Configured a data pipeline using <code>GGally</code> and <code>patchwork</code> libraries. Implemented data type enforcement using the <code>mutate</code> function to ensure high-precision numeric analysis.</li>
+                        <li><strong>Numeric Variable Analysis:</strong> Generated comprehensive summary statistics (mean, median, SD, IQR) to establish a baseline for the Nova Scotia turbine dataset.</li>
+                        <li><strong>Distribution Visualization:</strong> Engineered a multi-plot dashboard featuring <strong>Density Plots</strong>, <strong>Histograms</strong>, and <strong>Box Plots</strong> to identify data spikes, skewness, and significant outliers in turbine dimensions.</li>
+                        <li><strong>Correlation Analysis:</strong> Applied the <strong>Spearman Method</strong> to assess statistical trends. Discovered a strong correlation (<code>0.817</code>) between Hub Height and Rotor Diameter, while identifying non-linear anomalies in capacity-to-height ratios.</li>
+                        <li><strong>Advanced Matrix Reporting:</strong> Developed a <strong>Scatterplot Matrix</strong> to visualize all bivariate relationships simultaneously, providing a holistic view of how physical turbine constraints impact energy yield.</li>
+                        <li><strong>Frequency Modeling:</strong> Conducted frequency and proportion counts to identify industry standards within the region, identifying the <code>80m</code> hub height and <code>2300kW</code> capacity as the most frequent regional configurations.</li>
+                    </ul>
 
-            <p><strong>Conclusion:</strong> This project demonstrates proficiency in <strong>statistical programming</strong> and geospatial data cleaning. The analysis successfully validated that while physical dimensions (height and diameter) scale linearly, electrical capacity follows a more complex optimization curve influenced by external technological factors.</p>
-        </div>
+                <p><strong>Conclusion:</strong> This project demonstrates proficiency in <strong>statistical programming</strong> and geospatial data cleaning. The analysis successfully validated that while physical dimensions (height and diameter) scale linearly, electrical capacity follows a more complex optimization curve influenced by external technological factors.</p>
+            </div>
             <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 140336.png" alt="Project 7">
             <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 16314s2.png" alt="Project 7">
             <img src="/img/projects/NovaScotiaWindTurbineDataAnalysis/Screenshot 2025-12-08 170810.png" alt="Project 7">
+        </div>
+    </div>
+
+    <div id="modal8" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: South America Rivers</h1>
+                <div class="skill-icon-container">
+                        <div class="skill-chip">
+                            <img src="/img/skills/allskills/qgis.png" class="skill-icon-modal" alt="QGIS">
+                            <div class="skill-text-group">
+                                <span class="domain-label">Domain: Land Analysis</span>
+                                <span class="skill-label">Skill: GIS / Cartography</span>
+                            </div>
+                        </div>
+                    </div>
+                <img src="/img/projects/SouthAmericaRivers/SouthAmericaRiversfinal.png" alt="Project 8">
+                <h3>Key Technical Workflows:</h3>
+            <ul>
+                <li><strong>Data Processing:</strong> Ingested and clipped HydroSHEDS shapefile data specifically to the South American continental boundary to isolate the primary drainage basins.</li>
+                <li><strong>Dynamic Symbology:</strong> Utilized the <code>Expression Builder</code> in QGIS to define line widths based on the Strahler Order (<code>"ORD_STRA" / 10</code>), creating a visual hierarchy that reflects physical river volume.</li>
+                <li><strong>Stream Order Classification:</strong> Applied categorized symbology to differentiate stream orders, utilizing a graduated color ramp from deep blue to white to represent the transition from major river trunks to high-altitude headwaters.</li>
+                <li><strong>Professional Layout Design:</strong> Developed a high-contrast print layout with a black canvas, disabling background rendering to allow the hydrological network to stand out as the primary focal point.</li>
+            </ul>
+            
+            <p><strong>Outcomes:</strong> The resulting map effectively highlights the Amazon basin’s intricate structure, demonstrating advanced competency in <strong>vector data management</strong> and <strong>thematic cartography</strong>. This workflow can be adapted for any global region to support climatology, hydrology, or environmental planning studies.</p>
+        </div>
+            <img src="/img/projects/SouthAmericaRivers/SouthAmericaRiverscropped.png" alt="Project 8">
+            <img src="/img/projects/SouthAmericaRivers/SouthAmericaRiverscropper5.png" alt="Project 8">
+        </div>
+    </div>
+
+    <div id="modal9" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: Supervised Land Classification</h1>
+                <div class="skill-icon-container">
+                        <div class="skill-chip">
+                            <img src="/img/skills/allskills/catalyst.png" class="skill-icon-modal" alt="Catalyst">
+                            <img src="/img/skills/allskills/arcgis_pro.png" class="skill-icon-modal" alt="ArcGIS Pro">
+                            <div class="skill-text-group">
+                                <span class="domain-label">Domain: Land Analysis</span>
+                                <span class="skill-label">Skill: Remote Sensing / GIS</span>
+                            </div>
+                        </div>
+                    </div>
+                <img src="/img/projects/SupervisedImageClassification/Images/LandClassification.png" alt="Project 9">
+                <p>This project involved performing a complex <strong>Supervised Image Classification</strong> of Landsat 9 multispectral imagery covering the Annapolis Valley, Nova Scotia. Using <strong>Catalyst Focus</strong> and <strong>ArcGIS Pro</strong>, I transformed raw spectral data into a refined thematic map identifying six primary land cover information classes.</p>
+                    <h3>Key Technical Workflows:</h3>
+            <ul>
+                <li><strong>Image Preparation & Pan-sharpening:</strong> Processed Level 1 Landsat 9 bundles, performing pan-sharpening and clipping to a specific area of interest (AOI) to enhance spatial resolution for feature identification.</li>
+                <li><strong>Supervised Training & Signature Analysis:</strong> Manually digitized training areas to create distinct spectral classes. Evaluated signature quality using <code>Bhattacharrya Distance</code> for separability, scatter plots for spectral overlap, and histograms for class homogeneity.</li>
+                <li><strong>Class Aggregation & Post-Processing:</strong> Aggregated various spectral classes (e.g., bare soil, rock, and quarry) into higher-level <strong>Information Classes</strong> (e.g., Barren). Applied a <strong>Sieve Filter</strong> to reduce "salt-and-pepper" noise while maintaining critical linear features like transportation networks.</li>
+                <li><strong>Rigorous Accuracy Assessment:</strong> Conducted a non-biased accuracy assessment using 25+ independent random reference samples per class. Generated <strong>Confusion Matrices</strong> and <strong>Kappa Coefficients</strong> to statistically validate the classification reliability.</li>
+            </ul>
+            
+            <p><strong>Outcomes:</strong> The final output was a 24” x 36” professional-grade map following <strong>NRCAN</strong> standards. The project demonstrated proficiency in the full remote sensing lifecycle—from raw sensor data ingestion and statistical validation to final cartographic production.</p>
+        </div>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: Subcatchment Mapping</h1>
+                <div class="skill-icon-container">
+                        <div class="skill-chip">
+                            <img src="/img/skills/allskills/arcgis_pro.png" class="skill-icon-modal" alt="ArcGIS Pro">
+                            <div class="skill-text-group">
+                                <span class="domain-label">Domain: Land Analysis</span>
+                                <span class="skill-label">Skill: GIS / Cartography</span>
+                            </div>
+                        </div>
+                    </div>
+                <img src="/img/projects/SubcatchmentMapping/Watershed Map.png" alt="Project 10">
+                <p>This project involved the development of a professional topographic and hydrological map of <strong>Lesotho</strong>. Using <strong>ArcGIS Pro</strong>, I synthesized elevation gradients with sub-catchment data (WS1–WS10) to visualize the relationship between terrain and water management infrastructure.</p>
+                <h3>Key Technical Workflows:</h3>
+                <ul>
+                    <li><strong>Data Synthesis & Cleaning:</strong> Processed raw spatial layers including DEM-derived elevation gradients, river networks, and specialized hydrological/meteorological station data.</li>
+                    <li><strong>Advanced Symbology:</strong> Styled 10 distinct sub-catchment areas (WS1-WS10) using unique categorical identifiers, overlaid on a graduated elevation color ramp to provide geographic context for drainage patterns.</li>
+                    <li><strong>Layout Engineering:</strong> Designed a comprehensive map layout including a secondary map frame (extent indicator) to provide regional context within Southern Africa.</li>
+                    <li><strong>In-Map Data Tabulation:</strong> Integrated dynamic data tables directly into the layout to display catchment-specific attributes, such as calculated area in hectares, for improved technical utility.</li>
+                </ul>
+                
+                <p><strong>Outcomes:</strong> The final product is a technical-grade PDF/JPEG export featuring a full suite of cartographic elements: North arrows, scale bars, legend optimization, and ESRI basemap attributions. This map serves as a high-quality template for catchment-scale environmental reporting and water resource management.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: "Relaxation Space" – Immersive Ambient Web Platform</h1>
+                
+                <div class="skill-icon-container">
+                        <div class="skill-chip">
+                            <img src="/img/skills/allskills/html_css_js.png" class="skill-icon-modal" alt="HTML/CSS/JS">
+                            <img src="/img/skills/allskills/react.png" class="skill-icon-modal" alt="React">
+                            <img src="/img/skills/allskills/supabase.png" class="skill-icon-modal" alt="Supabase">
+                            <img src="/img/projects/RelaxationSpace/littlesymphony.png" class="skill-icon-modal" alt="little_symphony">
+                            <div class="skill-text-group">
+                                <span class="domain-label">Domain: User Experience</span>
+                                <span class="skill-label">Skill: Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255, 50, 50, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 50, 50, 0.3); margin-bottom: 25px;">
+                <p style="margin: 0; font-size: 0.9rem; color: #ff5a5a; line-height: 1.5;">
+                    <strong>Notice:</strong> Due to company privacy agreements and sharing restrictions, <strong>I am unable to post images, screenshots, or visual assets</strong> of the final product on this webpage. The summary below focuses on the technical architecture and development contributions made during my internship.
+                </p>
+            </div>
+                <img src="/img/projects/RelaxationSpace/Screenshot 2026-01-22 131950.png" alt="Project 11">
+                <p>During a four-month Web Development internship, I assisted in development at <strong>Little Symphony Inc.</strong> with the production of <strong>"Relaxation Space"</strong>, a sophisticated ambient soundscape generator. The platform empowers users to become "sound architects," blending high-fidelity geographic audio—ranging from forest environments to diverse river variants—with modular musical layers.</p>
+                <h3>Core Technical Contributions:</h3>
+                <ul>
+                    <li><strong>Full-Stack Development:</strong> Architected the front-end using <strong>React</strong> and <strong>Chakra-UI</strong>, while leveraging <strong>Supabase</strong> for user authentication and real-time database management of "Followed" spaces.</li>
+                    <li><strong>Modular Audio Engine:</strong> Implemented multi-track slider functionality allowing users to balance nature sounds with customizable instrument layers (Cello, Piano, Synth Pads).</li>
+                    <li><strong>Responsive UI/UX:</strong> Developed the platform with a "mobile-first" mindset using <strong>Tailwind CSS</strong>, ensuring a seamless experience across web and mobile browsers.</li>
+                    <li><strong>Community Features:</strong> Engineered logic for "Public Searchable Spaces," allowing users to save, share, and follow custom-created ambient playlists.</li>
+                </ul>
+                
+                <p><strong>Professional Growth:</strong> This role required an intensive, self-directed deep dive into React and modern web ecosystems. Under mentor supervision, I transitioned from fundamental GIS-based programming to deploying a complex, community-driven web application tailored for sleep, focus, and meditation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal12" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: ParkBuddy App for Capstone Project</h1>
+                
+                <div class="skill-icon-container">
+                    <div class="skill-chip">
+                        <img src="/img/skills/allskills/html_css_js.png" class="skill-icon-modal" alt="HTML/CSS/JS">
+                        <img src="/img/skills/allskills/react.png" class="skill-icon-modal" alt="React">
+                        <img src="/img/skills/allskills/leaflet.png" class="skill-icon-modal" alt="Leaflet">
+                        <div class="skill-text-group">
+                            <span class="domain-label">Domain: User Experience / Project Management</span>
+                            <span class="skill-label">Skill: Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <img src="/img/projects/ParkBuddy/ParkBuddy2.png" alt="Project 12">
+                <p><strong>ParkBuddy</strong> is a specialized social noticeboard designed to modernize urban living in Halifax by digitizing street cleaning schedules. As the <strong>Project Manager and Creator</strong>, I conceptualized the platform to solve a common municipal pain point: dated physical signage and the resulting parking citations. I led a multidisciplinary team through an intensive development cycle, transitioning from a formal Project Charter to a functional mobile application.</p>
+                <h3>Management & Strategic Contributions:</h3>
+                <ul>
+                    <li><strong>Project Lifecycle Oversight:</strong> Authored the Project Charter and defined the scope, focusing exclusively on residential street cleaning data to ensure a high-value, niche utility for Halifax residents.</li>
+                    <li><strong>Agile Sprint Management:</strong> Orchestrated two distinct development sprints, managing the Work Breakdown Structure (WBS) and aligning team tasks to meet critical milestones, including ERD finalization and tech stack selection.</li>
+                    <li><strong>UI/UX Design Vision:</strong> Directed the front-end aesthetic and user flow, ensuring the mobile experience (React Native/Expo) remained intuitive for crowd-sourced data entry and street-side search functionality.</li>
+                    <li><strong>Stakeholder Engagement:</strong> Acted as the primary point of contact for project advisors and internal team members, facilitating technical decisions between <strong>WordPress/PHP back-end</strong> integration and <strong>GeoJSON</strong> data structures.</li>
+                    <li><strong>Data Strategy:</strong> Defined critical success factors for data integrity, leading initial collection efforts to seed the database and validate the search-based notification model.</li>
+                </ul>
+                
+                <p><strong>Outcomes:</strong> Under my leadership, the team successfully delivered a functional prototype that met all key deliverables, including comprehensive requirement documentation and a polished final presentation. The project highlights my ability to manage complex schedules, mitigate platform constraints, and guide a technical team from ideation to delivery.</p>
+            </div>
         </div>
     </div>
 
@@ -554,7 +819,7 @@
     </div>
 </div>
 
-    <footer class="main-footer">
+<footer class="main-footer">
     <div class="footer-content">
         <div class="footer-side">
             <p>&copy; 2026 Adam Nearing</p>
