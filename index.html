@@ -155,7 +155,16 @@
         <div class="project-container">
             <div class="project-item" data-skills="arcgispro" data-domains="Land Analysis" data-types="GIS Cartography">
                 <div class="project-image-wrapper" data-modal="modal10">
-                    <img src="/img/projects/SubcatchmentMapping/Watershed Map-mobile.webp" alt="Project 10" loading="lazy">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="/img/projects/SubcatchmentMapping/Watershed_Map-mobile.webp">
+                        
+                        <source media="(min-width: 601px)" srcset="/img/projects/SubcatchmentMapping/Watershed_Map.webp">
+                        
+                        <img src="/img/projects/SubcatchmentMapping/Watershed_Map.webp" 
+                            alt="Project 10: Watershed Map" 
+                            class="project-map-style" 
+                            loading="lazy">
+                    </picture>
                     <div class="project-title">
                         <h2>Subcatchment Mapping</h2>
                     </div>
