@@ -744,6 +744,10 @@ html {
         grid-template-columns: 1fr;
     }
 
+    .project-title {
+        margin-top: -20px;
+    }   
+
     .project-title h2 {
         opacity: 1 !important;
         font-size: 1.2rem;
@@ -751,8 +755,6 @@ html {
         /* Remove any transform if you had one, to keep it static */
         transform: none !important;
     }
-
-    
 
     .project-image-wrapper img {
         /* Ensure image is slightly dimmed on mobile so text pops */
