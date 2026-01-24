@@ -7,7 +7,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #111; /* Or your preferred dark background */
+    background: #111;
+    /* Or your preferred dark background */
     color: white;
 }
 
@@ -21,15 +22,18 @@ html {
 }
 
 .header-side {
-    flex: 1; /* Gives both text sides equal width */
+    flex: 1;
+    /* Gives both text sides equal width */
 }
 
 .text-left {
-    text-align: right; /* Aligns toward the center image */
+    text-align: right;
+    /* Aligns toward the center image */
 }
 
 .text-right {
-    text-align: left; /* Aligns toward the center image */
+    text-align: left;
+    /* Aligns toward the center image */
 }
 
 .portfolio-title {
@@ -50,8 +54,10 @@ html {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #ffb300; /* Matching your orange accent color */
-    background: #333; /* Placeholder color */
+    border: 3px solid #ffb300;
+    /* Matching your orange accent color */
+    background: #333;
+    /* Placeholder color */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,10 +93,12 @@ html {
 
 
 .single-icon {
-    width: 50px; /* Adjust size as needed */
+    width: 50px;
+    /* Adjust size as needed */
     height: auto;
     cursor: pointer;
-    filter: grayscale(100%); /* Optional: icons look cleaner when grayed out until active */
+    filter: grayscale(100%);
+    /* Optional: icons look cleaner when grayed out until active */
     transition: all 0.3s ease;
 }
 
@@ -112,14 +120,20 @@ html {
 
 .icon-container {
     display: flex;
-    justify-content: center; /* Centers icons and the button */
-    align-items: center;     /* Vertically aligns icons and button */
-    flex-wrap: wrap;        /* Moves items to next line if screen is narrow */
-    gap: 15px;               /* Space between all items */
-    padding: 20px 20px 10px 20px; /* Reduced bottom padding */
-    background: rgba(255, 255, 255, 0.05); 
+    justify-content: center;
+    /* Centers icons and the button */
+    align-items: center;
+    /* Vertically aligns icons and button */
+    flex-wrap: wrap;
+    /* Moves items to next line if screen is narrow */
+    gap: 15px;
+    /* Space between all items */
+    padding: 20px 20px 10px 20px;
+    /* Reduced bottom padding */
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    margin-bottom: 15px;     /* Much smaller space below the container */
+    margin-bottom: 15px;
+    /* Much smaller space below the container */
 }
 
 #show-all-icons:hover {
@@ -139,7 +153,7 @@ html {
     flex-wrap: wrap;
     gap: 15px;
     /* Add space above and below the buttons */
-    padding: 30px 0; 
+    padding: 30px 0;
     /* Ensure it takes full width to keep items centered */
     width: 100%;
 }
@@ -156,13 +170,15 @@ html {
 
 .reset-pill {
     background: rgba(0, 0, 0, 0.7);
-    color: white; /* Ensure your page background isn't white! */
+    color: white;
+    /* Ensure your page background isn't white! */
     border: 2px solid rgba(255, 255, 255, 0.2);
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.8rem;
     cursor: pointer;
-    display: inline-block; /* Ensures it respects padding/height */
+    display: inline-block;
+    /* Ensures it respects padding/height */
     transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -185,7 +201,8 @@ html {
 .single-domain,
 .single-skill {
     cursor: pointer;
-    display: inline-block; /* Required for transform/scale to work properly */
+    display: inline-block;
+    /* Required for transform/scale to work properly */
     padding: 8px 12px;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -205,11 +222,14 @@ html {
 
 /* Domain: Purple Aesthetic */
 .single-domain.active-filter {
-    background-color: rgba(147, 51, 234, 0.3); /* Purple background */
-    box-shadow: 0 0 10px rgba(168, 85, 247, 0.6); /* Purple glow */
+    background-color: rgba(147, 51, 234, 0.3);
+    /* Purple background */
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+    /* Purple glow */
     border-radius: 4px;
     transform: scale(1.05);
 }
+
 /* The Toggle Button Styling */
 .filter-trigger {
     background: #222;
@@ -252,14 +272,16 @@ html {
 
 /* Open State */
 .filter-content.show {
-    max-height: 1000px; /* High value to accommodate content */
+    max-height: 1000px;
+    /* High value to accommodate content */
     opacity: 1;
     transition: max-height 0.5s ease-in, opacity 0.5s ease;
     margin-bottom: 30px;
 }
 
 /* Ensuring the buttons stay centered when revealed */
-.domain-container, .skill-container {
+.domain-container,
+.skill-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -268,8 +290,10 @@ html {
 
 /* Skills: Blue Aesthetic */
 .single-skill.active-filter {
-    background-color: rgba(50, 118, 254, 0.2); /* Your original Blue */
-    box-shadow: 0 0 10px rgba(0, 26, 255, 0.4);  /* Your original Blue glow */
+    background-color: rgba(50, 118, 254, 0.2);
+    /* Your original Blue */
+    box-shadow: 0 0 10px rgba(0, 26, 255, 0.4);
+    /* Your original Blue glow */
     border-radius: 4px;
     transform: scale(1.05);
 }
@@ -277,15 +301,15 @@ html {
 .project-container {
     display: grid;
     /* Defines 3 columns of equal width */
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     /* Gap between items (vertically and horizontally) */
-    gap: 30px; 
+    gap: 30px;
     grid-auto-rows: 1fr;
 }
 
 .project-item {
     /* We remove flex: 1; Grid now handles the sizing */
-    width: 100%; 
+    width: 100%;
     height: 100%;
     display: block;
     display: flex;
@@ -304,11 +328,12 @@ html {
 .project-image-wrapper {
     width: 100%;
     /* 1. Force a consistent shape (16:10 or 4:3 works well for portfolios) */
-    aspect-ratio: 16 / 10; 
+    aspect-ratio: 16 / 10;
     overflow: hidden;
     position: relative;
     border-radius: 8px;
-    background: #000; /* Black background to fill gaps if any */
+    background: #000;
+    /* Black background to fill gaps if any */
 }
 
 .project-image-wrapper img {
@@ -423,7 +448,9 @@ html {
     transition: all 0.3s ease;
 }
 
-.icons, .domains, .skills {
+.icons,
+.domains,
+.skills {
     margin-bottom: 30px;
 }
 
@@ -461,7 +488,8 @@ html {
 }
 
 .modal-content {
-    background: white; /* Or your dark theme color */
+    background: white;
+    /* Or your dark theme color */
     padding: 30px;
     border-radius: 15px;
     width: 90%;
@@ -469,13 +497,16 @@ html {
     position: relative;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 20px;
 
     /* --- SCROLL LOGIC --- */
-    max-height: 85vh;    /* 1. Limits height to 85% of the screen */
-    overflow-y: auto;    /* 2. Adds a vertical scrollbar if content is too long */
-    overflow-x: hidden;  /* 3. Prevents accidental horizontal shifting */
+    max-height: 85vh;
+    /* 1. Limits height to 85% of the screen */
+    overflow-y: auto;
+    /* 2. Adds a vertical scrollbar if content is too long */
+    overflow-x: hidden;
+    /* 3. Prevents accidental horizontal shifting */
 
     /* 1. Hide scrollbar for Chrome, Safari, and newer versions of Edge */
     &::-webkit-scrollbar {
@@ -495,26 +526,37 @@ html {
     display: block;
     margin: 0 auto 20px auto;
     height: auto;
-    flex-shrink: 0;      /* 4. Prevents the image from shrinking to fit the box */
+    flex-shrink: 0;
+    /* 4. Prevents the image from shrinking to fit the box */
     border-radius: 8px;
     object-fit: contain;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Adds depth */
     opacity: 0;
     animation: fadeIn 0.8s ease-in forwards;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .modal-content::-webkit-scrollbar {
     width: 8px;
 }
+
 .modal-content::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 10px;
 }
+
 .modal-content::-webkit-scrollbar-thumb:hover {
     background: #999;
 }
@@ -531,27 +573,33 @@ html {
 /* The individual chip containing icon + both labels */
 .skill-chip {
     display: inline-flex;
-    align-items: center;    /* Centers the icon and text group vertically */
-    background: rgba(255, 255, 255, 0.08); 
+    align-items: center;
+    /* Centers the icon and text group vertically */
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    padding: 10px;          /* This creates the space for your box shadow to be visible */
+    padding: 10px;
+    /* This creates the space for your box shadow to be visible */
     gap: 15px;
 }
 
 /* The vertical stack for text */
 .skill-text-group {
     display: flex;
-    flex-direction: column; /* This performs the stacking */
+    flex-direction: column;
+    /* This performs the stacking */
     justify-content: center;
     padding: 5px 0;
-    gap: 8px; /* This creates the vertical gap between Domain and Skill */
+    gap: 8px;
+    /* This creates the vertical gap between Domain and Skill */
 }
 
 .label-prefix {
     text-decoration: underline;
-    text-underline-offset: 2px; /* Makes the underline look cleaner */
-    margin-right: 4px; /* Space between prefix and the actual name */
+    text-underline-offset: 2px;
+    /* Makes the underline look cleaner */
+    margin-right: 4px;
+    /* Space between prefix and the actual name */
 }
 
 /* Enforcing icon size */
@@ -562,9 +610,11 @@ html {
 }
 
 /* Domain Label Styling */
-.domain-label, .skill-label {
+.domain-label,
+.skill-label {
     font-size: 1rem;
-    color: #515151; /* Slightly dimmed to distinguish from skill */
+    color: #515151;
+    /* Slightly dimmed to distinguish from skill */
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -579,17 +629,23 @@ html {
 
 /* Updated for smaller icon size */
 .skill-icon-modal {
-    height: 100% !important; /* Take up 100% of the chip's height */
+    height: 100% !important;
+    /* Take up 100% of the chip's height */
     width: auto !important;
-    display: block;          /* Removes the baseline text gap */
-    margin: 0 !important;    /* Removes any mystery margins */
-    padding: 5px;            /* Optional: small internal padding so it doesn't touch the VERY edge */
+    display: block;
+    /* Removes the baseline text gap */
+    margin: 0 !important;
+    /* Removes any mystery margins */
+    padding: 5px;
+    /* Optional: small internal padding so it doesn't touch the VERY edge */
     background: rgba(255, 255, 255, 0.05)
 }
 
 /* Using the container + class ensures this takes priority */
-.skill-icon-container, .skill-icon-modal {
-    height: 80px !important; /* The !important is a last resort, but useful for testing */
+.skill-icon-container,
+.skill-icon-modal {
+    height: 80px !important;
+    /* The !important is a last resort, but useful for testing */
     width: auto;
     object-fit: contain;
     display: inline-block;
@@ -600,20 +656,24 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; /* This centers the group of icons */
+    justify-content: center;
+    /* This centers the group of icons */
     align-items: center;
-    gap: 20px;               /* Clean spacing between raw icons */
+    gap: 20px;
+    /* Clean spacing between raw icons */
     margin: 15px 0 25px 0;
     padding: 10px;
 }
 
 /* Reset icon behavior for this specific container only */
 .dev-skills-container .skill-icon-modal {
-    height: 80px !important;  /* Slightly larger for visibility since there is no text */
+    height: 80px !important;
+    /* Slightly larger for visibility since there is no text */
     width: auto !important;
-    display: inline-block !important; 
+    display: inline-block !important;
     margin: 0 !important;
-    filter: none;             /* Clean look without the heavy project drop-shadow */
+    filter: none;
+    /* Clean look without the heavy project drop-shadow */
     opacity: 0.9;
     transition: opacity 0.2s ease;
 }
@@ -633,7 +693,8 @@ html {
     font-size: 2rem;
     font-weight: bold;
     color: white;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent circle background */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent circle background */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -643,7 +704,7 @@ html {
     cursor: pointer;
     line-height: 1;
     transition: background 0.3s ease;
-    
+
     /* Prevent the button from pushing content down */
     margin-bottom: -40px;
 }
@@ -706,10 +767,12 @@ html {
 }
 
 .footer-icon {
-    width: 54px;   /* Adjust size as needed */
+    width: 54px;
+    /* Adjust size as needed */
     height: auto;
     vertical-align: middle;
-    margin-right: 15px; /* Adds space between the icon and "Back to Top" */
+    margin-right: 15px;
+    /* Adds space between the icon and "Back to Top" */
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -722,7 +785,8 @@ html {
 .footer-side.text-right {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Keeps it to the edge of your constrained container */
+    justify-content: flex-end;
+    /* Keeps it to the edge of your constrained container */
 }
 
 /* Mobile Adjustment */
@@ -733,11 +797,15 @@ html {
         flex-direction: column;
         text-align: center;
     }
-    .text-left, .text-right {
+
+    .text-left,
+    .text-right {
         text-align: center;
     }
+
     .profile-circle {
-        order: -1; /* Puts image at the very top on mobile */
+        order: -1;
+        /* Puts image at the very top on mobile */
     }
 
     .project-container {
@@ -746,7 +814,7 @@ html {
 
     .project-title {
         margin-top: -35px;
-    }   
+    }
 
     .project-title h2 {
         opacity: 1 !important;
@@ -785,27 +853,69 @@ html {
     }
 
     .icon-container {
-        flex-direction: row; /* Keep icons side-by-side */
+        flex-direction: row;
+        /* Keep icons side-by-side */
         justify-content: center;
     }
 
     /* Target only the reset buttons inside icon containers */
     .icon-container .reset-pill {
-        flex-basis: 100%;    /* Forces the button to take up the full width of a row */
-        width: fit-content;  /* Keeps the button itself from stretching */
-        margin: 15px auto 5px auto; /* Centers it and adds space above */
-        order: 10;           /* Ensures it always stays at the very bottom */
+        flex-basis: 100%;
+        /* Forces the button to take up the full width of a row */
+        width: fit-content;
+        /* Keeps the button itself from stretching */
+        margin: 15px auto 5px auto;
+        /* Centers it and adds space above */
+        order: 10;
+        /* Ensures it always stays at the very bottom */
+    }
+
+    .domain-container,
+    .skill-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* THIS IS THE KEY */
+        justify-content: center;
+        /* Keeps the top icons centered */
+    }
+
+    .domain-container .reset-pill,
+    .skill-container .reset-pill {
+        /* 1. Force the break: This item now MUST start a new row */
+        flex-basis: 100%;
+
+        /* 2. Control visual width using margins instead of the width property */
+        /* (100% - 60% = 40% total margin, or 20% on each side) */
+        margin-left: 25%;
+        margin-right: 25%;
+
+        /* 3. Add vertical spacing */
+        margin-top: 15px;
+        margin-bottom: 5px;
+
+        /* 4. Keeps it at the very bottom */
+        order: 10;
+
+        /* 5. Clean up any conflicting width properties */
+        width: auto;
+        max-width: none;
     }
 
     /* Target all images inside the modal */
     .modal-content img {
         display: block;
-        width: 100%;          /* Makes the image almost full width of the modal */
-        max-width: 1000px;   /* Prevents it from becoming blurry on giant screens */
-        height: auto;        /* Maintains aspect ratio */
-        margin: 20px auto;   /* Centers the image with space above and below */
-        border-radius: 8px;  /* Optional: keeps the clean look of your cards */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+        width: 100%;
+        /* Makes the image almost full width of the modal */
+        max-width: 1000px;
+        /* Prevents it from becoming blurry on giant screens */
+        height: auto;
+        /* Maintains aspect ratio */
+        margin: 20px auto;
+        /* Centers the image with space above and below */
+        border-radius: 8px;
+        /* Optional: keeps the clean look of your cards */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        /* Adds depth */
     }
 
     /* Specifically for the text-heavy areas, ensure the text doesn't 
@@ -820,7 +930,7 @@ html {
         gap: 20px;
         text-align: center;
     }
-    
+
     .text-right {
         text-align: center;
     }
