@@ -789,6 +789,31 @@ html {
     /* Keeps it to the edge of your constrained container */
 }
 
+/* VOLCANO POSTER IMAGE ADJUSTMENT */
+.zoom-container {
+    overflow: hidden;
+    /* Keeps the zoom contained */
+    cursor: zoom-in;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background: #000;
+}
+
+.zoom-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* The state triggered by JavaScript */
+.zoom-image.is-zoomed {
+    transform: scale(2.5);
+    /* Adjust 2.5 to 3.0 depending on detail level */
+    cursor: zoom-out;
+}
+
 /* Mobile Adjustment */
 /* Mobile sizing */
 @media (max-width: 768px) {

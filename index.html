@@ -449,8 +449,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-item" data-skills="arcgis_online" data-domains="Professional Development"
-                data-types="GIS">
+            <div class="project-item" data-skills="arcgis_online" data-domains="Urban Planning" data-types="GIS">
                 <div class="project-image-wrapper" data-modal="modal15">
                     <picture>
                         <source media="(max-width: 600px)" srcset="/img/projects/BusAccessability/busstops.png">
@@ -655,7 +654,8 @@
                 <img src="/img/projects/YouwindTrial/Images/Screenshot 2025-11-24 194800-mobile.webp" alt="Project 2"
                     loading="lazy">
                 <p>Over a three-week period, I utilized the <strong>Youwind platform</strong> to design and analyze
-                    offshore wind farm layouts off the coast of Canada. Leveraging my GIS background, I transitioned
+                    offshore wind farm layouts off the coast of Nova Scotia. Leveraging my GIS background, I
+                    transitioned
                     from using predefined areas to creating custom polygon boundaries for layout optimization.</p>
                 <img src="/img/projects/YouwindTrial/Images/Screenshot 2025-11-24 194957-mobile.webp" alt="Project 2"
                     loading="lazy">
@@ -676,7 +676,8 @@
                 <img src="/img/projects/YouwindTrial/Images/CROPScreenshot 2025-11-25 123052.webp" alt="Project 2"
                     loading="lazy">
                 <p><strong>Outcomes & Future Objectives:</strong> Through technical support and one-on-one tutorials, I
-                    mastered the platform’s core workflows to achieve tangible design outcomes. Moving forward, I aim to
+                    became familiar with the platform’s core workflows to achieve tangible design outcomes. Moving
+                    forward, I aim to
                     integrate <strong>financial modeling</strong> to compare the <code>CAPEX</code> of different sites,
                     specifically analyzing the trade-offs between cabling costs, wake efficiency, and exclusion zone
                     restrictions.</p>
@@ -702,8 +703,10 @@
                         </div>
                     </div>
                 </div>
-                <img src="/img/projects/ImageEnhancmentVolcano/Images/Poster_Draft-mobile.webp" alt="Project 2"
-                    loading="lazy">
+                <div class="zoom-container">
+                    <img src="/img/projects/ImageEnhancmentVolcano/Images/Poster_Draft-mobile.webp" id="zoomablePoster"
+                        alt="Project Poster" class="zoom-image">
+                </div>
                 <p>This presentation poster was developed to demonstrate advanced <strong>image enhancement
                         techniques</strong> applied to remotely sensed imagery. The project focuses on the <strong>Mauna
                         Loa volcanic eruption</strong> in Hawaii, captured on November 27th, 2022.</p>
@@ -985,7 +988,7 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <div class="modal-text-content">
-                <h1>Project Summary: South America Rivers</h1>
+                <h1>Project Summary: The Rivers of South America</h1>
                 <div class="skill-icon-container">
                     <div class="skill-chip">
                         <img src="/img/skills/allskills/qgis-mobile.webp" class="skill-icon-modal" alt="QGIS">
@@ -997,9 +1000,16 @@
                 </div>
                 <img src="/img/projects/SouthAmericaRivers/SouthAmericaRiversfinal-mobile.webp" alt="Project 8"
                     loading="lazy">
+                <p><strong>The Rivers of South America</strong> is a high-resolution cartographic study that visualizes
+                    the continent's complex water networks. By processing <strong>HydroSHEDS</strong> global data, the
+                    project shows the relationship between geographic scale and water volume, specifically focusing on
+                    the massive physical presence of the Amazon drainage system. The map uses <strong>Strahler Stream
+                        Order attributes</strong>—a system that ranks rivers by their number of tributaries—to drive a
+                    visual hierarchy, ensuring the line thickness and color accurately reflect the size and flow of each
+                    river system.</p>
                 <h3>Key Technical Workflows:</h3>
                 <ul>
-                    <li><strong>Data Processing:</strong> Ingested and clipped HydroSHEDS shapefile data specifically to
+                    <li><strong>Data Processing:</strong> Sourced and clipped HydroSHEDS shapefile data specifically to
                         the South American continental boundary to isolate the primary drainage basins.</li>
                     <li><strong>Dynamic Symbology:</strong> Utilized the <code>Expression Builder</code> in QGIS to
                         define line widths based on the Strahler Order (<code>"ORD_STRA" / 10</code>), creating a visual
@@ -1114,7 +1124,7 @@
 
                 <p><strong>Outcomes:</strong> The final product is a technical-grade PDF/JPEG export featuring a full
                     suite of cartographic elements: North arrows, scale bars, legend optimization, and ESRI basemap
-                    attributions. This map serves as a high-quality template for catchment-scale environmental reporting
+                    attributions. This map serves as a template for catchment-scale environmental reporting
                     and water resource management.</p>
             </div>
         </div>
@@ -1246,7 +1256,7 @@
             </div>
             <img src="/img/projects/RasterSlopeAnalysis/Screenshot 2026-01-23 120620.png" alt="Project 13"
                 loading="lazy">
-            <p><strong>Least Cost Path Analysis</strong> is a geospatial modeling project focused on the principles of
+            <p><strong>Best Path Raster Analysis</strong> is a geospatial modeling project focused on the principles of
                 <strong>Map Algebra and Raster Analysis</strong> using ArcGIS Pro. This project explores the
                 mathematical frameworks used to determine the "path of least resistance" across complex geographic
                 surfaces. By leveraging <strong>Cost Functions and PathDistance algorithms</strong>, the project
@@ -1267,7 +1277,7 @@
                 <li><strong>Advanced Path Analysis:</strong> Utilized the <strong>PathDistance function</strong> to
                     incorporate 3D surface distance, vertical factors, and horizontal resistance, ensuring the model
                     accounted for real-world topographical energy expenditures.</li>
-                <li><strong>Python & Scripting Integration:</strong> Orchestrated the analysis through the
+                <li><strong>Python & Scripting Integration:</strong> Conducted the analysis through the
                     <strong>ArcGIS Pro Python Window</strong>, managing environment settings such as workspace extents,
                     cell sizes, and scratch workspaces to ensure data integrity across iterative runs.
                 </li>
@@ -1275,13 +1285,13 @@
                     single most efficient route between designated start and stop source cells, validating the
                     theoretical "least-cost path" against spatial variables.</li>
             </ul>
-            <img src="/img/projects/RasterSlopeAnalysis/Screenshot 2026-01-23 120559.png" alt="Project 13"
+            <img src="/img/projects/RasterSlopeAnalysis/Screenshot 2026-01-23 115633.png" alt="Project 13"
                 loading="lazy">
             <p><strong>Outcomes:</strong> The project resulted in a robust methodological workflow for automated route
                 selection. By successfully integrating <strong>Spatial Analyst global functions</strong> with Python
                 scripting, the analysis showcased the ability to translate qualitative site constraints into a
                 quantitative, data-driven spatial model for infrastructure planning and environmental mitigation.</p>
-            <img src="/img/projects/RasterSlopeAnalysis/Screenshot 2026-01-23 115633.png" alt="Project 13"
+            <img src="/img/projects/RasterSlopeAnalysis/Screenshot 2026-01-23 120559.png" alt="Project 13"
                 loading="lazy">
         </div>
     </div>
@@ -1290,7 +1300,7 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <div class="modal-text-content">
-                <h1>Project Summary: LiDAR Classification</h1>
+                <h1>Project Summary: Point Classification: LiDAR Terrain Modeling</h1>
 
                 <div class="skill-icon-container">
                     <div class="skill-chip">
@@ -1306,7 +1316,8 @@
             </div>
             <img src="/img/projects/LiDARClassification/Screenshot 2026-01-23 184700.png" alt="Project 14"
                 loading="lazy">
-            <p><strong>TerraScan Project & Data Management</strong> is a specialized LiDAR processing workflow focused
+            <p><strong>Point Classification: LiDAR Terrain Modeling</strong> is a specialized LiDAR processing workflow
+                focused
                 on the <strong>spatial organization and management of point cloud data</strong> within the
                 Microstation/TerraSolid environment. As a key component of LiDAR survey analytics, the project
                 demonstrates a professional methodology for partitioning massive datasets into manageable 1km x 1km
@@ -1333,12 +1344,16 @@
                         configurations</strong>, symbolizing point clouds by elevation, intensity, and flightline. This
                     allowed for detailed point-level querying and the identification of misclassified features through
                     red "cross-hair" location tracking.</li>
+                <li><strong>Multi-Platform Quality Assurance:</strong> Integrated <strong>Global Mapper</strong> into
+                    the post-processing workflow for visual confirmation and cross-verification of raster outputs,
+                    ensuring high-fidelity surface reconstruction and vertical accuracy.</li>
             </ul>
             <img src="/img/projects/LiDARClassification/Screenshot 2026-01-23 180309.png" alt="Project 14"
                 loading="lazy">
             <p><strong>Outcomes:</strong> The project successfully established a scalable <strong>LiDAR Project
                     Management framework</strong>. By transitioning raw flightline data into a labeled, block-organized
-                system, I created a workflow that allows for targeted ground classification and feature extraction. The
+                system, I followed this workflow that allows for targeted ground classification and feature extraction.
+                The
                 final deliverables included a comprehensive <strong>Block Import Report</strong>, validating the precise
                 point counts and spatial distribution required for professional topographic modeling.</p>
             <img src="/img/projects/LiDARClassification/Screenshot 2026-01-23 184831.png" alt="Project 14"
@@ -1674,6 +1689,31 @@
                 refreshProjects();
             });
         }
+
+        const poster = document.getElementById('zoomablePoster');
+
+        poster.addEventListener('click', function (e) {
+            this.classList.toggle('is-zoomed');
+
+            // Change cursor based on state
+            if (this.classList.contains('is-zoomed')) {
+                this.parentElement.style.cursor = 'zoom-out';
+            } else {
+                this.parentElement.style.cursor = 'zoom-in';
+                this.style.transformOrigin = `center center`; // Reset when zooming out
+            }
+        });
+
+        // Optional: Follow the mouse move to "pan" around the details
+        poster.addEventListener('mousemove', function (e) {
+            if (this.classList.contains('is-zoomed')) {
+                const rect = this.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+                this.style.transformOrigin = `${x}% ${y}%`;
+            }
+        });
     </script>
 
 </body>
