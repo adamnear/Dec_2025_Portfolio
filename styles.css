@@ -47,15 +47,16 @@ html {
 .header-side {
     flex: 1;
     /* Gives both text sides equal width */
+    padding: 0 20px;
 }
 
 .text-left {
-    text-align: right;
+    text-align: left;
     /* Aligns toward the center image */
 }
 
 .text-right {
-    text-align: left;
+    text-align: right;
     /* Aligns toward the center image */
 }
 
@@ -611,6 +612,7 @@ html {
     display: inline-flex;
     align-items: center;
     /* Centers the icon and text group vertically */
+    flex-wrap: wrap;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
@@ -628,6 +630,8 @@ html {
     padding: 5px 0;
     gap: 8px;
     /* This creates the vertical gap between Domain and Skill */
+    flex-grow: 1;
+    min-width: 120px;
 }
 
 .label-prefix {
@@ -850,7 +854,7 @@ html {
     }
 
     .project-title {
-        margin-top: -42px;
+        margin-top: -56px;
     }
 
     .project-title h2 {
@@ -888,6 +892,29 @@ html {
         overflow-y: auto;
         /* Allows scrolling if the description is long */
     }
+
+    .skill-icon-container {
+        display: block;
+        width: 100%;
+        margin-bottom: 140px;
+    }
+
+    /* 2. Update the chip to stack and push content */
+    .skill-chip {
+        display: flex;
+        /* Changed from inline-flex */
+        width: 100%;
+        /* Ensures it takes up the row to push text down */
+
+        /* Stacks icons on top of text labels */
+
+        padding: 15px;
+        /* Extra breathing room */
+        gap: 10px;
+        margin-bottom: 15px;
+        /* Secondary push for the following content */
+    }
+
 
     .icon-container {
         flex-direction: row;
@@ -937,6 +964,8 @@ html {
         width: auto;
         max-width: none;
     }
+
+
 
     /* Target all images inside the modal */
     .modal-content img {
