@@ -1,3 +1,26 @@
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --font-base: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--font-base);
+    line-height: 1.6;
+    /* Adds vertical breathing room */
+    letter-spacing: -0.01em;
+    /* Makes Inter look extra crisp */
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-base);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    /* Keeps headings tight but not squashed */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -932,7 +955,7 @@ html {
         /* Adds depth */
     }
 
-    /* Specifically for the text-heavy areas, ensure the text doesn't 
+    /* Specifically for the text-heavy areas, ensure the text doesn't
     get squeezed by the wider images */
     .modal-text-content {
         width: 100%;
