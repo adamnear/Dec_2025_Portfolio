@@ -703,10 +703,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="zoom-container">
-                    <img src="/img/projects/ImageEnhancmentVolcano/Images/Poster_Draft.webp" id="zoomablePoster"
-                        alt="Project Poster" class="zoom-image">
-                </div>
+
+                <img src="/img/projects/ImageEnhancmentVolcano/Images/Poster_Draft-mobile.webp" alt="Project 2"
+                    loading="lazy">
                 <p>This presentation poster was developed to demonstrate advanced <strong>image enhancement
                         techniques</strong> applied to remotely sensed imagery. The project focuses on the <strong>Mauna
                         Loa volcanic eruption</strong> in Hawaii, captured on November 27th, 2022.</p>
@@ -720,8 +719,7 @@
                     <li><strong>Research Readiness:</strong> Prepared high-fidelity imagery suitable for further
                         geospatial research and temporal analysis.</li>
                 </ul>
-                <p><strong>Note:</strong> Please click and hold on the poster image above to enter <strong>Preview
-                        Mode</strong>.
+                <p><strong>Note:</strong> Please click on the poster image above to enter <strong>Zoom Mode</strong>.
                     This will allow you to read the fine technical details, methodology, and results documented in the
                     draft.</p>
             </div>
@@ -1689,31 +1687,6 @@
                 document.querySelectorAll('#additional-list .single-icon').forEach(el => el.classList.remove('active-skill'));
                 refreshProjects();
             });
-        }
-
-        document.addEventListener('click', function (e) {
-            // Check if the clicked element is our zoom image
-            if (e.target.classList.contains('zoom-image')) {
-                const img = e.target;
-                img.classList.toggle('is-zoomed');
-
-                // If we just zoomed in, follow the mouse
-                if (img.classList.contains('is-zoomed')) {
-                    img.addEventListener('mousemove', panImage);
-                } else {
-                    img.removeEventListener('mousemove', panImage);
-                    img.style.transformOrigin = 'center center';
-                }
-            }
-        });
-
-        function panImage(e) {
-            const rect = this.getBoundingClientRect();
-            // Calculate mouse position percentage inside the image
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-            this.style.transformOrigin = `${x}% ${y}%`;
         }
     </script>
 
