@@ -790,28 +790,29 @@ html {
 }
 
 /* VOLCANO POSTER IMAGE ADJUSTMENT */
+/* Container must allow the image to expand */
 .zoom-container {
+    position: relative;
     overflow: hidden;
-    /* Keeps the zoom contained */
+    width: 100%;
     cursor: zoom-in;
-    display: flex;
-    justify-content: center;
-    border-radius: 8px;
-    background: #000;
+    border: 1px solid #444;
+    margin-bottom: 15px;
 }
 
 .zoom-image {
-    transition: transform 0.3s ease;
     width: 100%;
     height: auto;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: block;
+    transform-origin: center center;
 }
 
-/* The state triggered by JavaScript */
+/* When zoomed: Scale up and change cursor */
 .zoom-image.is-zoomed {
     transform: scale(2.5);
-    /* Adjust 2.5 to 3.0 depending on detail level */
     cursor: zoom-out;
+    z-index: 999;
 }
 
 /* Mobile Adjustment */
