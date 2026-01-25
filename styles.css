@@ -402,6 +402,19 @@ html {
     object-fit: contain;
 }
 
+.project-title {
+    margin-top: -30px;
+}
+
+.project-title h2 {
+    text-align: center;
+    /* Centers both single and multi-line text */
+    margin: 0 auto;
+    /* Ensures the block itself is centered if it has a width */
+    width: 100%;
+    /* Forces the h2 to span the full width of its container */
+}
+
 .project-info-stack {
     position: absolute;
     bottom: 15px;
