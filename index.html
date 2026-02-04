@@ -132,7 +132,7 @@
                 <div class="single-domain" data-domain="Renewable Energy">Renewable Energy</div>
                 <div class="single-domain" data-domain="Hazard">Hazard</div>
                 <div class="single-domain" data-domain="Land Analysis">Land Analysis</div>
-                <div class="single-domain" data-domain="Urban Planning">Urban Planning</div>
+                <div class="single-domain" data-domain="Infrastructure Planning">Infrastructure Planning</div>
                 <div class="single-domain" data-domain="Population Tracking">Population Tracking</div>
                 <div class="single-domain" data-domain="Community Involvement">Community Involvement</div>
                 <div class="single-domain" data-domain="Project Management">Project Management</div>
@@ -171,6 +171,35 @@
     <!----------------------------->
     <section id="project" class="project">
         <div class="project-container">
+            <div class="project-item" data-skills="arcgispro" data-domains="Infrastructure Planning Land Analysis"
+                data-types="Raster Analysis Modelling">
+                <div class="project-image-wrapper" data-modal="modal19">
+                    <picture>
+                        <source media="(max-width: 600px)"
+                            srcset="/img/projects/BestPathAnalysis/cardimage.webp">
+
+                        <source media="(min-width: 601px)"
+                            srcset="/img/projects/BestPathAnalysis/cardimage.webp">
+
+                        <img src="/img/projects/BestPathAnalysis/cardimage.webp"
+                            alt="Project: Least-Cost Path & Infrastructure Modelling" class="project-map-style" loading="lazy">
+                    </picture>
+                    
+                    <div class="project-title">
+                        <h2>Least-Cost Path & Terrain Modelling</h2>
+                    </div>
+
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/arcgis_pro.webp" class="mini-skill-icon" alt="ArcGIS Pro">
+                        </div>
+
+                        <div class="project-domain-bar">Infrastructure Planning / Land Analysis</div>
+
+                        <div class="project-type-bar">Raster Analysis / Modelling</div>
+                    </div>
+                </div>
+            </div>
             <div class="project-item" data-skills="microstation global_mapper" data-domains="Land Analysis Forestry"
                 data-types="LiDAR Remote Sensing">
                 <div class="project-image-wrapper" data-modal="modal14">
@@ -520,7 +549,7 @@
                 </div>
             </div>
 
-            <div class="project-item" data-skills="arcgis_online" data-domains="Urban Planning" data-types="GIS">
+            <div class="project-item" data-skills="arcgis_online" data-domains="Infrastructure Planning" data-types="GIS">
                 <div class="project-image-wrapper" data-modal="modal15">
                     <picture>
                         <source media="(max-width: 600px)" srcset="/img/projects/BusAccessability/busstops-mobile.webp">
@@ -1495,7 +1524,7 @@
                     <div class="skill-chip">
                         <img src="/img/skills/allskills/arcgis_pro.webp" class="skill-icon-modal" alt="ArcGIS Pro">
                         <div class="skill-text-group">
-                            <span class="domain-label">Domain: Land Analysis</span>
+                            <span class="domain-label">Domain: Infrastructure Planning / Land Analysis</span>
                             <span class="skill-label">Skill: Raster Analysis / Modelling</span>
                         </div>
                     </div>
@@ -1685,7 +1714,7 @@
                         <img src="/img/skills/allskills/arcgis_online.webp" class="skill-icon-modal"
                             alt="ArcGIS Online">
                         <div class="skill-text-group">
-                            <span class="domain-label">Domain: Urban Planning</span>
+                            <span class="domain-label">Domain: Infrastructure Planning</span>
                             <span class="skill-label">Skill: GIS</span>
                         </div>
                     </div>
@@ -1964,6 +1993,112 @@
             </div>
         </div>
     </div>
+    <div id="modal19" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: Least-Cost Path & Terrain Modelling</h1>
+
+                <div class="skill-icon-container">
+                    <div class="skill-chip">
+                        <img src="/img/skills/allskills/arcgis_pro.webp" class="skill-icon-modal" alt="ArcGIS Pro">
+                        <div class="skill-text-group">
+                            <span class="domain-label">Domain: Infrastructure Planning / Land Analysis</span>
+                            <span class="skill-label">Skill: Raster Analysis / Modelling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/BestPathAnalysis/bestpath_line_start_stop.webp"
+                    alt="Final vector road path connecting start and stop points" loading="lazy"
+                    style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 1: The final optimized road corridor converted to a vector polyline, demonstrating 
+                    the successful translation of complex raster math into a usable engineering feature.
+                </figcaption>
+            </figure>
+
+            <p><strong>Least-Cost Path Raster Analysis</strong> is a geospatial modelling project focused on the principles of
+                <strong>Map Algebra and Anisotropic Modelling</strong> using ArcGIS Pro. This project explores the
+                mathematical frameworks used to determine the "path of least resistance" across complex geographic
+                surfaces. By leveraging <strong>PathDistance algorithms and multi-criteria suitability grids</strong>, the project
+                demonstrates how to model optimal routes by balancing topographical resistance, 
+                environmental sensitivities, and construction feasibility.
+            </p>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/BestPathAnalysis/road_suittif_only.webp"
+                    alt="Multi-criteria weighted suitability raster" loading="lazy"
+                    style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 2: The weighted impedance grid (Road Suitability), combining slope, forest cover, 
+                    and shoreline buffers into a single friction surface used for path calculation.
+                </figcaption>
+            </figure>
+
+            <h3>Technical & Analytical Contributions:</h3>
+            <ul>
+                <li><strong>Map Algebra Implementation:</strong> Applied core raster modelling concepts, including
+                    <strong>Weighted Overlay</strong> and <strong>Integer Conversion</strong>, to transform disparate environmental 
+                    variables into a unified cost-impedance grid.
+                </li>
+                <li><strong>Anisotropic Path Analysis:</strong> Utilized the <strong>Path Distance function</strong> to
+                    incorporate 3D surface distance and vertical factors (Topography), ensuring the model
+                    accounted for real-world energy expenditures over varying slopes.
+                </li>
+                <li><strong>Directional Logic Modelling:</strong> Generated <strong>Back Link (out_b)</strong> rasters to establish 
+                    a directional web across the study area, allowing the algorithm to trace the "downhill" cost gradient 
+                    from any destination back to the source.
+                </li>
+                <li><strong>Visual Data Slicing:</strong> Performed <strong>Equal Interval Slicing</strong> on cumulative 
+                    surfaces to visualize cost-contours, providing a clear intuitive check of how resistance 
+                    distorts travel time and effort across the island.
+                </li>
+                <li><strong>Iterative Workflow Management:</strong> Managed complex environment settings, including 
+                    <strong>Masks and Snap Rasters</strong>, to ensure perfect cell alignment between point-based 
+                    source data and 20m resolution environmental grids.
+                </li>
+            </ul>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/BestPathAnalysis/surfacetif_start_stop.webp"
+                    alt="Cumulative cost surface from start to stop" loading="lazy"
+                    style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 3: The cumulative Path Distance surface, where cell values represent the total "cost" 
+                    accumulated while traveling outward from the designated start point.
+                </figcaption>
+            </figure>
+
+            <p><strong>Outcomes:</strong> The project resulted in a robust methodological workflow for automated route
+                selection. By successfully integrating <strong>Spatial Analyst cost functions</strong> with high-resolution 
+                terrain data, the analysis showcased the ability to translate qualitative site constraints into a
+                quantitative, data-driven spatial model for infrastructure planning and environmental mitigation.</p>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/BestPathAnalysis/surfaceslicetif_routetif_start_stop.webp"
+                    alt="Sliced surface with overlaid route" loading="lazy"
+                    style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 4: A 100-zone sliced visualization of the cost surface, illustrating how the 
+                    final path (route.tif) dynamically steers through the gaps between high-resistance zones.
+                </figcaption>
+            </figure>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/BestPathAnalysis/out_btif_start_stop.webp"
+                    alt="Back link direction raster" loading="lazy"
+                    style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 5: The Back Link (Direction) raster, identifying the 8-way directional flow required 
+                    to navigate from any cell on the island back to the origin source.
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
     <div id="modalAmbassador" class="modal-overlay">
         <div class="modal-content">
             <span class="close-button">&times;</span>
