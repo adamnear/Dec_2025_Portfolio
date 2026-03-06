@@ -133,6 +133,7 @@
                 <div class="single-domain" data-domain="Renewable Energy">Renewable Energy</div>
                 <div class="single-domain" data-domain="Hazard">Hazard</div>
                 <div class="single-domain" data-domain="Land Analysis">Land Analysis</div>
+                <div class="single-domain" data-domain="Geomatics">Geomatics</div>
                 <div class="single-domain" data-domain="Infrastructure Planning">Infrastructure Planning</div>
                 <div class="single-domain" data-domain="Population Tracking">Population Tracking</div>
                 <div class="single-domain" data-domain="Community Involvement">Community Involvement</div>
@@ -172,19 +173,40 @@
     <!----------------------------->
     <section id="project" class="project">
         <div class="project-container">
+            <div class="project-item" data-skills="microstation terrasolid" data-domains="Remote Sensing Geomatics"
+                data-types="LiDAR TerraMatch">
+                <div class="project-image-wrapper" data-modal="modal21">
+                    <picture>
+                        <source media="(max-width: 600px)"
+                            srcset="/img/projects/LiDARCalibration/Boresight_Overview-mobile.webp">
+
+                        <source media="(min-width: 601px)"
+                            srcset="/img/projects/LiDARCalibration/Boresight_Overview.webp">
+
+                        <img src="/img/projects/LiDARCalibration/Boresight_Overview.webp"
+                            alt="Project 21: Sensor Calibration & Boresight Alignment" class="project-map-style" loading="lazy">
+                    </picture>
+                    <div class="project-title">
+                        <h2>Sensor Calibration & Boresight Alignment</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/microstation.webp" class="mini-skill-icon" alt="MicroStation">
+                            <img src="/img/skills/allskills/terrasolid.webp" class="mini-skill-icon" alt="TerraSolid">
+                        </div>
+
+                        <div class="project-domain-bar">Remote Sensing / Geomatics</div>
+
+                        <div class="project-type-bar">LiDAR / TerraMatch</div>
+                    </div>
+                </div>
+            </div>
             <div class="project-item" data-skills="arcgispro" data-domains="Infrastructure Planning Land Analysis"
                 data-types="Raster Analysis Modelling">
                 <div class="project-image-wrapper" data-modal="modal19">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="/img/projects/BestPathAnalysis/cardimage.webp">
-
-                        <source media="(min-width: 601px)" srcset="/img/projects/BestPathAnalysis/cardimage.webp">
-
                         <img src="/img/projects/BestPathAnalysis/cardimage.webp"
                             alt="Project: Least-Cost Path & Infrastructure Modelling" class="project-map-style"
                             loading="lazy">
-                    </picture>
-
                     <div class="project-title">
                         <h2>Least-Cost Path & Terrain Modelling</h2>
                     </div>
@@ -2325,6 +2347,77 @@
             </div>
         </div>
     </div>
+
+    <div id="modal21" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-text-content">
+            <h1>Project Summary: Sensor Calibration & Boresight Alignment</h1>
+
+            <div class="skill-icon-container">
+                <div class="skill-chip">
+                    <img src="/img/skills/allskills/microstation.webp" class="skill-icon-modal" alt="MicroStation">
+                    <img src="/img/skills/allskills/terrasolid.webp" class="skill-icon-modal" alt="TerraSolid">
+                    <div class="skill-text-group">
+                        <span class="domain-label">Domain: Remote Sensing / Geomatics</span>
+                        <span class="skill-label">Skill: LiDAR Calibration & TerraMatch</span>
+                    </div>
+                </div>
+            </div>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/LiDARCalibration/Boresight_Overview.webp" 
+                     alt="LiDAR boresight alignment illustration" loading="lazy"
+                     style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 1: Comparative analysis of overlapping flightlines showing the removal of spatial "ghosting" through boresight correction.
+                </figcaption>
+            </figure>
+
+            <p><strong>Sensor Calibration & Boresight Alignment</strong> is a technical post-processing project focused on mitigating <strong>systematic angular misalignments</strong> between a LiDAR laser head and its Inertial Measurement Unit (IMU). Working with the Middleton dataset, this workflow demonstrates the ability to transform raw SBET (Smoothed Best Estimate of Trajectory) data and uncalibrated point clouds into high-precision, geometrically consistent topographic models suitable for engineering-grade analysis.</p>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/LiDARCalibration/Trajectory_Management.webp" 
+                     alt="Trajectory management in TerraScan" loading="lazy"
+                     style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 2: Trajectory management workflow: Importing SBET files and delineating individual flightlines to correlate laser pulses with aircraft orientation.
+                </figcaption>
+            </figure>
+
+            <h3>Technical & Calibration Contributions:</h3>
+            <ul>
+                <li><strong>Advanced Trajectory Integration:</strong> Processed <strong>Smoothed Best Estimate of Trajectory (SBET)</strong> files, performing coordinate transformations from Geographic NAD83 to UTM Zone 20N and accounting for meridian convergence (Grid North vs. True North).</li>
+                <li><strong>Flightline Delineation & Logic:</strong> Utilized <strong>Split at Laser Gaps</strong> and manual polygon clipping to isolate valid data swaths from aircraft "turn-around" maneuvers, ensuring only linear survey data informed the calibration model.</li>
+                <li><strong>Boresight Error Diagnostics:</strong> Conducted <strong>Profile Analysis</strong> to identify specific error signatures: Pitch (along-track shifts), Roll (across-track horizontal shifts), and Heading (alternating pitch errors), quantifying the pre-calibration "mismatch" magnitude.</li>
+                <li><strong>Automated Data Scripting:</strong> Engineered <strong>TerraScan Macros</strong> to deduce flightline numbers for millions of points and prepared a specialized calibration dataset by classifying ground and building surfaces independently per flightline.</li>
+                <li><strong>Mathematical Optimization:</strong> Executed <strong>Find Match</strong> routines within TerraMatch to solve for systematic corrections, iterating through surface-matching algorithms to minimize the Root Mean Square (RMS) error across overlapping swaths.</li>
+                <li><strong>Vertical Bias Correction:</strong> Performed <strong>Z-Shift Adjustments</strong> on a per-flightline basis to eliminate elevation offsets, resulting in a seamless vertical integration of the global point cloud.</li>
+            </ul>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/LiDARCalibration/Measure_Match_Report.webp" 
+                     alt="TerraMatch Measure Match Report" loading="lazy"
+                     style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 3: Quality Assurance: A Measure Match report verifying the reduction in average magnitude of error following the application of PRH (Pitch, Roll, Heading) corrections.
+                </figcaption>
+            </figure>
+
+            <p><strong>Outcomes:</strong> The project successfully reduced spatial misalignment from decimeter-level errors to within the hardware's expected precision limits. By delivering a comprehensive suite of <strong>Calibration Reports (*.tms and *.txt)</strong>, the workflow established a verifiable audit trail for data accuracy. The final output—a fully calibrated, block-organized, and classified LiDAR project—serves as the rigorous foundation required for accurate Digital Terrain Model (DTM) generation.</p>
+
+            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                <img src="/img/projects/LiDARCalibration/Final_Classified_Model.webp" 
+                     alt="Final calibrated LiDAR model" loading="lazy"
+                     style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                    Figure 4: Final project state: Fully calibrated and classified point cloud showing distinct vegetation strata and crisp building edges free of misalignment artifacts.
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
 
     <div id="modalAmbassador" class="modal-overlay">
         <div class="modal-content">
