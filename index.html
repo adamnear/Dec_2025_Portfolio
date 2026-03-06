@@ -80,7 +80,8 @@
                 <img class="single-icon" src="/img/skills/allskills/arcgis_enterprise.webp"
                     data-skill="arcgis_enterprise">
                 <img class="single-icon" src="/img/skills/allskills/arcgis_online.webp" data-skill="arcgis_online">
-                <img class="single-icon" src="/img/skills/allskills/experience_builder.webp" data-skill="experience_builder">
+                <img class="single-icon" src="/img/skills/allskills/experience_builder.webp"
+                    data-skill="experience_builder">
                 <img class="single-icon" src="/img/skills/allskills/catalyst.webp" data-skill="catalyst">
                 <img class="single-icon" src="/img/skills/allskills/microstation.webp" data-skill="microstation">
                 <img class="single-icon" src="/img/skills/allskills/fme.webp" data-skill="fme">
@@ -129,6 +130,8 @@
         </button>
         <div id="domain-list" class="filter-content">
             <div class="domain-container">
+                <div class="single-domain" data-domain="QA/QC">QA/QC</div>
+                <div class="single-domain" data-domain="Aerial Survey">Aerial Survey</div>
                 <div class="single-domain" data-domain="Forestry">Forestry</div>
                 <div class="single-domain" data-domain="Renewable Energy">Renewable Energy</div>
                 <div class="single-domain" data-domain="Hazard">Hazard</div>
@@ -160,6 +163,7 @@
                 <div class="single-skill" data-type="Modelling">Modelling</div>
                 <div class="single-skill" data-type="Research">Research</div>
                 <div class="single-skill" data-type="LiDAR">LiDAR</div>
+                <div class="single-skill" data-type="TerraMatch">TerraMatch</div>
                 <div class="single-skill" data-type="Raster Analysis">Raster Analysis</div>
                 <div class="single-skill" data-type="Geospatial Advocacy">Geospatial Advocacy</div>
                 <div class="single-skill" data-type="Web Development">Web Development</div>
@@ -173,40 +177,96 @@
     <!----------------------------->
     <section id="project" class="project">
         <div class="project-container">
-            <div class="project-item" data-skills="microstation terrasolid" data-domains="Remote Sensing Geomatics"
-                data-types="LiDAR TerraMatch">
+            <div class="project-item" data-skills="arcgis_pro" data-domains="Conservation Biology Ecology"
+                data-types="Raster Analysis Corridor Modeling">
+                <div class="project-image-wrapper" data-modal="modal23">
+                    <picture>
+                        <source media="(max-width: 600px)"
+                            srcset="/img/projects/WildlifeCorridors/Least_Cost_Path-mobile.webp">
+
+                        <source media="(min-width: 601px)"
+                            srcset="/img/projects/WildlifeCorridors/Least_Cost_Path.webp">
+
+                        <img src="/img/projects/WildlifeCorridors/Least_Cost_Path.webp"
+                            alt="Project 23: Wildlife Corridor Modeling" class="project-map-style" loading="lazy">
+                    </picture>
+                    <div class="project-title">
+                        <h2>Wildlife Corridor Modeling</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/arcgis_pro.webp" class="mini-skill-icon" alt="ArcGIS Pro">
+                        </div>
+
+                        <div class="project-domain-bar">Conservation / Ecology</div>
+
+                        <div class="project-type-bar">Raster Analysis / Connectivity</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-skills="microstation" data-domains="Aerial Survey Geomatics"
+                data-types="LiDAR QA/QC">
+                <div class="project-image-wrapper" data-modal="modal22">
+                    <img src="/img/projects/LiDARDroneAccuracy/All.webp"
+                        alt="Project 22: Accuracy Assessment & Federal Compliance" class="project-map-style"
+                        loading="lazy">
+                    <div class="project-title">
+                        <h2>Accuracy Assessment & Federal Compliance</h2>
+                    </div>
+                    <div class="project-info-stack">
+                        <div class="project-skills-bar">
+                            <img src="/img/skills/allskills/microstation.webp" class="mini-skill-icon"
+                                alt="MicroStation">
+                        </div>
+
+                        <div class="project-domain-bar">Aerial Survey / Geomatics</div>
+
+                        <div class="project-type-bar">LiDAR / QA/QC</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-skills="microstation" data-domains="Remote Sensing Geomatics"
+                data-types="LiDAR QA/QC">
                 <div class="project-image-wrapper" data-modal="modal21">
                     <picture>
                         <source media="(max-width: 600px)"
-                            srcset="/img/projects/LiDARCalibration/Boresight_Overview-mobile.webp">
+                            srcset="/img/projects/LiDARSensorCalibration/block4extrapitch_badmatch1.webp">
 
                         <source media="(min-width: 601px)"
-                            srcset="/img/projects/LiDARCalibration/Boresight_Overview.webp">
+                            srcset="/img/projects/LiDARSensorCalibration/block4extrapitch_badmatch1.webp">
 
-                        <img src="/img/projects/LiDARCalibration/Boresight_Overview.webp"
-                            alt="Project 21: Sensor Calibration & Boresight Alignment" class="project-map-style" loading="lazy">
+                        <img src="/img/projects/LiDARSensorCalibration/block4extrapitch_badmatch1.webp"
+                            alt="Project 21: Sensor Calibration & Boresight Alignment" class="project-map-style"
+                            loading="lazy">
                     </picture>
                     <div class="project-title">
                         <h2>Sensor Calibration & Boresight Alignment</h2>
                     </div>
                     <div class="project-info-stack">
                         <div class="project-skills-bar">
-                            <img src="/img/skills/allskills/microstation.webp" class="mini-skill-icon" alt="MicroStation">
-                            <img src="/img/skills/allskills/terrasolid.webp" class="mini-skill-icon" alt="TerraSolid">
+                            <img src="/img/skills/allskills/microstation.webp" class="mini-skill-icon"
+                                alt="MicroStation">
                         </div>
 
                         <div class="project-domain-bar">Remote Sensing / Geomatics</div>
 
-                        <div class="project-type-bar">LiDAR / TerraMatch</div>
+                        <div class="project-type-bar">LiDAR / QA/QC</div>
                     </div>
                 </div>
             </div>
             <div class="project-item" data-skills="arcgispro" data-domains="Infrastructure Planning Land Analysis"
                 data-types="Raster Analysis Modelling">
                 <div class="project-image-wrapper" data-modal="modal19">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="/img/projects/BestPathAnalysis/cardimage.webp">
+
+                        <source media="(min-width: 601px)" srcset="/img/projects/BestPathAnalysis/cardimage.webp">
+
                         <img src="/img/projects/BestPathAnalysis/cardimage.webp"
                             alt="Project: Least-Cost Path & Infrastructure Modelling" class="project-map-style"
                             loading="lazy">
+                    </picture>
+
                     <div class="project-title">
                         <h2>Least-Cost Path & Terrain Modelling</h2>
                     </div>
@@ -1549,7 +1609,8 @@
                     </div>
                 </div>
 
-                <img src="/img/projects/ParkBuddy/ParkBuddy2.webp" alt="Project 12" loading="lazy">
+                <img src="/img/projects/ParkBuddy/ParkBuddy2.webp" alt="Project 12" loading="lazy"
+                    style="display: block; margin: 0 auto; max-width: 30%; height: auto;">
                 <p><strong>ParkBuddy</strong> is a specialized social noticeboard designed to modernize urban living in
                     Halifax by digitizing street cleaning schedules. As the <strong>Project Manager and
                         Creator</strong>, I
@@ -1751,7 +1812,8 @@
                         <strong>TerraScan
                             (TSCAN)</strong> applications within Microstation, utilizing configuration variables (.ucf)
                         and
-                        dedicated TerraSolid workflows to establish a high-performance processing environment.</li>
+                        dedicated TerraSolid workflows to establish a high-performance processing environment.
+                    </li>
                     <li><strong>Spatial Partitioning Strategy:</strong> Engineered a <strong>Block-Based Data
                             Structure</strong> by defining project parameters (LAS 1.2 format) and generating automated
                         block arrays. This ensured that high-density LiDAR surveys remained processable within hardware
@@ -2289,8 +2351,8 @@
                         morphology.</li>
                     <li><strong>Binary Coincidence (Phase A):</strong> Developed a boolean logic model using the
                         <strong>Con Tool</strong> and <strong>Map Algebra</strong>. Sites were filtered to meet strict
-                        thresholds: Slopes ($6^{\circ}$–$18^{\circ}$), South-facing Aspects
-                        ($112.5^{\circ}$–$247^{\circ}$), and proximity to transmission lines ($\le 2000m$).
+                        thresholds: Slopes (6°–18°), South-facing Aspects
+                        (112.5°–247°), and proximity to transmission lines (less than 2000m).
                     </li>
                     <li><strong>Environmental Masking:</strong> Engineered a land-only study area by converting
                         hydrographic vector data into a raster mask. Utilized <strong>IsNull</strong> and
@@ -2349,75 +2411,281 @@
     </div>
 
     <div id="modal21" class="modal-overlay">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <div class="modal-text-content">
-            <h1>Project Summary: Sensor Calibration & Boresight Alignment</h1>
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: Sensor Calibration & Boresight Alignment</h1>
 
-            <div class="skill-icon-container">
-                <div class="skill-chip">
-                    <img src="/img/skills/allskills/microstation.webp" class="skill-icon-modal" alt="MicroStation">
-                    <img src="/img/skills/allskills/terrasolid.webp" class="skill-icon-modal" alt="TerraSolid">
-                    <div class="skill-text-group">
-                        <span class="domain-label">Domain: Remote Sensing / Geomatics</span>
-                        <span class="skill-label">Skill: LiDAR Calibration & TerraMatch</span>
+                <div class="skill-icon-container">
+                    <div class="skill-chip">
+                        <img src="/img/skills/allskills/microstation.webp" class="skill-icon-modal" alt="MicroStation">
+                        <div class="skill-text-group">
+                            <span class="domain-label">Domain: Remote Sensing / Geomatics</span>
+                            <span class="skill-label">Skill: LiDAR Calibration & TerraMatch</span>
+                        </div>
                     </div>
                 </div>
+
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/LiDARSensorCalibration/area2compare.png"
+                        alt="LiDAR boresight alignment illustration" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 1: Comparative analysis of overlapping flightlines showing the removal of spatial
+                        "ghosting" through boresight correction.
+                    </figcaption>
+                </figure>
+
+                <p><strong>Sensor Calibration & Boresight Alignment</strong> is a technical post-processing project
+                    focused on mitigating <strong>systematic angular misalignments</strong> between a LiDAR laser head
+                    and its Inertial Measurement Unit (IMU). Working with the Middleton dataset, this workflow
+                    demonstrates the ability to transform raw SBET (Smoothed Best Estimate of Trajectory) data and
+                    uncalibrated point clouds into high-precision, geometrically consistent topographic models suitable
+                    for engineering-grade analysis.</p>
+
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/LiDARSensorCalibration/roll4compare.png"
+                        alt="Trajectory management in TerraScan" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 2: Comparison.
+                    </figcaption>
+                </figure>
+
+                <h3>Technical & Calibration Contributions:</h3>
+                <ul>
+                    <li><strong>Advanced Trajectory Integration:</strong> Processed <strong>Smoothed Best Estimate of
+                            Trajectory (SBET)</strong> files, performing coordinate transformations from Geographic
+                        NAD83 to UTM Zone 20N and accounting for meridian convergence (Grid North vs. True North).</li>
+                    <li><strong>Flightline Delineation & Logic:</strong> Utilized <strong>Split at Laser Gaps</strong>
+                        and manual polygon clipping to isolate valid data swaths from aircraft "turn-around" maneuvers,
+                        ensuring only linear survey data informed the calibration model.</li>
+                    <li><strong>Boresight Error Diagnostics:</strong> Conducted <strong>Profile Analysis</strong> to
+                        identify specific error signatures: Pitch (along-track shifts), Roll (across-track horizontal
+                        shifts), and Heading (alternating pitch errors), quantifying the pre-calibration "mismatch"
+                        magnitude.</li>
+                    <li><strong>Automated Data Scripting:</strong> Engineered <strong>TerraScan Macros</strong> to
+                        deduce flightline numbers for millions of points and prepared a specialized calibration dataset
+                        by classifying ground and building surfaces independently per flightline.</li>
+                    <li><strong>Mathematical Optimization:</strong> Executed <strong>Find Match</strong> routines within
+                        TerraMatch to solve for systematic corrections, iterating through surface-matching algorithms to
+                        minimize the Root Mean Square (RMS) error across overlapping swaths.</li>
+                    <li><strong>Vertical Bias Correction:</strong> Performed <strong>Z-Shift Adjustments</strong> on a
+                        per-flightline basis to eliminate elevation offsets, resulting in a seamless vertical
+                        integration of the global point cloud.</li>
+                </ul>
+
+                <!-- <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/LiDARCalibration/Measure_Match_Report.webp"
+                        alt="TerraMatch Measure Match Report" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 3: Quality Assurance: A Measure Match report verifying the reduction in average magnitude
+                        of error following the application of PRH (Pitch, Roll, Heading) corrections.
+                    </figcaption>
+                </figure> -->
+
+                <p><strong>Outcomes:</strong> The project successfully reduced spatial misalignment from decimeter-level
+                    errors to within the hardware's expected precision limits. By delivering a comprehensive suite of
+                    <strong>Calibration Reports (*.tms and *.txt)</strong>, the workflow established a verifiable audit
+                    trail for data accuracy. The final output—a fully calibrated, block-organized, and classified LiDAR
+                    project—serves as the rigorous foundation required for accurate Digital Terrain Model (DTM)
+                    generation.
+                </p>
+
+                <!-- <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/LiDARCalibration/Final_Classified_Model.webp"
+                        alt="Final calibrated LiDAR model" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 4: Final project state: Fully calibrated and classified point cloud showing distinct
+                        vegetation strata and crisp building edges free of misalignment artifacts.
+                    </figcaption>
+                </figure> -->
             </div>
-
-            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
-                <img src="/img/projects/LiDARCalibration/Boresight_Overview.webp" 
-                     alt="LiDAR boresight alignment illustration" loading="lazy"
-                     style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-                    Figure 1: Comparative analysis of overlapping flightlines showing the removal of spatial "ghosting" through boresight correction.
-                </figcaption>
-            </figure>
-
-            <p><strong>Sensor Calibration & Boresight Alignment</strong> is a technical post-processing project focused on mitigating <strong>systematic angular misalignments</strong> between a LiDAR laser head and its Inertial Measurement Unit (IMU). Working with the Middleton dataset, this workflow demonstrates the ability to transform raw SBET (Smoothed Best Estimate of Trajectory) data and uncalibrated point clouds into high-precision, geometrically consistent topographic models suitable for engineering-grade analysis.</p>
-
-            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
-                <img src="/img/projects/LiDARCalibration/Trajectory_Management.webp" 
-                     alt="Trajectory management in TerraScan" loading="lazy"
-                     style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-                    Figure 2: Trajectory management workflow: Importing SBET files and delineating individual flightlines to correlate laser pulses with aircraft orientation.
-                </figcaption>
-            </figure>
-
-            <h3>Technical & Calibration Contributions:</h3>
-            <ul>
-                <li><strong>Advanced Trajectory Integration:</strong> Processed <strong>Smoothed Best Estimate of Trajectory (SBET)</strong> files, performing coordinate transformations from Geographic NAD83 to UTM Zone 20N and accounting for meridian convergence (Grid North vs. True North).</li>
-                <li><strong>Flightline Delineation & Logic:</strong> Utilized <strong>Split at Laser Gaps</strong> and manual polygon clipping to isolate valid data swaths from aircraft "turn-around" maneuvers, ensuring only linear survey data informed the calibration model.</li>
-                <li><strong>Boresight Error Diagnostics:</strong> Conducted <strong>Profile Analysis</strong> to identify specific error signatures: Pitch (along-track shifts), Roll (across-track horizontal shifts), and Heading (alternating pitch errors), quantifying the pre-calibration "mismatch" magnitude.</li>
-                <li><strong>Automated Data Scripting:</strong> Engineered <strong>TerraScan Macros</strong> to deduce flightline numbers for millions of points and prepared a specialized calibration dataset by classifying ground and building surfaces independently per flightline.</li>
-                <li><strong>Mathematical Optimization:</strong> Executed <strong>Find Match</strong> routines within TerraMatch to solve for systematic corrections, iterating through surface-matching algorithms to minimize the Root Mean Square (RMS) error across overlapping swaths.</li>
-                <li><strong>Vertical Bias Correction:</strong> Performed <strong>Z-Shift Adjustments</strong> on a per-flightline basis to eliminate elevation offsets, resulting in a seamless vertical integration of the global point cloud.</li>
-            </ul>
-
-            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
-                <img src="/img/projects/LiDARCalibration/Measure_Match_Report.webp" 
-                     alt="TerraMatch Measure Match Report" loading="lazy"
-                     style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-                    Figure 3: Quality Assurance: A Measure Match report verifying the reduction in average magnitude of error following the application of PRH (Pitch, Roll, Heading) corrections.
-                </figcaption>
-            </figure>
-
-            <p><strong>Outcomes:</strong> The project successfully reduced spatial misalignment from decimeter-level errors to within the hardware's expected precision limits. By delivering a comprehensive suite of <strong>Calibration Reports (*.tms and *.txt)</strong>, the workflow established a verifiable audit trail for data accuracy. The final output—a fully calibrated, block-organized, and classified LiDAR project—serves as the rigorous foundation required for accurate Digital Terrain Model (DTM) generation.</p>
-
-            <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
-                <img src="/img/projects/LiDARCalibration/Final_Classified_Model.webp" 
-                     alt="Final calibrated LiDAR model" loading="lazy"
-                     style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-                <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-                    Figure 4: Final project state: Fully calibrated and classified point cloud showing distinct vegetation strata and crisp building edges free of misalignment artifacts.
-                </figcaption>
-            </figure>
         </div>
     </div>
-</div>
+    <div id="modal22" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: Accuracy Assessment & Federal Compliance</h1>
 
+                <div class="skill-icon-container">
+                    <div class="skill-chip">
+                        <img src="/img/skills/allskills/microstation.webp" class="skill-icon-modal" alt="MicroStation">
+                        <div class="skill-text-group">
+                            <span class="domain-label">Domain: Aerial Survey / Geomatics</span>
+                            <span class="skill-label">Skill: LiDAR / QA/QC</span>
+                        </div>
+                    </div>
+                </div>
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/LiDARDroneAccuracy/All.webp" alt="LiDAR Accuracy Assessment Report Header"
+                        loading="lazy" style="display: block; margin: 0 auto; max-width: 80%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 1: LiDAR classified Study area with flight trajectories, NVA and VVA control points.
+                    </figcaption>
+                </figure>
+                <p><strong>Accuracy Assessment of LiDAR</strong> is a high-level QA/QC project centered on the
+                    <strong>absolute vertical validation</strong> of drone-based LiDAR data (Zenmuse L1). The workflow
+                    adheres to the <em>Government of Canada’s Federal Airborne LiDAR Data Acquisition Guidelines</em>,
+                    requiring rigorous statistical testing against high-precision RTK GNSS check points to determine
+                    data suitability for federal and provincial repositories.
+                </p>
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/LiDARDroneAccuracy/report.webp"
+                        alt="LiDAR Accuracy Assessment Report Header" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 50%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 1: One page from professional documentation prepared to meet the Federal Airborne LiDAR
+                        Data
+                        Acquisition Guidelines (NRCAN).
+                    </figcaption>
+                    <figcaption style="font-style: italic; font-size: 1.2em; color: #555; margin-top: 8px;">
+                        <a href="/docs/Nearing_lab3_report.pdf" target="_blank">View Full
+                            Document</a>
+                    </figcaption>
+                </figure>
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/LiDARDroneAccuracy/TwoControlPointsClassColour.webp"
+                        alt="NVA and VVA comparison in LiDAR profiles" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 2: Spatial distribution and profile analysis of Non-vegetated (NVA) and Vegetated (VVA)
+                        vertical accuracy check points.
+                    </figcaption>
+                </figure>
+
+                <h3>Core Competencies & Professional Deliverables:</h3>
+                <ul>
+                    <li><strong>Federal Standard Compliance:</strong> Evaluated point cloud accuracy against
+                        <strong>CQL1 (Calibration Quality Level 1)</strong> specifications, ensuring the data met
+                        mandated vertical thresholds through formal statistical reporting.
+                    </li>
+                    <li><strong>NVA & VVA Categorization:</strong> Stratified RTK control data into
+                        <strong>Non-vegetated Vertical Accuracy (NVA)</strong> for hard surfaces and <strong>Vegetated
+                            Vertical Accuracy (VVA)</strong> for complex land covers (grass, weeds, and brush).
+                    </li>
+                    <li><strong>Drone Project Wizardry:</strong> Streamlined the ingestion of DJI Matrice 300 RTK data,
+                        utilizing automated flightline derivation and <strong>Match Passes</strong> for sensor-specific
+                        calibration and mirror angle correction.</li>
+                    <li><strong>Advanced Statistical Computation:</strong> Derived metrics beyond standard software
+                        outputs, calculating the <strong>95% Confidence Level</strong> for NVA (Normal Distribution) and
+                        the <strong>95th Percentile</strong> for VVA (Non-normal Distribution) using Excel-based
+                        modeling.</li>
+                    <li><strong>Anomalous Data Investigation:</strong> Conducted "Blunder Analysis" by cross-referencing
+                        high-error points against 5cm resolution orthomosaics, justifying the deactivation of outliers
+                        caused by physical obstructions or misclassification.</li>
+                    <li><strong>Formal Technical Reporting:</strong> Authored a 20-page comprehensive project report
+                        featuring cartographic project maps, survey control descriptions, and detailed appendices as per
+                        industry-standard project deliverable protocols.</li>
+                </ul>
+
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/LiDARDroneAccuracy/AssessmentReport.webp"
+                        alt="TerraScan Assessment Report summary" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 3: Output control report showing RMSE, Standard Deviation, and Magnitude calculations
+                        used for the final accuracy certification.
+                    </figcaption>
+                </figure>
+
+
+
+                <p><strong>Outcomes:</strong> The project culminated in a professional-grade <strong>Accuracy Assessment
+                        Report</strong> and a validated 0.5m Bare Earth DTM. By proving that the vertical error Dz
+                    remained within strict 95% confidence intervals, the project successfully certified the L1 drone
+                    survey for topographic mapping and hydrological modeling applications.</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal23" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-text-content">
+                <h1>Project Summary: Wildlife Corridor Modeling & Map Algebra</h1>
+
+                <div class="skill-icon-container">
+                    <div class="skill-chip">
+                        <img src="/img/skills/allskills/arcgis_pro.webp" class="skill-icon-modal" alt="ArcGIS Pro">
+                        <img src="/img/skills/allskills/python.webp" class="skill-icon-modal" alt="Python">
+                        <div class="skill-text-group">
+                            <span class="domain-label">Domain: Conservation Biology / Ecology</span>
+                            <span class="skill-label">Skill: Raster Analytics & Cost-Path Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/WildlifeCorridors/Least_Cost_Path.webp"
+                        alt="Wildlife corridor connectivity model" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 1: Identification of a "path of least resistance" connecting fragmented habitat patches
+                        using cumulative cost-distance surfaces.
+                    </figcaption>
+                </figure>
+
+                <p><strong>Wildlife Corridor Modeling</strong> is a spatial decision-support project designed to restore
+                    ecological connectivity for White-tailed deer populations in Nova Scotia. Utilizing <strong>Map
+                        Algebra and Boolean/Fuzzy logic</strong>, the model identifies optimal migration swaths through
+                    fragmented landscapes, balancing biological requirements with human-made barriers like paved road
+                    networks.</p>
+
+
+
+                <h3>Technical Methodology & Raster Operations:</h3>
+                <ul>
+                    <li><strong>Multi-Criteria Impedance Modeling:</strong> Engineered a complex <strong>Corridor
+                            Impedance Raster</strong> by integrating Riparian buffers, Habitat Suitability indices, and
+                        Paved Road proximity. This included managing variable weights where road bisection represents a
+                        high-cost barrier to movement.</li>
+                    <li><strong>Supervised Landsat Classification:</strong> Performed a probability-based classification
+                        of <strong>Landsat 8 spectral bands</strong> to delineate land cover types, specifically
+                        identifying forest edges and field-pasture boundaries critical for deer browse.</li>
+                    <li><strong>Cost-Distance Analytics:</strong> Leveraged the <code>CostDistance</code> function to
+                        calculate the accumulative cost of movement from discrete habitat "clusters" (identified via
+                        <code>RegionGroup</code>) across the impedance surface.
+                    </li>
+                    <li><strong>Corridor Function Execution:</strong> Applied the <code>Corridor</code> function to sum
+                        two cost surfaces, identifying a mathematical "swath" of least resistance rather than a singular
+                        linear path, allowing for more robust conservation planning.</li>
+                    <li><strong>Fuzzy Variable Scaling:</strong> Implemented <strong>Linear Combination (WLC)</strong>
+                        and <strong>Slice</strong> functions to standardize disparate data types (e.g., proximity to
+                        water vs. forest density) onto a common suitability scale of 1–10.</li>
+                    <li><strong>Riparian Delineation:</strong> Operationalized <code>Expand</code> and <code>Con</code>
+                        functions to model 150m riparian corridors, prioritizing these natural movement "highways"
+                        within the final connective model.</li>
+                </ul>
+
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/WildlifeCorridors/Suitability_Matrix.webp"
+                        alt="Habitat suitability matrix for White-tailed deer" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 2: Reclassification of Euclidean distance from forest edges to score habitat suitability.
+                    </figcaption>
+                </figure>
+
+                <p><strong>Outcomes:</strong> The model successfully identified a primary corridor with a cumulative
+                    cost threshold of <strong>20,586 units</strong>, effectively linking isolated habitat clusters via
+                    established riparian zones. This spatial framework provides a quantitative basis for mitigating
+                    vehicle-wildlife collisions and informing land-use policy in Queens and Lunenburg Counties.</p>
+
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/WildlifeCorridors/Final_Corridor_Map.webp"
+                        alt="Final mapped wildlife corridor output" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 3: Final cartographic output showing the least-cost corridor (beige) overlaid with local
+                        hydrography and habitat patches.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
 
     <div id="modalAmbassador" class="modal-overlay">
         <div class="modal-content">
