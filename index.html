@@ -181,16 +181,8 @@
             <div class="project-item" data-skills="arcgis_pro" data-domains="Conservation Biology Ecology"
                 data-types="Raster Analysis Corridor Modeling">
                 <div class="project-image-wrapper" data-modal="modal23">
-                    <picture>
-                        <source media="(max-width: 600px)"
-                            srcset="/img/projects/WildlifeCorridors/Least_Cost_Path-mobile.webp">
-
-                        <source media="(min-width: 601px)"
-                            srcset="/img/projects/WildlifeCorridors/Least_Cost_Path.webp">
-
-                        <img src="/img/projects/WildlifeCorridors/Least_Cost_Path.webp"
-                            alt="Project 23: Wildlife Corridor Modeling" class="project-map-style" loading="lazy">
-                    </picture>
+                    <img src="/img/projects/HabitatCorridorRasterAnalysis/RoadsThroughClusterConnectionCord.webp"
+                        alt="Project 23: Wildlife Corridor Modeling" class="project-map-style" loading="lazy">
                     <div class="project-title">
                         <h2>Wildlife Corridor Modeling</h2>
                     </div>
@@ -2606,8 +2598,7 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <div class="modal-text-content">
-                <h1>Project Summary: Wildlife Corridor Modeling & Map Algebra</h1>
-
+                <h1>Project Summary: Wildlife Corridor Modelling & Map Algebra</h1>
                 <div class="skill-icon-container">
                     <div class="skill-chip">
                         <img src="/img/skills/allskills/arcgis_pro.webp" class="skill-icon-modal" alt="ArcGIS Pro">
@@ -2617,25 +2608,30 @@
                         </div>
                     </div>
                 </div>
-
                 <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
-                    <img src="/img/projects/WildlifeCorridors/Least_Cost_Path.webp"
-                        alt="Wildlife corridor connectivity model" loading="lazy"
+                    <img src="/img/projects/HabitatCorridorRasterAnalysis/FieldClassificationProbabilityForDeer.webp"
+                        alt="Species Probability Classification" loading="lazy"
                         style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
                     <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-                        Figure 1: Identification of a "path of least resistance" connecting fragmented habitat patches
-                        using cumulative cost-distance surfaces.
+                        Figure 1: Establishing the biological baseline using a field classification layer to determine
+                        the probability of deer occupancy across the study area.
                     </figcaption>
                 </figure>
-
-                <p><strong>Wildlife Corridor Modeling</strong> is a spatial decision-support project designed to restore
+                <p><strong>Wildlife Corridor Modelling</strong> is a spatial decision-support project designed to
+                    restore
                     ecological connectivity for White-tailed deer populations in Nova Scotia. Utilizing <strong>Map
                         Algebra and Boolean/Fuzzy logic</strong>, the model identifies optimal migration swaths through
                     fragmented landscapes, balancing biological requirements with human-made barriers like paved road
                     networks.</p>
-
-
-
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/HabitatCorridorRasterAnalysis/Hex30AndPatchmean_nowater.webp"
+                        alt="Hexagonal Habitat Delineation" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 2: Translating biological probability into structural units using a 30m hexagonal grid to
+                        identify core habitat patches for further analysis.
+                    </figcaption>
+                </figure>
                 <h3>Technical Methodology & Raster Operations:</h3>
                 <ul>
                     <li><strong>Multi-Criteria Impedance Modeling:</strong> Engineered a complex <strong>Corridor
@@ -2659,34 +2655,49 @@
                         functions to model 150m riparian corridors, prioritizing these natural movement "highways"
                         within the final connective model.</li>
                 </ul>
-
                 <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
-                    <img src="/img/projects/WildlifeCorridors/Suitability_Matrix.webp"
-                        alt="Habitat suitability matrix for White-tailed deer" loading="lazy"
+                    <img src="/img/projects/HabitatCorridorRasterAnalysis/RiparianImpedenceAndWater.webp"
+                        alt="Riparian Impedance Model" loading="lazy"
                         style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
                     <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-                        Figure 2: Reclassification of Euclidean distance from forest edges to score habitat suitability.
+                        Figure 3: Incorporating natural landscape features, specifically riparian zones and water
+                        bodies, as key factors in movement potential and environmental resistance.
                     </figcaption>
                 </figure>
-
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/HabitatCorridorRasterAnalysis/RoadsCorImp_nowater.webp"
+                        alt="Corridor Impedance Surface" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 4: Developing a total impedance surface by integrating road density and infrastructure
+                        barriers to calculate the cumulative cost of movement between identified habitats.
+                    </figcaption>
+                </figure>
                 <p><strong>Outcomes:</strong> The model successfully identified a primary corridor with a cumulative
                     cost threshold of <strong>20,586 units</strong>, effectively linking isolated habitat clusters via
                     established riparian zones. This spatial framework provides a quantitative basis for mitigating
                     vehicle-wildlife collisions and informing land-use policy in Queens and Lunenburg Counties.</p>
-
                 <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
-                    <img src="/img/projects/WildlifeCorridors/Final_Corridor_Map.webp"
-                        alt="Final mapped wildlife corridor output" loading="lazy"
+                    <img src="/img/projects/HabitatCorridorRasterAnalysis/HabClustAndMeanBuf.webp"
+                        alt="Habitat Clustering and Buffering" loading="lazy"
                         style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
                     <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-                        Figure 3: Final cartographic output showing the least-cost corridor (beige) overlaid with local
-                        hydrography and habitat patches.
+                        Figure 5: Refinement of core habitat into functional clusters, applying mean buffers to account
+                        for edge effects and ensure minimum viable habitat sizes are represented.
+                    </figcaption>
+                </figure>
+                <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                    <img src="/img/projects/HabitatCorridorRasterAnalysis/RoadsThroughClusConnectionOnly.webp"
+                        alt="Road Conflict Analysis" loading="lazy"
+                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                        Figure 6: Final analysis isolating critical wildlife corridor connections that are bisected by
+                        the road network, highlighting priority areas for mitigation.
                     </figcaption>
                 </figure>
             </div>
         </div>
     </div>
-
     <div id="modalAmbassador" class="modal-overlay">
         <div class="modal-content">
             <span class="close-button">&times;</span>
