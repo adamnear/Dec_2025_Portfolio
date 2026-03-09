@@ -302,7 +302,7 @@ html {
 
 /* Open State */
 .filter-content.show {
-    max-height: 5000px;
+    max-height: 6000px;
     /* High value to accommodate content */
     opacity: 1;
     transition: max-height 0.5s ease-in, opacity 0.5s ease;
