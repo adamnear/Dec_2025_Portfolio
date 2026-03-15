@@ -581,6 +581,17 @@ html {
     -ms-overflow-style: none;
 }
 
+.poster-modal .close-button {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0 0 5px #000;
+    /* Makes it visible over any image color */
+    z-index: 10002;
+}
+
 /* Ensure the image doesn't get squashed in the flex layout */
 .modal-content img {
     width: 80%;
@@ -596,6 +607,140 @@ html {
     opacity: 0;
     animation: fadeIn 0.8s ease-in forwards;
 }
+
+/* Enhancement styles for the poster image on hover */
+.poster-enhance-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Full Viewport Width */
+    height: 100vh;
+    /* Full Viewport Height */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Dark background to focus the viewer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    /* Ensure it is on top of everything */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: zoom-out;
+    /* Click to exit */
+}
+
+/* Specific enhancement styles for high-resolution images */
+.poster-enhance-overlay:not(.closing-poster-enhance) {
+    opacity: 1;
+    /* Fade in */
+}
+
+/* Specific enhancement styles for high-resolution images */
+.poster-enhance-content {
+    position: relative;
+    max-width: 95vw;
+    /* Almost full screen */
+    max-height: 95vh;
+}
+
+/* Enhancement styles for high-resolution images */
+.full-screen-enhanced-poster {
+    display: block;
+    max-width: 100%;
+    max-height: 95vh;
+    border: 3px solid #fff;
+    /* White border for emphasis */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    /* Strong shadow */
+}
+
+/* Enhancement styles for high-resolution images */
+.poster-enhance-close {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 10001;
+    /* Must be clickable over the image */
+}
+
+/* Enhancement styles for high-resolution images */
+.poster-enhance-close:hover {
+    color: #e0e0e0;
+}
+
+/* Ensure the cursor is set correctly for interaction */
+.poster-click-area {
+    display: inline-block;
+    /* Wraps tightly around the image */
+}
+
+/* If you are using a pseudo-element (:after) for the icon */
+.poster-trigger::after {
+    content: '\1F50D';
+    /* Microscope/Magnifying Glass Emoji or Icon */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    pointer-events: none;
+    /* CRITICAL: Click goes through the icon to the div */
+    opacity: 0.7;
+}
+
+.poster-trigger {
+    position: relative;
+    /* Necessary for the icon positioning */
+    display: inline-block;
+}
+
+/* Ensure the high-res modal stays on top of the project modal */
+.poster-modal {
+    z-index: 9999;
+}
+
+/* Make the poster modal larger than standard project modals */
+.poster-modal .modal-content {
+    width: 95vw;
+    /* 95% of viewport width */
+    max-width: 1400px;
+    /* Upper limit for very large monitors */
+    max-height: 95vh;
+    /* 95% of viewport height */
+    padding: 10px;
+    /* Minimal padding to maximize image space */
+    background-color: #000;
+    /* Black background makes colors pop */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Prevents double scrollbars */
+}
+
+/* Ensure the image within the poster modal behaves correctly */
+.poster-modal img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* Ensures the full poster is visible without cropping */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    /* Subtle glow */
+}
+
+/* Ensure the poster modal is physically on top of modal24 */
+.poster-modal {
+    z-index: 10001;
+    /* Must be higher than your standard modal z-index */
+}
+
+
 
 @keyframes fadeIn {
     from {

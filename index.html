@@ -138,6 +138,7 @@
                 <div class="single-skill" data-type="Remote Sensing">Remote Sensing</div>
                 <div class="single-skill" data-type="GIS">GIS</div>
                 <div class="single-skill" data-type="Cartography">Cartography</div>
+                <div class="single-skill" data-type="3D">3D</div>
                 <div class="single-skill" data-type="Modelling">Modelling</div>
                 <div class="single-skill" data-type="Research">Research</div>
                 <div class="single-skill" data-type="LiDAR">LiDAR</div>
@@ -162,7 +163,8 @@
                 <div class="project-item" data-skills="" data-domains="Esri Canada Community Involvement Teaching"
                     data-types="Geospatial Advocacy">
                     <div class="project-image-wrapper" data-modal="modalAmbassador">
-                        <img src="/img/projects/GISAmbassador/GISAmbBanner.webp" alt="Esri Canada GIS Ambassador" loading="lazy">
+                        <img src="/img/projects/GISAmbassador/GISAmbBanner.webp" alt="Esri Canada GIS Ambassador"
+                            loading="lazy">
                         <div class="project-title">
                             <h2>Esri Canada GIS Ambassador Program</h2>
                         </div>
@@ -248,13 +250,33 @@
         </button>
         <section id="project-wrapper" class="filter-content show">
             <div class="project-container">
+                <div class="project-item" data-skills="arcgis_pro arcgis_online"
+                    data-domains="Land Analysis Infrastructure Planning" data-types="GIS 3D Modelling">
+                    <div class="project-image-wrapper" data-modal="modal24">
+                        <img src="/img/projects/SeawallHutSuitability/SeawallTrail3D.webp"
+                            alt="Project 24: Seawall Trail 3D Suitability" class="project-map-style" loading="lazy">
+                        <div class="project-title">
+                            <h2>Seawall Trail 3D Hut Suitability</h2>
+                        </div>
+                        <div class="project-info-stack">
+                            <div class="project-skills-bar">
+                                <img src="/img/skills/allskills/arcgis_pro.webp" class="mini-skill-icon"
+                                    alt="ArcGIS Pro">
+                                <img src="/img/skills/allskills/arcgis_online.webp" class="mini-skill-icon"
+                                    alt="ArcGIS Online">
+                            </div>
+                            <div class="project-domain-bar">Land Analysis / Infrastructure Planning</div>
+                            <div class="project-type-bar">GIS / 3D / Modelling</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-item" data-skills="arcgis_pro" data-domains="Conservation Biology Ecology"
                     data-types="Raster Analysis Corridor Modeling">
                     <div class="project-image-wrapper" data-modal="modal23">
                         <img src="/img/projects/HabitatCorridorRasterAnalysis/RoadsThroughClusterConnectionCord.webp"
                             alt="Project 23: Wildlife Corridor Modeling" class="project-map-style" loading="lazy">
                         <div class="project-title">
-                            <h2>Wildlife Corridor Modeling</h2>
+                            <h2>Wildlife Corridor Modelling</h2>
                         </div>
                         <div class="project-info-stack">
                             <div class="project-skills-bar">
@@ -289,6 +311,23 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="project-item" data-skills="windpro" data-domains="Renewable Energy Infrastructure Planning"
+                    data-types="3D Modelling">
+                    <div class="project-image-wrapper" data-modal="modal25">
+                        <img src="/img/projects/WindProTutorials/Sound1.webp"
+                            alt="WindPRO: Sound & Shadow Flicker Analysis" class="project-map-style" loading="lazy">
+                        <div class="project-title">
+                            <h2>WindPRO: Noise & Shadow Flicker Assessment</h2>
+                        </div>
+                        <div class="project-info-stack">
+                            <div class="project-skills-bar">
+                                <img src="/img/skills/allskills/windpro.webp" class="mini-skill-icon" alt="WindPRO">
+                            </div>
+                            <div class="project-domain-bar">Renewable Energy / Environmental</div>
+                            <div class="project-type-bar">3D / Modelling</div>
+                        </div>
+                    </div>
+                </div> -->
                 <div class="project-item" data-skills="microstation terrasolid" data-domains="Remote Sensing Geomatics"
                     data-types="LiDAR QAQC">
                     <div class="project-image-wrapper" data-modal="modal21">
@@ -856,15 +895,24 @@
                     </div>
 
                     <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
-                        <img src="/img/projects/ImageEnhancmentVolcano/Images/Poster_Draft.webp"
-                            alt="Multispectral Satellite Enhancement Project Poster" loading="lazy"
-                            style="display: block; margin: 0 auto; max-width: 100%; height: auto; cursor: zoom-in;">
+                        <div class="poster-trigger" data-poster-modal="poster-highres-volcano">
+                            <img src="/img/projects/ImageEnhancmentVolcano/Images/Poster_Draft.webp"
+                                alt="Multispectral Satellite Enhancement Project Poster" loading="lazy"
+                                style="display: block; margin: 0 auto; max-width: 100%; height: auto; cursor: zoom-in;">
+                        </div>
                         <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-                            Figure 1: Research poster demonstrating advanced multispectral enhancement—zoom in to
-                            explore
-                            the methodology and spectral results.
+                            Figure 1: Research poster demonstrating advanced multispectral enhancement—click to enhance
+                            and explore spectral methodology.
                         </figcaption>
                     </figure>
+
+                    <div id="poster-highres-volcano" class="modal-overlay poster-modal">
+                        <div class="modal-content large-image-content">
+                            <span class="close-button">&times;</span>
+                            <img src="/img/projects/ImageEnhancmentVolcano/Images/Poster_Draft.png"
+                                alt="Full Resolution Volcano Poster">
+                        </div>
+                    </div>
                     <p>This presentation poster was developed to demonstrate advanced <strong>image enhancement
                             techniques</strong> applied to remotely sensed imagery. The project focuses on the
                         <strong>Mauna
@@ -2826,6 +2874,240 @@
                 </div>
             </div>
         </div>
+
+        <div id="modal24" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-text-content">
+                    <h1>Project Summary: Seawall Trail Suitability</h1>
+
+                    <div class="skill-icon-container">
+                        <div class="skill-chip">
+                            <img src="/img/skills/allskills/arcgis_pro.webp" class="skill-icon-modal" alt="ArcGIS Pro">
+                            <img src="/img/skills/allskills/arcgis_online.webp" class="skill-icon-modal"
+                                alt="ArcGIS Pro">
+                            <div class="skill-text-group">
+                                <span class="domain-label">Domain: Land Analysis / Infrastructure Planning</span>
+                                <span class="skill-label">Skill: GIS / 3D / Modelling</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <img src="/img/projects/SeawallHutSuitability/SiteSuitWater3D_1.webp" alt="3D Web Scene Output"
+                            loading="lazy" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Figure 1: Perspective 3D visualization of the Seawall Trail. This view demonstrates the
+                            vertical relationship between the coastal topography and the proposed infrastructure, with
+                            suitability results draped over a high-resolution 5m LiDAR-derived surface.
+                        </figcaption>
+                    </figure>
+
+                    <p>This project utilized high-resolution <strong>5m LiDAR data</strong> to conduct a multi-criteria
+                        suitability analysis for the proposed 46km Seawall Trail in Cape Breton. The model identifies
+                        optimal sites for backcountry huts by balancing environmental safety, resource accessibility,
+                        and construction feasibility within rugged coastal topography.
+                    </p>
+
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+
+                        <img src="/img/projects/SeawallHutSuitability/SiteSuitOverhead.webp"
+                            alt="Suitability Raster Logic" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Figure 2: Two-dimensional overhead suitability mask. Areas highlighted in Red indicate the
+                            successful coincidence of all environmental variables, including slope, aspect, and
+                            proximity to fresh water, intersected with the Black trail corridor.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Technical Workflow:</h3>
+                    <ul>
+                        <li><strong>Terrain Characterization:</strong> Generated a high-fidelity <strong>Digital
+                                Elevation Model (DEM)</strong>
+                            from a Triangulated Irregular Network (TIN). Derived <strong>Slope</strong> and
+                            <strong>Aspect</strong>
+                            layers and applied <strong>Focal Statistics</strong> to smooth LiDAR noise for optimized 3D
+                            rendering.
+                        </li>
+                        <li><strong>Linear Referencing & Routing:</strong> Developed a continuous trail route using the
+                            <strong>Dissolve</strong> and <strong>Create Routes</strong> tools, allowing for the
+                            integration of
+                            M-values (measures) for precise distance tracking along the 46km path.
+                        </li>
+                        <li><strong>Multi-Criteria Modeling:</strong> Employed <strong>Map Algebra</strong> and the
+                            <strong>Raster Calculator</strong> to intersect environmental constraints. Criteria included
+                            stable building grades (25°), <strong>Euclidean Distance</strong> to water sources,
+                            and corridor proximity.
+                        </li>
+                        <li><strong>3D Web Implementation:</strong> Engineered a 3D Web Scene by "draping" 2D analysis
+                            results over a custom elevation surface. Managed <strong>Z-value</strong> interpolation
+                            and published hosted feature layers to <strong>ArcGIS Online</strong> for public stakeholder
+                            engagement.
+                        </li>
+                    </ul>
+
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+
+                        <img src="/img/projects/SeawallHutSuitability/SiteSuit3dTINandTrail2.webp"
+                            alt="Z-Aware Trail Geometry" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Figure 3: Triangulated Irregular Network (TIN) surface model. This vector-based elevation
+                            model served as the primary foundation for deriving the high-resolution Slope and Aspect
+                            rasters used throughout the suitability study.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Future Implementation & Logic:</h3>
+                    <p>Building upon the environmental model, current development focuses on an iterative
+                        <strong>distance-based constraint</strong>. By utilizing <strong>Cost Distance</strong>
+                        and <strong>Generate Points Along Lines</strong>, the next phase will automate hut placement
+                        at regulated intervals between 8 km and 14 km of actual hiking distance.
+                    </p>
+
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                            <div class="poster-trigger" data-poster-modal="poster-highres-24">
+                                <img src="/img/projects/SeawallHutSuitability/SeawallTrail3D.webp"
+                                    alt="Final Deliverable Poster" loading="lazy"
+                                    style="display: block; margin: 0 auto; max-width: 100%; height: auto; cursor: zoom-in;">
+                            </div>
+                            <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                                Figure 4: Final deliverable poster. Click to view high-resolution version.
+                            </figcaption>
+                        </figure>
+
+                        <div id="poster-highres-24" class="modal-overlay poster-modal">
+                            <div class="modal-content large-image-content">
+                                <span class="close-button">&times;</span>
+                                <img src="/img/projects/SeawallHutSuitability/SeawallTrail3D.png"
+                                    style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+
+                        <p><strong>Outcome:</strong> The project successfully transitioned raw geomatics data into a
+                            comprehensive decision-support tool. The final 3D visualization provides project planners
+                            with a realistic preview of the trail’s infrastructure potential, balancing ecological
+                            protection with the logistical needs of a multi-day trek.</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal25" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-text-content">
+                    <h1>Project Summary: WindPRO Noise & Shadow Flicker Assessment</h1>
+
+                    <div class="skill-icon-container">
+                        <div class="skill-chip">
+                            <img src="/img/skills/allskills/windpro.webp" class="skill-icon-modal" alt="WindPRO">
+                            <div class="skill-text-group">
+                                <span class="domain-label">Domain: Renewable Energy / Infrastructure Planning</span>
+                                <span class="skill-label">Skill: 3D / Modelling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <img src="/img/projects/WindProTutorials/Sound10mps5WTG3D.webp" alt="ISO 9613-2 Noise Map"
+                            loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto; border: 1px solid #ddd;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Figure 1: Decibel Map (10.0 m/s). Modelled using <strong>ISO 9613-2:2024 (UK)</strong>.
+                            Contours
+                            represent L90 exceedance values ranging from 35dB(A) to 62dB(A) at a 4.0m receiver height.
+                        </figcaption>
+                    </figure>
+
+                    <p><strong>WindPRO Sound & Shadow Flicker Modelling</strong> is an environmental impact assessment
+                        project
+                        focused on evaluating the spatial footprint of a five-turbine wind farm. Working with the
+                        <strong>United Kingdom farm site</strong> dataset, this workflow demonstrates the application of
+                        international modeling standards to predict noise propagation and solar flicker duration,
+                        ensuring
+                        proposed renewable energy infrastructure meets stringent <strong>Great Britain regulatory
+                            standards</strong>.
+                    </p>
+
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <img src="/img/projects/WindProTutorials/shadowraster5WTG2.webp" alt="Shadow Flicker Model"
+                            loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto; border: 1px solid #ddd;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Figure 2: Shadow Flicker "Worst Case" Analysis. Calculation based on ZVI (Zones of Visual
+                            Influence) with an OS Terrain 50 elevation model, identifying potential impact zones
+                            exceeding
+                            100 hours per year.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Technical & Assessment Contributions:</h3>
+                    <ul>
+                        <li><strong>Acoustic Propagation Modeling:</strong> Implemented the <strong>ISO
+                                9613-2:2024</strong> noise model
+                            to calculate sound pressure levels for five BONUS 1.3 MW turbines, accounting for wind
+                            speeds from 4.0 m/s to 12.0 m/s.</li>
+                        <li><strong>Environmental Constraint Logic:</strong> Applied complex attenuation factors
+                            including a <strong>0.5 General Ground factor</strong>,
+                            a 3.0 dB Valley effect penalty, and topographic screening reductions to simulate realistic
+                            environmental conditions.</li>
+                        <li><strong>Regulatory Threshold Analysis:</strong> Benchmarked results against
+                            <strong>ETSU-R-97</strong> guidelines,
+                            utilizing a 90% exceedance value (L90) with a 5dB margin above ambient noise and a 35dB
+                            floor setting for compliance.
+                        </li>
+                        <li><strong>Spectral Data Integration:</strong> Processed octave band data (63 Hz to 8,000 Hz)
+                            to account for frequency-dependent
+                            air absorption at 10.0°C and 70% humidity.</li>
+                        <li><strong>Shadow Flicker ZVI Calculation:</strong> Performed a <strong>Zones of Visual
+                                Influence (ZVI)</strong> assessment using
+                            <strong>OS Terrain 50</strong> elevation data to eliminate non-visible turbines from the
+                            flicker duration model.
+                        </li>
+                        <li><strong>Worst-Case Temporal Analysis:</strong> Evaluated solar flicker impact using a 1,144m
+                            maximum influence distance
+                            and 3-minute time steps, identifying areas susceptible to over 100 hours of flicker per
+                            year.</li>
+                    </ul>
+
+                    <p><strong>Outcomes:</strong> The project produced a verifiable suite of environmental deliverables,
+                        including
+                        High-resolution <strong>Decibel Maps</strong> and <strong>Shadow Flicker Isopleths</strong>. By
+                        delivering
+                        detailed Octave data reports and Worst-Case flicker summaries, the workflow establishes the
+                        analytical
+                        rigor required for the planning and permitting phase of wind energy developments under UK
+                        standards.
+                    </p>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="/docs/WindPro/DECIBEL_5 Old WTG.pdf" class="btn" target="_blank"
+                            style="display: inline-block; padding: 10px 20px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px;">
+                            View Noise Technical Report (PDF)
+                        </a>
+                    </div>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="/docs/WindPro/SHADOW_5 Old WTG.pdf" class="btn" target="_blank"
+                            style="display: inline-block; padding: 10px 20px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px;">
+                            View Shadow Flicker Technical Report (PDF)
+                        </a>
+                    </div>
+                    <br>
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <video
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto; border: 1px solid #ddd;"
+                            controls loop muted playsinline>
+                            <source src="/img/projects/WindProTutorials/Noise.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Figure 3: 3D model of cumulative noise impact for five 1.3 MW turbines 10 m/s wind speed.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
         <div id="modalAmbassador" class="modal-overlay">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
@@ -2850,8 +3132,7 @@
                         introduce students to the power of geospatial thinking. Using the <strong>National Geographic
                             MapMaker</strong>, I led an interactive demo designed to transform abstract geography into a
                         tangible, digital exploration of our world.</p>
-                    <img src="/img/projects/GISAmbassador/SPECsign.webp"
-                        alt="SPEC" loading="lazy">
+                    <img src="/img/projects/GISAmbassador/SPECsigncrop.webp" alt="SPEC" loading="lazy">
                     <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
                         <img src="/img/projects/GISAmbassador/Screenshot 2026-01-25 143629.webp"
                             alt="Light Pollution and Population Density Map" loading="lazy"
@@ -2907,7 +3188,7 @@
                         to
                         <strong>Como Chamling Lake</strong>.
                     </p>
-                    
+
                     <ul>
                         <li><strong>Constraint Mapping:</strong> The road had to remain in areas >0°C to avoid icing
                             hazards.
@@ -2943,7 +3224,8 @@
                             the Kosi river and the lake.
                         </figcaption>
                     </figure>
-                    <img src="/img/projects/GISAmbassador/me.webp" alt="Project 18" loading="lazy" style="max-width: 80%;">
+                    <img src="/img/projects/GISAmbassador/me.webp" alt="Project 18" loading="lazy"
+                        style="max-width: 80%;">
                 </div>
             </div>
         </div>
@@ -3161,9 +3443,16 @@
                         on the ECCE Blog</a>
                 </div> -->
                     <br>
-                    <img src="/img/projects/ECCEBlogPost/TW_Education_Taitungcrop.webp" class="modal-project-logo"
-                        alt="Esri Canada Conference" loading="lazy"
-                        style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <img src="/img/projects/ECCEBlogPost/TW_Education_Taitungcropped.webp"
+                            alt="Ice Road Challenge Route" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Pointing out Nova Scotia to highschool students<br>
+                            Taitung City
+                        </figcaption>
+                    </figure>
+
                     <h3>Featured Sections:</h3>
                     <ul>
                         <li><strong>My background:</strong> How childhood explorations of Cape Breton and the
@@ -3180,6 +3469,14 @@
                             assisted students to reach their own conclusions by exploring 3D map views and correlating
                             multiple specific datasets to solve geographic puzzles.</li>
                     </ul>
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <img src="/img/projects/ECCEBlogPost/Kaoshiung.webp" alt="Ice Road Challenge Route"
+                            loading="lazy" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            My first school visit in Taiwan, February 23, 2025<br> Kaoshiung Municipal Ling Jou Primary
+                            School
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -3417,6 +3714,58 @@
             });
         }
 
+        // Logic to open high-res poster enhancement
+        // Add this below your existing modal logic
+        const posterTriggers = document.querySelectorAll('.poster-trigger');
+
+        posterTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                // 1. Prevent the click from reaching the underlying project modal
+                e.stopPropagation();
+                e.preventDefault();
+
+                // 2. Get the target high-res modal ID
+                const posterModalId = trigger.getAttribute('data-poster-modal');
+                const posterModal = document.getElementById(posterModalId);
+
+                // 3. Open it
+                if (posterModal) {
+                    posterModal.classList.add('open');
+                }
+            });
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const posterModal = document.querySelector('.poster-modal.open');
+                if (posterModal) {
+                    posterModal.classList.remove('open');
+                }
+            }
+        });
+        // Target the specific image inside your high-res poster modal
+        const posterImage = document.querySelector('.poster-modal img');
+
+        if (posterImage) {
+            posterImage.addEventListener('click', function (e) {
+                // Stop the click from closing the modal background
+                e.stopPropagation();
+
+                // Toggle the class
+                this.classList.toggle('zoomed');
+
+                // Optional: If you want it to zoom exactly where you clicked:
+                if (this.classList.contains('zoomed')) {
+                    // Scroll the container to the mouse position
+                    const container = this.parentElement;
+                    container.scrollTo({
+                        left: e.offsetX,
+                        top: e.offsetY,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
     </script>
 
 </body>
