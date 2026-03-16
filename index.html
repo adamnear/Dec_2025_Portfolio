@@ -270,6 +270,28 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-item" data-skills="terrasolid microstation arcgis_pro"
+                    data-domains="Infrastructure Planning" data-types="Remote Sensing  LiDAR 3D Modelling">
+                    <div class="project-image-wrapper" data-modal="modal26">
+                        <img src="/img/projects/LiDAR3DBuildingModelling/arcproSchool3d.webp"
+                            alt="Project 26: 3D Building Vectorization" class="project-map-style" loading="lazy">
+                        <div class="project-title">
+                            <h2>3D Building Vectorization</h2>
+                        </div>
+                        <div class="project-info-stack">
+                            <div class="project-skills-bar">
+                                <img src="/img/skills/allskills/microstation.webp" class="mini-skill-icon"
+                                    alt="MicroStation">
+                                <img src="/img/skills/allskills/terrasolid.webp" class="mini-skill-icon"
+                                    alt="TerraSolid">
+                                <img src="/img/skills/allskills/arcgis_pro.webp" class="mini-skill-icon"
+                                    alt="ArcGIS Pro">
+                            </div>
+                            <div class="project-domain-bar">Remote Sensing / Infrastructure Planning</div>
+                            <div class="project-type-bar">LiDAR / 3D / Modelling</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-item" data-skills="arcgis_pro" data-domains="Conservation Biology Ecology"
                     data-types="Raster Analysis Corridor Modeling">
                     <div class="project-image-wrapper" data-modal="modal23">
@@ -328,8 +350,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-item" data-skills="microstation terrasolid" data-domains="Remote Sensing Geomatics"
-                    data-types="LiDAR QAQC">
+                <div class="project-item" data-skills="microstation terrasolid" data-domains="Geomatics"
+                    data-types="Remote Sensing LiDAR QAQC">
                     <div class="project-image-wrapper" data-modal="modal21">
                         <img src="/img/projects/LiDARSensorCalibration/block4extrapitch_badmatch1.webp"
                             alt="Project 21: Sensor Calibration & Boresight Alignment" class="project-map-style"
@@ -2541,7 +2563,7 @@
                             <img src="/img/skills/allskills/terrasolid.webp" class="skill-icon-modal" alt="TerraSolic">
                             <div class="skill-text-group">
                                 <span class="domain-label">Domain: Remote Sensing / Geomatics</span>
-                                <span class="skill-label">Skill: LiDAR Calibration & TerraMatch</span>
+                                <span class="skill-label">Skill: LiDAR / QA/QC</span>
                             </div>
                         </div>
                     </div>
@@ -3094,6 +3116,101 @@
                         </a>
                     </div>
                     <br>
+                </div>
+            </div>
+        </div>
+        <div id="modal26" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-text-content">
+                    <h1>3D Building Vectorization & LiDAR Analysis</h1>
+
+                    <div class="skill-icon-container">
+                        <div class="skill-chip">
+                            <img src="/img/skills/allskills/terrasolid.webp" class="skill-icon-modal" alt="TerraScan">
+                            <img src="/img/skills/allskills/microstation.webp" class="skill-icon-modal"
+                                alt="MicroStation">
+                            <img src="/img/skills/allskills/arcgis_pro.webp" class="skill-icon-modal" alt="ArcGIS Pro">
+                            <div class="skill-text-group">
+                                <span class="domain-label">Domain: Remote Sensing / Infrastructure Planning</span>
+                                <span class="skill-label">Skill: LiDAR / 3D / Modelling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="project-figure">
+                        <img src="/img/projects/LiDAR3DBuildingModelling/plane.webp"
+                            alt="Overview of Lawrencetown building class point cloud" class="modal-image-full">
+                        <figcaption style="text-align: center;"><strong>Step 1: Point Cloud Classification.</strong>
+                            Full view of the
+                            classified LiDAR building points across the study area prior to vectorization.</figcaption>
+                    </figure>
+                    <p>This project focused on the end-to-end workflow of transforming raw LiDAR point clouds into
+                        high-fidelity 3D building models. Using <strong>TerraScan</strong> within a
+                        <strong>MicroStation</strong> environment, I performed rigorous QA/QC on building
+                        classifications to ensure planar accuracy before vectorizing the urban landscape of
+                        Lawrencetown.
+                    </p>
+                    <figure class="project-figure">
+                        <img src="/img/projects/LiDAR3DBuildingModelling/exhibition3d2.webp"
+                            alt="LiDAR point cloud building class in 3D" class="modal-image-full">
+                        <figcaption style="text-align: center;"><strong>Step 2: QA/QC.</strong> Isometric view of the
+                            building class points,
+                            utilized to identify planar outliers and "roof junk" before automated extraction.
+                        </figcaption>
+                    </figure>
+                    <h3>Technical Workflow:</h3>
+                    <ul>
+                        <li><strong>Point Cloud QA/QC:</strong> Utilized profile views and isometric shading modes to
+                            identify and reclassify "roof junk" and vegetation voids, ensuring a clean dataset for
+                            vectorization.</li>
+                        <li><strong>3D Vectorization:</strong> Executed automated building extraction routines, followed
+                            by manual edge-matching and patch editing to ensure vectors matched the true physical
+                            footprint of the structures.</li>
+                        <li><strong>Surface Modelling:</strong> Generated 1m resolution <strong>Digital Terrain Models
+                                (DTM)</strong> and <strong>Digital Surface Models (DSM)</strong> using Global Mapper to
+                            provide the elevation foundation for the 3D scene.</li>
+                        <li><strong>Multipatch Integration:</strong> Converted vectorized CAD data into multipatch
+                            shapefiles for ingestion into <strong>ArcGIS Pro</strong>, creating a localized 3D scene
+                            with correct vertical datums (CGVD 2013).</li>
+                    </ul>
+                    <figure class="project-figure">
+                        <img src="/img/projects/LiDAR3DBuildingModelling/Frame 16.webp"
+                            alt="Default automated vectorization vs manual fix" class="modal-image-full">
+                        <figcaption style="text-align: center;"><strong>Step 3: Vectorization & Manual Editing.</strong>
+                            A comparison showing the
+                            default
+                            automated extraction (left) alongside the manual topological corrections (right) performed
+                            in TerraScan.</figcaption>
+                    </figure>
+                    <figure class="project-figure">
+                        <img src="/img/projects/LiDAR3DBuildingModelling/Frame 17.webp"
+                            alt="Default automated vectorization vs manual fix" class="modal-image-full">
+                        <figcaption style="text-align: center;"><strong>Vectorization & Manual Editing Comparison
+                                #2.</strong></figcaption>
+                    </figure>
+                    <p><strong>Impact:</strong> This exercise demonstrates my proficiency in the specialized
+                        <strong>TerraSolid</strong> suite and my ability to navigate complex software interoperability
+                        between CAD, Global Mapper, and GIS environments.
+                    </p>
+                    <p><strong>Tools Used:</strong> TerraScan, TerraModeler, MicroStation, Global Mapper, ArcGIS Pro</p>
+                    <p><strong>Location:</strong> Lawrencetown, NS</p>
+                    <figure class="project-figure">
+                        <img src="/img/projects/LiDAR3DBuildingModelling/arcproSchool3d.webp"
+                            alt="Overview of Lawrencetown with vectorized buildings in 3D" class="modal-image-full">
+                        <figcaption style="text-align: center;"><strong>Final Output:</strong> The completed 3D models
+                            integrated into a localized
+                            scene within ArcGIS Pro, utilizing the DTM/DSM for correct elevation placement.</figcaption>
+                    </figure>
+                    <figure class="project-figure">
+                        <img src="/img/projects/LiDAR3DBuildingModelling/arcproCOGS3d.webp"
+                            alt="Overview of Lawrencetown with vectorized buildings in 3D" class="modal-image-full">
+                        <figcaption style="text-align: center;"><strong>Final Output view #2</strong></figcaption>
+                    </figure>
+                    <figure class="project-figure">
+                        <img src="/img/projects/LiDAR3DBuildingModelling/arcproExC3d.webp"
+                            alt="Overview of Lawrencetown with vectorized buildings in 3D" class="modal-image-full">
+                        <figcaption style="text-align: center;"><strong>Final Output view #3</strong></figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
