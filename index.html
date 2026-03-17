@@ -339,7 +339,7 @@
                         <img src="/img/projects/WindProTutorials/Sound1.webp"
                             alt="WindPRO: Sound & Shadow Flicker Analysis" class="project-map-style" loading="lazy">
                         <div class="project-title">
-                            <h2>WindPRO: Noise & Shadow Flicker Assessment</h2>
+                            <h2>WindPRO Environmental & Yield Assessment</h2>
                         </div>
                         <div class="project-info-stack">
                             <div class="project-skills-bar">
@@ -3020,7 +3020,7 @@
             <div class="modal-content">
                 <span class="close-button">&times;</span>
                 <div class="modal-text-content">
-                    <h1>Project Summary: WindPRO Noise & Shadow Flicker Assessment</h1>
+                    <h1>Project Summary: WindPRO Environmental & Yield Assessment</h1>
 
                     <div class="skill-icon-container">
                         <div class="skill-chip">
@@ -3038,20 +3038,17 @@
                             style="display: block; margin: 0 auto; max-width: 100%; height: auto; border: 1px solid #ddd;">
                         <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
                             Figure 1: Decibel Map (10.0 m/s). Modelled using <strong>ISO 9613-2:2024 (UK)</strong>.
-                            Contours
-                            represent L90 exceedance values ranging from 35dB(A) to 62dB(A) at a 4.0m receiver height.
+                            Contours represent L90 exceedance values ranging from 35dB(A) to 62dB(A) at a 4.0m receiver
+                            height.
                         </figcaption>
                     </figure>
 
                     <p><strong>WindPRO Sound & Shadow Flicker Modelling</strong> is an environmental impact assessment
-                        project
-                        focused on evaluating the spatial footprint of a five-turbine wind farm. Working with the
-                        <strong>United Kingdom farm site</strong> dataset, this workflow demonstrates the application of
-                        international modeling standards to predict noise propagation and solar flicker duration,
-                        ensuring
-                        proposed renewable energy infrastructure meets stringent <strong>Great Britain regulatory
-                            standards</strong>.
-                    </p>
+                        project focused on evaluating the spatial footprint of a five-turbine wind farm. Working with
+                        the <strong>United Kingdom farm site</strong> dataset, this workflow demonstrates the
+                        application of international modeling standards to predict noise propagation and solar flicker
+                        duration, ensuring proposed renewable energy infrastructure meets stringent <strong>Great
+                            Britain regulatory standards</strong>.</p>
 
                     <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
                         <img src="/img/projects/WindProTutorials/shadowraster5WTG2.webp" alt="Shadow Flicker Model"
@@ -3068,50 +3065,79 @@
                     <h3>Technical & Assessment Contributions:</h3>
                     <ul>
                         <li><strong>Acoustic Propagation Modeling:</strong> Implemented the <strong>ISO
-                                9613-2:2024</strong> noise model
-                            to calculate sound pressure levels for five BONUS 1.3 MW turbines, accounting for wind
-                            speeds from 4.0 m/s to 12.0 m/s.</li>
+                                9613-2:2024</strong> noise model to calculate sound pressure levels for five BONUS 1.3
+                            MW turbines, accounting for wind speeds from 4.0 m/s to 12.0 m/s.</li>
                         <li><strong>Environmental Constraint Logic:</strong> Applied complex attenuation factors
-                            including a <strong>0.5 General Ground factor</strong>,
-                            a 3.0 dB Valley effect penalty, and topographic screening reductions to simulate realistic
-                            environmental conditions.</li>
+                            including a <strong>0.5 General Ground factor</strong>, a 3.0 dB Valley effect penalty, and
+                            topographic screening reductions to simulate realistic environmental conditions.</li>
                         <li><strong>Regulatory Threshold Analysis:</strong> Benchmarked results against
-                            <strong>ETSU-R-97</strong> guidelines,
-                            utilizing a 90% exceedance value (L90) with a 5dB margin above ambient noise and a 35dB
-                            floor setting for compliance.
+                            <strong>ETSU-R-97</strong> guidelines, utilizing a 90% exceedance value (L90) with a 5dB
+                            margin above ambient noise and a 35dB floor setting for compliance.
                         </li>
                         <li><strong>Spectral Data Integration:</strong> Processed octave band data (63 Hz to 8,000 Hz)
-                            to account for frequency-dependent
-                            air absorption at 10.0°C and 70% humidity.</li>
+                            to account for frequency-dependent air absorption at 10.0°C and 70% humidity.</li>
                         <li><strong>Shadow Flicker ZVI Calculation:</strong> Performed a <strong>Zones of Visual
-                                Influence (ZVI)</strong> assessment using
-                            <strong>OS Terrain 50</strong> elevation data to eliminate non-visible turbines from the
-                            flicker duration model.
-                        </li>
+                                Influence (ZVI)</strong> assessment using <strong>OS Terrain 50</strong> elevation data
+                            to eliminate non-visible turbines from the flicker duration model.</li>
                         <li><strong>Worst-Case Temporal Analysis:</strong> Evaluated solar flicker impact using a 1,144m
-                            maximum influence distance
-                            and 3-minute time steps, identifying areas susceptible to over 100 hours of flicker per
-                            year.</li>
-                    </ul>
+                            maximum influence distance and 3-minute time steps, identifying areas susceptible to over
+                            100 hours of flicker per year.</li>
 
+                        <li><strong>Wake Loss & Energy Yield (PARK):</strong> Executed a production analysis using the
+                            <strong>N.O. Jensen (RISØ/EMD) Park 2</strong> model to evaluate a 17.3 MW hybrid array.
+                            Calculated a total farm wake loss of <strong>5.1%</strong>, achieving a Net AEP of
+                            <strong>65,963.1 MWh/y</strong>.
+                        </li>
+                        <li><strong>Inter-Array Interference Study:</strong> Quantified the impact of high-capacity New
+                            WTGs (Vestas V162 & Enercon E-160) on the existing Bonus fleet, identifying a specific
+                            reduction of <strong>573.5 MWh/y</strong> for the existing park caused by new wake
+                            turbulence.</li>
+                        <li><strong>Wind Resource Profiling:</strong> Analyzed <strong>EMD-GASP</strong> resource files
+                            to establish Weibull distributions across 12 sectors, noting a mean wind speed of
+                            <strong>8.6 m/s</strong> at the 119m hub height for new installations.
+                        </li>
+                    </ul>
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <img src="/img/projects/WindProTutorials/Map3.webp" alt="Wind Resource Map View" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto; border: 1px solid #ddd;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Figure 3: Spatial Distribution of Wind Resources. Map view displaying the
+                            <strong>EMD-GASP</strong>
+                            siteres data across the project area, utilized for sector-specific frequency analysis.
+                        </figcaption>
+                    </figure>
+                    <figure style="margin: 0 auto; padding-bottom: 20px; text-align: center;">
+                        <img src="/img/projects/WindProTutorials/DataAnalytics_50mHH.webp"
+                            alt="Wake Loss Bar Chart and Analytics" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 80%; height: auto; border: 1px solid #ddd;"><br>
+                        <img src="/img/projects/WindProTutorials/WakeLossChart.webp"
+                            alt="Wake Loss Bar Chart and Analytics" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 60%; height: auto; border: 1px solid #ddd;">
+                        <figcaption style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Figure 4: Yield Analytics. Comparison of the 50m hub height Bonus turbines alongside a
+                            <strong>Wake Loss bar chart</strong>, illustrating the 9.5% efficiency reduction in the
+                            existing fleet.
+                        </figcaption>
+                    </figure>
                     <p><strong>Outcomes:</strong> The project produced a verifiable suite of environmental deliverables,
-                        including
-                        High-resolution <strong>Decibel Maps</strong> and <strong>Shadow Flicker Isopleths</strong>. By
-                        delivering
-                        detailed Octave data reports and Worst-Case flicker summaries, the workflow establishes the
-                        analytical
-                        rigor required for the planning and permitting phase of wind energy developments under UK
-                        standards.
-                    </p>
-                    <div style="text-align: center; margin-top: 20px;">
+                        including High-resolution <strong>Decibel Maps</strong>, <strong>Shadow Flicker
+                            Isopleths</strong>, and comprehensive <strong>Park Production Reports</strong>. By
+                        delivering detailed Octave data and Wake-induced reduction summaries, the workflow establishes
+                        the analytical rigor required for the planning and permitting phase of wind energy developments
+                        under UK standards.</p>
+
+                    <div
+                        style="text-align: center; margin-top: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                        <a href="/docs/WindPro/PARK_5 Old WTG and 2 New WTG.pdf" class="btn" target="_blank"
+                            style="display: inline-block; width: 300px; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">
+                            View Wake Loss & AEP Report (PDF)
+                        </a>
                         <a href="/docs/WindPro/DECIBEL_5 Old WTG.pdf" class="btn" target="_blank"
-                            style="display: inline-block; padding: 10px 20px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px;">
+                            style="display: inline-block; width: 300px; padding: 10px 20px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px;">
                             View Noise Technical Report (PDF)
                         </a>
-                    </div>
-                    <div style="text-align: center; margin-top: 20px;">
                         <a href="/docs/WindPro/SHADOW_5 Old WTG.pdf" class="btn" target="_blank"
-                            style="display: inline-block; padding: 10px 20px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px;">
+                            style="display: inline-block; width: 300px; padding: 10px 20px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px;">
                             View Shadow Flicker Technical Report (PDF)
                         </a>
                     </div>
