@@ -105,8 +105,9 @@
         </button>
         <div id="domain-list" class="filter-content">
             <div class="domain-container">
-                <div class="single-domain" data-domain="Esri Canada">Esri Canada</div>
+                <div class="single-domain" data-domain="Education">Education</div>
                 <div class="single-domain" data-domain="Teaching">Teaching</div>
+                <div class="single-domain" data-domain="Esri Canada">Esri Canada</div>
                 <div class="single-domain" data-domain="Aerial Survey">Aerial Survey</div>
                 <div class="single-domain" data-domain="Forestry">Forestry</div>
                 <div class="single-domain" data-domain="Renewable Energy">Renewable Energy</div>
@@ -157,10 +158,27 @@
     <!----------------------------->
     <section id="community-section">
         <button class="main-filter-trigger" onclick="toggleFilter('community-list')">
-            <span class="arrow">▲</span>Community Involvement, Public Speaking, Team Collaboration
+            <span class="arrow">▲</span>About Me, Community Involvement, Team Collaboration
         </button>
         <section id="community-list" class="filter-content show">
             <div class="project-container">
+                            <div class="project-item" data-skills=""
+    data-domains="Education Professional Development" data-types="GIS Web Development">
+    <div class="project-image-wrapper" data-modal="modalEducation">
+        <!-- Replace with a relevant thumbnail image path -->
+        <img src="/img/schools/schools.png" alt="Academic Credentials & Certifications"
+            loading="lazy">
+        <div class="project-title">
+            <h2>Academic & Technical Credentials</h2>
+        </div>
+        <div class="project-info-stack">
+            <div class="project-skills-bar">
+            </div>
+            <div class="project-domain-bar">Education / Professional Development</div>
+            <div class="project-type-bar">GIS / Web Development / Film Studies</div>
+        </div>
+    </div>
+</div>
                 <div class="project-item" data-skills="" data-domains="Esri Canada Community Involvement Teaching"
                     data-types="Geospatial Advocacy">
                     <div class="project-image-wrapper" data-modal="modalAmbassador">
@@ -3594,6 +3612,43 @@ Figure 3: Analyzing Japan’s urban density vs. water demand revealed irrigation
                 </div>
             </div>
         </div>
+
+        <div id="modalEducation" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-text-content">
+            <h1>Academic Credentials & Technical Certifications</h1>
+
+            <div class="skill-icon-container">
+                <div class="skill-chip">
+                    <img src="/img/schools/schools.png" class="skill-icon-modal" alt="Education">
+                    <div class="skill-text-group">
+                        <span class="domain-label">Domain: Education / Professional Development</span>
+                        <span class="skill-label">Skill: GIS / Web Development / Film Studies</span>
+                    </div>
+                </div>
+            </div>
+
+            <p>My professional foundation bridges the gap between creative media, software engineering, and geospatial analysis.</p>
+
+<h3>Core Qualifications:</h3>
+            <ul>
+                <li><strong>Graduate Certificate in GIS:</strong> <em>Centre of Geographic Sciences (COGS) - NSCC.</em> Specialized in multidisciplinary infrastructure planning, advanced raster analysis, and the processing of raw LiDAR point cloud data for high-precision 3D modelling.</li>
+                <br><img src="/img/schools/cogs.jpg"
+                            alt="Ice Road Challenge Route" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto;"><br>
+                <li><strong>Diploma in IT Programming:</strong> <em>Nova Scotia Community College (NSCC).</em> Comprehensive training in full-stack development and automated workflows across a diverse stack, including <strong>C++, C#, C, Java, JavaScript, Python, and React.</strong></li>
+                <br><img src="/img/schools/it2.jpg"
+                            alt="Ice Road Challenge Route" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto;"><br>
+                <li><strong>Bachelor of Fine Arts in Film Studies:</strong> <em>Nova Scotia College of Art and Design (NSCAD) University.</em> Expert-level visual communication with a primary focus on <strong>Director of Photography</strong> roles, emphasizing technical cinematography and high-end visual storytelling.</li>
+<br><img src="/img/schools/nscad.jpg"
+                            alt="Ice Road Challenge Route" loading="lazy"
+                            style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+            </ul>
+        </div>
+    </div>
+</div>
         <div id="modal99" class="modal-overlay">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
