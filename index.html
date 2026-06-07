@@ -10,6 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
+
+<!-- PROJECTS TO ADD - TODAYS DATE: jUNE 6TH 2026 -->
+<!-- LiDAR:
+        Flood Sim
+        Forest Canopy
+        Utility Line
+    Raster:
+        !!!Seawall Watershed!!!
+            Note: Priority for this project because I still need to open it
+            up and take screenshots of the workflow and results.
+    Capstone:
+        WindPRO section
+        ArcPro section
+        17-min video presentation (uploaded to youtube)
+        Video fly
+    Updates to existing projects:
+        Live App from ECCE Challenge
+        Link to blog post
+    -->
+
+
 <body>
     <!-- <video id="bgVideo" autoplay muted loop style="position:fixed; left:0; bottom:0; width:100vw; height:auto; min-width:100vw; z-index:-1;">
         <source src="/img/vid/globe_1080.mp4" type="video/mp4">
@@ -22,7 +43,7 @@
 
             <div class="header-center">
                 <div class="profile-circle">
-                    <img src="/img/me/Media.jpg" alt="">
+                    <img src="/img/me/Headshot_COGS.jpg" alt="Adam Nearing">
                 </div>
             </div>
 
@@ -110,6 +131,7 @@
                 <div class="single-domain" data-domain="Esri Canada">Esri Canada</div>
                 <div class="single-domain" data-domain="Aerial Survey">Aerial Survey</div>
                 <div class="single-domain" data-domain="Forestry">Forestry</div>
+                <div class="single-domain" data-domain="Hydrology">Hydrology</div>
                 <div class="single-domain" data-domain="Renewable Energy">Renewable Energy</div>
                 <div class="single-domain" data-domain="Hazard">Hazard</div>
                 <div class="single-domain" data-domain="Land Analysis">Land Analysis</div>
@@ -268,6 +290,43 @@
         </button>
         <section id="project-wrapper" class="filter-content show">
             <div class="project-container">
+                <div class="project-item" data-skills="arcgis_pro" 
+     data-domains="Forestry Land Analysis" 
+     data-types="LiDAR Remote Sensing">
+    <div class="project-image-wrapper" data-modal="modal28">
+        <img src="/img/projects/LiDARForestCanopy/2018LasPoints3dPond.png" alt="LiDAR Vegetation Change Analysis"
+            loading="lazy">
+        <div class="project-title">
+            <h2>Multi-Temporal LiDAR Vegetation Analysis</h2>
+        </div>
+        <div class="project-info-stack">
+            <div class="project-skills-bar">
+                <img src="/img/skills/allskills/arcgis_pro.webp" class="mini-skill-icon" alt="ArcGIS Pro">
+            </div>
+            <div class="project-domain-bar">Forestry / Land Analysis</div>
+            <div class="project-type-bar">LiDAR / Remote Sensing</div>
+        </div>
+    </div>
+</div>
+                <div class="project-item" data-skills="arcgis_pro global_mapper" 
+     data-domains="Land Analysis Hydrology" 
+     data-types="LiDAR 3D Modelling">
+    <div class="project-image-wrapper" data-modal="modal27">
+        <img src="/img/projects/LiDARFloodSimulation/" alt="Hydrological Applications of LiDAR"
+            loading="lazy">
+        <div class="project-title">
+            <h2>LiDAR Hydrological Analysis & Flooding</h2>
+        </div>
+        <div class="project-info-stack">
+            <div class="project-skills-bar">
+                <img src="/img/skills/allskills/arcgis_pro.webp" class="mini-skill-icon" alt="ArcGIS Pro">
+                <img src="/img/skills/allskills/global_mapper.webp" class="mini-skill-icon" alt="Global Mapper">
+            </div>
+            <div class="project-domain-bar">Land Analysis / Hydrology</div>
+            <div class="project-type-bar">LiDAR / 3D / Modelling</div>
+        </div>
+    </div>
+</div>
                 <div class="project-item" data-skills="arcgispro arcgis_online"
                     data-domains="Land Analysis Infrastructure Planning" data-types="GIS 3D Modelling">
                     <div class="project-image-wrapper" data-modal="modal24">
@@ -3258,6 +3317,146 @@
                 </div>
             </div>
         </div>
+        <div id="modal27" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-text-content">
+            <h1>Hydrological Applications of LiDAR & Digital Elevation Models</h1>
+
+            <div class="skill-icon-container">
+                <div class="skill-chip">
+                    <img src="/img/skills/allskills/arcgis_pro.webp" class="skill-icon-modal" alt="ArcGIS Pro">
+                    <img src="/img/skills/allskills/global_mapper.webp" class="skill-icon-modal" alt="Global Mapper">
+                    <div class="skill-text-group">
+                        <span class="domain-label">Domain: Land Analysis / Hydrology</span>
+                        <span class="skill-label">Skill: LiDAR / 3D / Modelling</span>
+                    </div>
+                </div>
+            </div>
+
+            <figure class="project-figure">
+                <img src="/img/projects/WindProTutorials/WindDataMapView.webp"
+                    alt="Overview of hydro-flattened lidar DEM" class="modal-image-full">
+                <figcaption style="text-align: center;"><strong>Step 1: Hydrological Flattening.</strong>
+                    Plan view of the 1m resolution <strong>AGRG LiDAR DEM</strong> over Middleton, NS. The raster undergoes trend surface interpolation and clipping to eliminate artificial TIN triangulation artifacts across waterbodies.</figcaption>
+            </figure>
+
+            <p>This project executed a complete surface optimization and spatial analysis workflow, converting a raw, ground-return LiDAR terrain dataset into a hydrologically conditioned surface model. Focused on the town of Middleton, Nova Scotia, the project leveraged automated <strong>ArcGIS Pro Model Builder</strong> architecture to enforce true water gradients, establish precise drainage catchments, and generate temporal flood progression simulations.</p>
+
+            <figure class="project-figure">
+                <img src="/img/projects/WindProTutorials/WakeLossComparisonChart.webp"
+                    alt="LiDAR flow accumulation and watershed mapping" class="modal-image-full">
+                <figcaption style="text-align: center;"><strong>Step 2: Hydro-Enforcement & Catchment Delineation.</strong> 
+                    Isometric view showing intersecting transportation barriers removed ("burned") from the surface matrix, generating clean flow paths and an accurate watershed basin layout via snap pour points.
+                </figcaption>
+            </figure>
+
+            <h3>Technical Workflow:</h3>
+            <ul>
+                <li><strong>Surface Flattening & Trend Interpolation:</strong> Extracted feature vertices from 1:10,000 scale NSGC base water polygons, sampling native cell values to construct an sloped, multi-directional 3D plane using the <code>Trend</code> tool to rectify specular sensor anomalies.</li>
+                <li><strong>Hydrological Enforcement & Barrier Breach:</strong> Intersected transport infrastructure with regional stream vectors using <code>Feature to Raster</code> and conditional logic statements to drop cell values under artificial embankments, mitigating raw LiDAR obstruction issues.</li>
+                <li><strong>Terrain Conditioning & Sink Elimination:</strong> Implemented automated <code>Fill</code> workflows across the structural matrix to neutralize isolated vertical voids and micro-depressions, preserving uninhibited flow accumulation routes.</li>
+                <li><strong>Catchment Extraction & Pour Point Analysis:</strong> Modeled explicit drainage behavior using <code>Flow Direction</code> and <code>Flow Accumulation</code> tools, auto-aligning drainage choke-points to regions of high accumulation to delineate the true watershed boundaries.</li>
+                <li><strong>Incremental Flood Contouring & Animation:</strong> Developed an iterative multi-stage script using <code>Con</code> mask constraints to isolate contiguous flood zones linked to core drainage sources, culminating in a 5-second <code>.mp4</code> visual sequence tracking 25cm interval surge vectors from 9m to 12m.</li>
+            </ul>
+
+            <figure class="project-figure">
+                <img src="/img/projects/LiDAR3DBuildingModelling/Frame 16.webp"
+                    alt="Automated Model Builder script comparison for hydro-processing" class="modal-image-full">
+                <figcaption style="text-align: center;"><strong>Step 3: Workflow Automation.</strong>
+                    A side-by-side diagnostic visualization showing unconditioned accumulation blocks (left) versus the seamless flow lines accomplished via the <code>YourSurname_HydroTools</code> automated geoprocessing toolboxes (right).</figcaption>
+            </figure>
+
+            <p><strong>Impact:</strong> This project highlights my ability to resolve data limitations in high-resolution remote sensing layers through advanced raster geoprocessing. By engineering reusable, error-managed toolboxes that manage spatial variables across divergent coordinate systems (UTM Zone 20 NAD83 CSRS98 / CGVD28), it establishes an automated framework essential for civil flood mitigation planning and environmental compliance.</p>
+
+            <p><strong>Tools Used:</strong> ArcGIS Pro, Model Builder, Python, Raster Calculator, Global Mapper</p>
+            <p><strong>Location:</strong> Middleton, Annapolis Valley, NS</p>
+
+            <div style="text-align: center; margin-top: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                <a href="/docs/WindPro/PARK_Main_Result.pdf" class="btn" target="_blank"
+                    style="display: inline-block; width: 300px; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">
+                    View Hydrological Models (TBX)
+                </a>
+                <a href="/video/flood_sim.mp4" class="btn" target="_blank"
+                    style="display: inline-block; width: 300px; padding: 10px 20px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px;">
+                    Play Flood Simulation Video (MP4)
+                </a>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<div id="modal28" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-text-content">
+            <h1>LiDAR Vegetation Multi-Temporal Change Analysis</h1>
+
+            <div class="skill-icon-container">
+                <div class="skill-chip">
+                    <img src="/img/skills/allskills/arcgis_pro.webp" class="skill-icon-modal" alt="ArcGIS Pro">
+                    <div class="skill-text-group">
+                        <span class="domain-label">Domain: Forestry / Land Analysis</span>
+                        <span class="skill-label">Skill: LiDAR / Remote Sensing</span>
+                    </div>
+                </div>
+            </div>
+
+            <figure class="project-figure">
+                <img src="/img/projects/WindProTutorials/WindDataMapView.webp"
+                    alt="Canopy Height Model and Canopy Change Detection" class="modal-image-full">
+                <figcaption style="text-align: center;"><strong>Step 1: Canopy Height Model Construction.</strong>
+                    Plan view of the 1m resolution <strong>Canopy Height Model (CHM)</strong> derived via raster subtraction. Ground features are normalized to reveal actual vegetation canopy heights above the ellipsoid.
+                </figcaption>
+            </figure>
+
+            <p>This project executed a multi-temporal remote sensing assessment to track structural vegetation dynamics and canopy changes over a 7-year interval. Utilizing raw airborne LiDAR point clouds captured over Nova Scotia in <strong>2011 and 2018</strong>, downloaded from the GeoNova Elevation Data Explorer, this project addresses a common challenge in environmental monitoring: normalized change detection across distinct, independent flight lines with varying point densities and sensor capabilities.</p>
+            
+            <p>The workflow required establishing structural parity between the datasets. Because differences in sensor configuration, point spacing, and seasonal flight windows can introduce artificial variances, rigorous interpolation and data gridding strategies were enforced. The end goal was to transform unstructured, millions-of-points LAS arrays into clean, synchronized 1-meter rasters capable of revealing genuine ecological successions or logging footprints.</p>
+
+            <figure class="project-figure">
+                <img src="/img/projects/WindProTutorials/WakeLossComparisonChart.webp"
+                    alt="Vegetation height reclassification and distribution charts" class="modal-image-full">
+                <figcaption style="text-align: center;"><strong>Step 2: Height Stratification &amp; Change Analysis.</strong> 
+                    Isometric view showing the stratified reclassification of canopy architecture alongside a multi-temporal inventory chart, highlighting variations across structural strata over time.
+                </figcaption>
+            </figure>
+
+            <h3>Technical Workflow &amp; Methodology:</h3>
+            <ul>
+                <li><strong>Discrete-Return Surface Generation:</strong> Processed multi-year GeoNova LAS datasets to grid 1m resolution elevation layers. <strong>Digital Terrain Models (DTM)</strong> were isolated using minimum local binning with linear interpolation to secure true bare-earth elevations beneath dense canopies, while <strong>Digital Surface Models (DSMs)</strong> were extracted via maximum local binning with zero gap filling to retain pure first-return tree tips.</li>
+                <li><strong>Feature Filtering &amp; Structural Cleansing:</strong> Implemented <code>Raster Calculator</code> arrays to build normalized Height Models. To prevent cultural objects from skewing forest metrics, urban features, power lines, and residential structural footprints were filtered out, leaving a refined <strong>Canopy Height Model (CHM)</strong> containing vegetation signatures only.</li>
+                <li><strong>Anomalous Pixel Correction:</strong> Applied <code>Set Null</code> conditional mathematical statements to neutralize invalid negative elevation steps ($DSM_{max} < DTM_{min}$) generated by interpolation edge effects and micro-topographic shifts between data collection years, constraining calculations strictly to valid biological heights ($> 0$ meters).</li>
+                <li><strong>Biophysical Height Stratification:</strong> Executed structural cohort modeling using the <code>Reclassify</code> tool to break forest layers into distinct canopy strata: <strong>Shrubs (&lt;3.0m), Short Vegetation (3.0m–4.9m), Medium Vegetation (5.0m–9.9m), and Mature Trees (&ge;10.0m)</strong>. This allows for clear biomass distribution charting and volumetric change monitoring.</li>
+                <li><strong>Canopy Change Detection (CCD):</strong> Subtracted the historical baseline from the modern surface layer ($CHM_{2018} - CHM_{2011}$) under strict environment snap profiles. This isolated exact vertical displacement values, dynamically mapping localized timber harvest boundaries, clear-cut operations, and natural canopy regrowth rates.</li>
+            </ul>
+
+            <figure class="project-figure">
+                <img src="/img/projects/LiDAR3DBuildingModelling/Frame 16.webp"
+                    alt="High-resolution localized map layout at 1:2,500 scale" class="modal-image-full">
+                <figcaption style="text-align: center;"><strong>Step 3: Cartographic Inventory &amp; Evaluation.</strong>
+                    Detailed layout view at 1:2,500 scale showcasing a high-intensity clearing event, contrasting clear-cut boundaries against neighboring untouched timber stands.</figcaption>
+            </figure>
+
+            <p><strong>Impact &amp; Outcomes:</strong> This project highlights the utility of multi-temporal airborne laser scanning arrays for regional environmental inventorying. By managing coordinate matrices across <strong>NAD83 (CSRS) UTM Zone 20</strong> and <strong>CGVD2013a</strong> vertical scales, the completed processing framework transforms unstructured point observations into reproducible cartographic metrics. The analytics yielded quantitative tabular outputs documenting stand evolution in hectares, generating five production-grade map layouts—including a specialized 1:2,500 micro-analysis layout of local timber extraction zones—essential for civil resource auditing and spatial forestry management.</p>
+
+            <p><strong>Tools Used:</strong> ArcGIS Pro, LAS Dataset To Raster, Raster Calculator, Reclassify, Bar Charting Engine</p>
+            <p><strong>Location:</strong> Nova Scotia, Canada</p>
+
+            <div style="text-align: center; margin-top: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                <a href="/docs/WindPro/PARK_Main_Result.pdf" class="btn" target="_blank"
+                    style="display: inline-block; width: 300px; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">
+                    View Canopy Inventory Report (CSV)
+                </a>
+                <a href="/docs/WindPro/DECIBEL_5 Old WTG.pdf" class="btn" target="_blank"
+                    style="display: inline-block; width: 300px; padding: 10px 20px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px;">
+                    Open Cartographic Map Suite (PDF)
+                </a>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
 <div id="modalAmbassador" class="modal-overlay">
     <div class="modal-content">
         <span class="close-button">&times;</span>
